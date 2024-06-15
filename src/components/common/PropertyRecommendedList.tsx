@@ -1,0 +1,72 @@
+import { IListPropertyResponse } from '@/types/pages/property'
+import RecommendedCard from './PropertyRecommendedCard'
+
+const recommendedData = [
+  {
+    imageSrc: '/rectangle-17@2x.png',
+    location: 'Property Title 1',
+    price: '$300,000',
+    bedCount: 3,
+    bathCount: 2,
+    area: '1,200',
+  },
+  {
+    imageSrc: '/rectangle-17@2x.png',
+    location: 'Property Title 2',
+    price: '$250,000',
+    bedCount: 2,
+    bathCount: 2,
+    area: '1,000',
+  },
+  {
+    imageSrc: '/rectangle-17@2x.png',
+    location: 'Property Title 1',
+    price: '$300,000',
+    bedCount: 3,
+    bathCount: 2,
+    area: '1,200',
+  },
+  {
+    imageSrc: '/rectangle-17@2x.png',
+    location: 'Property Title 1',
+    price: '$300,000',
+    bedCount: 3,
+    bathCount: 2,
+    area: '1,200',
+  },
+]
+
+interface IProps {
+  recommendedProperty: IListPropertyResponse[]
+}
+
+const PropertyRecommendedList: React.FC<IProps> = ({ recommendedProperty }) => {
+  return (
+    <div
+      id='nearByLoc'
+      className='custom_screen_width w-full min-w-max space-y-4 pt-10 font-inter text-sm text-black md:space-y-5 md:pt-8 md:text-base lg:pt-16'
+    >
+      <div className='font-inter text-xl font-medium md:text-2xl'>
+        Similar Property Around
+      </div>
+      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4'>
+        {recommendedProperty.map((data) => (
+          <RecommendedCard
+            key={data.id}
+            id={data.id}
+            imageSrc={
+              data.property_images?.length ? data.property_images[0]?.image : ''
+            }
+            price={data.price}
+            location={data.title}
+            bedCount={data.bed}
+            bathCount={data.bath}
+            area={data.size}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default PropertyRecommendedList

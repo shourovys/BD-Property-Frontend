@@ -1,0 +1,149 @@
+import { propertyUrls } from '@/api/urls/propertyUrls'
+import Input from '@/components/atomic/Input'
+import { ISelectOption } from '@/types/components/common'
+import { ISingleServerResponse } from '@/types/pages/common'
+import classNames from 'classnames'
+import React, { useState } from 'react'
+import useSWR from 'swr'
+
+interface IProps {
+  selectedPropertyLocation: ISelectOption[]
+  setSelectedPropertyLocation: (propertyLocation: ISelectOption[]) => void
+}
+
+const LocationSelector: React.FC<IProps> = ({
+  selectedPropertyLocation,
+  setSelectedPropertyLocation,
+}) => {
+  const [inputValue, setInputValue] = useState('')
+  const [activeIndex, setActiveIndex] = useState<number | null>(0)
+
+  const {  data } = useSWR<
+    ISingleServerResponse<{ id: string; name: string }[]>
+  >(propertyUrls.address)
+
+  const filteredLocations = data?.results?.filter(
+    (location) =>
+      location.name.toLowerCase().includes(inputValue.toLowerCase()) &&
+      !selectedPropertyLocation.some(
+        (selected) => selected.value === location.id
+      )
+  )
+
+  const handleLocationSelect = (location: ISelectOption) => {
+    setInputValue('')
+    setActiveIndex(0)
+    // Check if the location is not already selected
+    if (
+      !selectedPropertyLocation.some(
+        (selected) => selected.value === location.value
+      )
+    ) {
+      setSelectedPropertyLocation([...selectedPropertyLocation, location])
+    }
+  }
+
+  const handleLocationRemove = (locationToRemove: ISelectOption) => {
+    setSelectedPropertyLocation(
+      selectedPropertyLocation.filter(
+        (location) => location !== locationToRemove
+      )
+    )
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (filteredLocations?.length) {
+      switch (e.key) {
+        case 'ArrowDown':
+          e.preventDefault()
+          setActiveIndex((prev) =>
+            prev === null ? 0 : Math.min(prev + 1, filteredLocations.length - 1)
+          )
+          break
+        case 'ArrowUp':
+          e.preventDefault()
+          setActiveIndex((prev) =>
+            prev === null ? filteredLocations.length - 1 : Math.max(prev - 1, 0)
+          )
+          break
+        case 'Enter':
+          if (activeIndex !== null && filteredLocations[activeIndex]) {
+            handleLocationSelect({
+              label: filteredLocations[activeIndex].name,
+              value: filteredLocations[activeIndex].id,
+            })
+          }
+          break
+        default:
+          break
+      }
+    }
+  }
+
+  return (
+    <div className='relative w-full flex-1 text-start md:pr-2'>
+      <p className='text-gray-600'>Location</p>
+      <div
+        className={classNames(
+          'flex flex-wrap gap-1.5',
+          selectedPropertyLocation.length && 'mt-1'
+        )}
+      >
+        {selectedPropertyLocation.map((location) => (
+          <div
+            key={location.value}
+            className='flex items-center gap-1 rounded-6xs bg-lightgray-200 px-2 py-1 text-gray-600'
+          >
+            {location.label}
+            <button
+              className='ml-2 text-xs font-medium'
+              onClick={() => handleLocationRemove(location)}
+            >
+              x
+            </button>
+          </div>
+        ))}
+      </div>
+      <div className='relative'>
+        <div className='mr-6 flex items-center justify-between'>
+          <Input
+            type='text'
+            name='propertyLocation'
+            value={inputValue}
+            onChange={(name, value) => {
+              if (!Array.isArray(value) && typeof value === 'string') {
+                setInputValue(value)
+              }
+            }}
+            placeholder='Search location...'
+            inputClass='border-0 pl-0'
+            onKeyDown={handleKeyDown}
+          />
+        </div>
+        {inputValue && !!filteredLocations?.length && (
+          <div className='absolute z-10 mt-2 w-full overflow-hidden rounded-md border border-lightgray-100 bg-white shadow-md'>
+            {filteredLocations?.map((location, index) => (
+              <div
+                key={location.id}
+                className={classNames(
+                  'cursor-pointer p-2 hover:bg-lightgray-100',
+                  index === activeIndex && 'bg-lightgray-100'
+                )}
+                onClick={() =>
+                  handleLocationSelect({
+                    label: location.name,
+                    value: location.id,
+                  })
+                }
+              >
+                {location.name}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default LocationSelector

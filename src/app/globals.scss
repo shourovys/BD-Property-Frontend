@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .custom_screen_width {
+    @apply mx-auto max-w-screen-xl px-4 2xl:px-0;
+  }
+  .custom_section_gap {
+    @apply pb-0 pt-16 md:pb-0 md:pt-24;
+  }
+  .custom_screen_width_with_section_gap {
+    @apply mx-auto max-w-screen-xl px-4 pb-0 pt-20 md:pb-0 md:pt-24 lg:px-0;
+  }
+
+  //common custom transition for all component
+  .custom_transition {
+    @apply transition duration-300 ease-in-out;
+  }
+
+  .text_balance {
+    text-wrap: balance;
+  }
+
+  /* swiper pagination bullet style update  */
+
+  .homeImageCardsSlider .swiper-pagination-bullet {
+    @apply h-5 w-5 bg-[#777676] transition-all duration-300 ease-in-out;
+  }
+  .homeImageCardsSlider .swiper-pagination-bullet-active {
+    @apply h-5 w-5 bg-[#f56e50];
+  }
+
+  .homeImageCardsSlider {
+    --add-bottom: 60px;
+    padding-bottom: var(--add-bottom) !important;
+  }
+  .homeImageCardsSlider [class^='swiper-button-'] {
+    top: calc(50% - var(--add-bottom) / 2);
+  }
+
+  .pageSwiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pageSwiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pageSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .custom_opacity_100 {
+    opacity: 100 !important;
+  }
+
+  .custom_cursor_default {
+    cursor: default !important;
+  }
+
+  //making text gray
+  .custom_text_gray {
+    color: rgb(156 163 175) !important;
+  }
+
+  //disable styles
+  .important_disable_bg {
+    background-color: #f0f1f3 !important;
+  }
+
+  .important_disable_color {
+    color: rgb(75 85 99) !important; // text-gray-600
+  }
+
+  .selector_relative_position > div {
+    position: static;
+  }
+
+  // otp input class
+  .otpInput {
+    @apply block aspect-square h-10 w-full overflow-hidden overflow-ellipsis whitespace-nowrap rounded-md border border-gray-400 bg-white text-sm text-black transition ease-in-out focus:border-salmon focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base;
+    width: 40px !important;
+  }
+
+  // Paragraph line limit
+  .two_line_limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .three_line_limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .four_line_limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .six_line_limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+}
