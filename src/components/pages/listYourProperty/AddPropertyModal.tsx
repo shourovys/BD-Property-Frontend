@@ -10,7 +10,7 @@ import {
   THandleInputChange,
 } from '@/types/components/common'
 import { INewFormErrors, ISingleServerResponse } from '@/types/pages/common'
-import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
+import { propertyPurposeData, propertyTypeData } from '@/utils/data/property'
 import { CloseIcon } from '@/utils/icon'
 import { errorToast, successToast } from '@/utils/toast'
 import React, { useState } from 'react'
@@ -104,12 +104,12 @@ const AddPropertyModal: React.FC<AddPropertyModalProps> = ({
     })
   }
 
-  const { isLoading: propertyPurposeLoading, data: propertyPurposeData } =
-    useSWR<ISingleServerResponse<IPropertyPurpose[]>>(propertyUrls.purposes)
+  // const { isLoading: propertyPurposeLoading, data: propertyPurposeData } =
+  //   useSWR<ISingleServerResponse<IPropertyPurpose[]>>(propertyUrls.purposes)
 
-  const { isLoading: propertyTypeLoading, data: propertyTypeData } = useSWR<
-    ISingleServerResponse<IPropertyType[]>
-  >(propertyUrls.type)
+  // const { isLoading: propertyTypeLoading, data: propertyTypeData } = useSWR<
+  //   ISingleServerResponse<IPropertyType[]>
+  // >(propertyUrls.type)
 
   const { data: propertyLocationData, isLoading: propertyLocationLoading } =
     useSWR<ISingleServerResponse<{ id: number; name: string }[]>>(
@@ -141,12 +141,11 @@ const AddPropertyModal: React.FC<AddPropertyModalProps> = ({
             inputLabel='Purpose*'
             checked={formData.purpose}
             radios={
-              propertyPurposeData?.results.map((purpose) => ({
+              propertyPurposeData?.map((purpose) => ({
                 label: purpose.purpose_title,
                 value: purpose.id.toString(),
               })) || []
             }
-            isLoading={propertyPurposeLoading}
             onChange={handleInputChange}
             error={formErrors.purpose}
           />
@@ -155,12 +154,11 @@ const AddPropertyModal: React.FC<AddPropertyModalProps> = ({
             inputLabel='Property Type*'
             checked={formData.propertyType}
             radios={
-              propertyTypeData?.results.map((type) => ({
+              propertyTypeData?.map((type) => ({
                 label: type.type,
                 value: type.id.toString(),
               })) || []
             }
-            isLoading={propertyTypeLoading}
             onChange={handleInputChange}
             error={formErrors.propertyType}
           />

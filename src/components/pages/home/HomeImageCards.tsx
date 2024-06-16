@@ -2,23 +2,28 @@
 
 import Section from '@/components/common/Section'
 import SectionTitle from '@/components/common/SectionTitle'
-import { ISliderImageData } from '@/types/pages/home'
-import { NextPage } from 'next'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
 import { Autoplay, Pagination } from 'swiper/modules' // Correct module import
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-interface IProps {
-  images: ISliderImageData[]
-}
+const imageSources = [
+  '/rectangle-56@2x.png',
+  '/rectangle-57@2x.png',
+  '/rectangle-58@2x.png',
+  '/rectangle-59@2x.png',
+  '/rectangle-56@2x.png',
+  '/rectangle-57@2x.png',
+  '/rectangle-58@2x.png',
+  '/rectangle-59@2x.png',
+]
 
-const HomeImageCards: NextPage<IProps> = ({ images }) => {
+const HomeImageCards = () => {
   return (
     <Section>
       <SectionTitle>Industry Insights</SectionTitle>
-      {images.length > 0 && (
+      {imageSources.length > 0 && (
         <Swiper
           autoplay={{
             delay: 2000,
@@ -48,8 +53,8 @@ const HomeImageCards: NextPage<IProps> = ({ images }) => {
           modules={[Pagination, Autoplay]}
           className='homeImageCardsSlider'
         >
-          {images.map(({ image }, index) => (
-            <SwiperSlide key={index}>
+          {imageSources.map((image) => (
+            <SwiperSlide key={image}>
               <Card imgSrc={image} />
             </SwiperSlide>
           ))}

@@ -1,5 +1,4 @@
 import { homePageApi } from '@/api/urls'
-import { propertyUrls } from '@/api/urls/propertyUrls'
 import Section from '@/components/common/Section'
 import PropertyGuidelineHero from '@/components/pages/PropertyGuideline/PropertyGuidelineHero'
 import ExclusiveOffers from '@/components/pages/home/ExclusiveOffers/ExclusiveOffers'
@@ -8,7 +7,7 @@ import HomeImageGallery from '@/components/pages/home/HomeImageGallery'
 import HomePopularLinks from '@/components/pages/home/HomePopularLinks'
 import { ISingleServerResponse } from '@/types/pages/common'
 import { ILandingPageData } from '@/types/pages/home'
-import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
+import { propertyPurposeData, propertyTypeData } from '@/utils/data/property'
 import fetchData from '@/utils/fetchData'
 import type { NextPage } from 'next'
 
@@ -17,19 +16,19 @@ const PropertyGuidelinePage: NextPage = async () => {
     homePageApi.landing
   )
 
-  const propertyPurposeData = await fetchData<
-    ISingleServerResponse<IPropertyPurpose[]>
-  >(propertyUrls.purposes)
+  // const propertyPurposeData = await fetchData<
+  //   ISingleServerResponse<IPropertyPurpose[]>
+  // >(propertyUrls.purposes)
 
-  const propertyTypeData = await fetchData<
-    ISingleServerResponse<IPropertyType[]>
-  >(propertyUrls.type)
+  // const propertyTypeData = await fetchData<
+  //   ISingleServerResponse<IPropertyType[]>
+  // >(propertyUrls.type)
 
   return (
     <div className='w-full bg-gray-100 font-ubuntu text-sm text-darkslateblue-100 md:text-base'>
       <PropertyGuidelineHero
-        propertyPurposeData={propertyPurposeData.results}
-        propertyTypeData={propertyTypeData.results}
+        propertyPurposeData={propertyPurposeData}
+        propertyTypeData={propertyTypeData}
       />
       <Section>
         <HomeImageGallery

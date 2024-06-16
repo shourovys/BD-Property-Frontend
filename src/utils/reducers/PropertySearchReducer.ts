@@ -1,5 +1,6 @@
 import { ISelectOption, emptySelectOption } from '@/types/components/common'
 import { propertySortOptions } from '@/types/propertyFilter'
+import { propertyPurposeData, propertyTypeData } from '../data/property'
 
 export interface IPropertySearchState {
   page: number
@@ -82,11 +83,17 @@ export type PropertySearchAction =
 export const propertySearchInitialState: IPropertySearchState = {
   page: 1,
   selectedPurpose: {
-    purpose: emptySelectOption,
+    purpose: {
+      value: propertyPurposeData[0].id,
+      label: propertyPurposeData[0].purpose_title,
+    },
     completion: emptySelectOption,
   },
   selectedPropertyType: {
-    type: emptySelectOption,
+    type: {
+      value: propertyTypeData[0].id,
+      label: propertyTypeData[0].type,
+    },
     subType: emptySelectOption,
   },
   selectedBedsBaths: { beds: [], baths: [] },

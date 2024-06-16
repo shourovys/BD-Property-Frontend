@@ -2,38 +2,49 @@ import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
 
 export const propertyPurposeData: IPropertyPurpose[] = [
   {
-    id: 1,
-    purpose_title: 'Residential',
-    sub_purpose: [
-      { id: 1, purpose_title: 'Single Family' },
-      { id: 2, purpose_title: 'Multi Family' },
-    ],
+    id: 'rent',
+    purpose_title: 'Rent',
+    sub_purpose: [],
   },
   {
-    id: 2,
-    purpose_title: 'Commercial',
+    id: 'buy',
+    purpose_title: 'Buy',
     sub_purpose: [
-      { id: 3, purpose_title: 'Office' },
-      { id: 4, purpose_title: 'Retail' },
+      { id: 'all', purpose_title: 'All' },
+      { id: 'ready', purpose_title: 'Ready' },
+      { id: 'under-construction', purpose_title: 'Under Construction' },
     ],
   },
 ]
 
 export const propertyTypeData: IPropertyType[] = [
   {
-    id: 1,
-    type: 'House',
+    id: 'residential',
+    type: 'Residential',
     property_sub_type: [
-      { id: 1, sub_type: 'Detached' },
-      { id: 2, sub_type: 'Semi-Detached' },
+      { id: 'apartment', sub_type: 'Apartment' },
+      { id: 'penthouse', sub_type: 'Penthouse' },
+      { id: 'plaza', sub_type: 'Plaza' },
+      { id: 'plot', sub_type: 'Plot' },
+      { id: 'room', sub_type: 'Room' },
+      { id: 'duplex', sub_type: 'Duplex' },
+      { id: 'building', sub_type: 'Building' },
     ],
   },
   {
-    id: 2,
-    type: 'Apartment',
+    id: 'commercial',
+    type: 'Commercial',
     property_sub_type: [
-      { id: 3, sub_type: 'Studio' },
-      { id: 4, sub_type: 'Duplex' },
+      { id: 'office', sub_type: 'Office' },
+      { id: 'floor', sub_type: 'Floor' },
+      { id: 'duplex', sub_type: 'Duplex' },
+      { id: 'building', sub_type: 'Building' },
+      { id: 'warehouse', sub_type: 'Warehouse' },
+      { id: 'shop', sub_type: 'Shop' },
+      { id: 'apartment', sub_type: 'Apartment' },
+      { id: 'plaza', sub_type: 'Plaza' },
+      { id: 'plot', sub_type: 'Plot' },
+      { id: 'factory', sub_type: 'Factory' },
     ],
   },
 ]

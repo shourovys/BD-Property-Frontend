@@ -53,10 +53,13 @@ const Header: React.FC = () => {
                 <div className='flex flex-shrink-0 items-center'>
                   <Link href='/'>
                     <img
-                      className='h-12 w-auto md:h-14'
-                      alt=''
+                      className='h-6 w-auto md:h-8'
+                      alt='BD Property'
                       src='/logo.png'
                     />
+                    {/* <h2 className='text-2xl font-semibold text-inherit'>
+                      BD Property
+                    </h2> */}
                   </Link>
                 </div>
                 <div className='flex items-center gap-6 md:gap-8'>

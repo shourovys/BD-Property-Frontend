@@ -2,13 +2,11 @@ import FlyoutWrapper from '@/components/common/Flyout'
 import PropertyPurposeFlyout from '@/components/common/Search/PropertyPurposeFlyout'
 import { emptySelectOption } from '@/types/components/common'
 import { IPropertyPurpose } from '@/types/pages/property'
-import { purposeFilterOptions } from '@/types/propertyFilter'
 import { DownArrowIcon } from '@/utils/icon'
 import { IPropertySearchState } from '@/utils/reducers/PropertySearchReducer'
 import classNames from 'classnames'
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { useEffect } from 'react'
 
 interface IHomeHeroTabButtonsProps {
   propertyPurposeData?: IPropertyPurpose[]
@@ -27,23 +25,23 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
   selectedPurpose,
   setSelectedPurpose,
 }) => {
-  useEffect(() => {
-    setSelectedPurpose({
-      purpose: propertyPurposeData?.length
-        ? {
-            label: propertyPurposeData[0].purpose_title,
-            value: propertyPurposeData[0].id.toString(),
-          }
-        : emptySelectOption,
-      completion:
-        propertyPurposeData?.length && propertyPurposeData[0].sub_purpose.length
-          ? {
-              label: propertyPurposeData[0].sub_purpose[0].purpose_title,
-              value: propertyPurposeData[0].sub_purpose[0].id.toString(),
-            }
-          : emptySelectOption,
-    })
-  }, [propertyPurposeData])
+  // useEffect(() => {
+  //   setSelectedPurpose({
+  //     purpose: propertyPurposeData?.length
+  //       ? {
+  //           label: propertyPurposeData[0].purpose_title,
+  //           value: propertyPurposeData[0].id,
+  //         }
+  //       : emptySelectOption,
+  //     completion:
+  //       propertyPurposeData?.length && propertyPurposeData[0].sub_purpose.length
+  //         ? {
+  //             label: propertyPurposeData[0].sub_purpose[0].purpose_title,
+  //             value: propertyPurposeData[0].sub_purpose[0].id,
+  //           }
+  //         : emptySelectOption,
+  //   })
+  // }, [propertyPurposeData])
 
   return (
     <div className='flex flex-wrap items-center justify-center gap-2.5 font-ubuntu text-sm font-light text-black sm:gap-4  md:text-base'>
@@ -53,20 +51,19 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
           <button
             key={purpose.id}
             className={classNames(
-              'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white px-4 py-3 font-normal sm:font-light md:px-6 md:py-2',
-              selectedPurpose.purpose.value !== purposeFilterOptions[0].value &&
-                'bg-opacity-60'
+              'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white bg-opacity-60 px-4 py-3 font-normal sm:font-light md:px-6 md:py-2',
+              selectedPurpose.purpose.value === purpose.id && 'bg-opacity-100'
             )}
             onClick={() => {
               setSelectedPurpose({
                 purpose: {
                   label: purpose.purpose_title,
-                  value: purpose.id.toString(),
+                  value: purpose.id,
                 },
                 completion: purpose.sub_purpose.length
                   ? {
                       label: purpose.sub_purpose[0].purpose_title,
-                      value: purpose.sub_purpose[0].id.toString(),
+                      value: purpose.sub_purpose[0].id,
                     }
                   : emptySelectOption,
               })
@@ -129,32 +126,32 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
                 <div
                   className={classNames(
                     'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
-                    selectedPurpose.purpose.value !== purpose.id.toString() &&
+                    selectedPurpose.purpose.value !== purpose.id &&
                       'bg-opacity-60'
                   )}
                 >
                   {purpose.purpose_title}
-                  {!!purpose.sub_purpose.length && <DownArrowIcon />}
+                  <DownArrowIcon />
                 </div>
               </FlyoutWrapper>
             ) : (
               <button
                 className={classNames(
                   'flex items-center justify-center rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
-                  selectedPurpose.purpose.value !== purpose.id.toString() &&
+                  selectedPurpose.purpose.value !== purpose.id &&
                     'bg-opacity-60'
                 )}
                 onClick={() =>
                   setSelectedPurpose({
                     purpose: {
                       label: purpose.purpose_title,
-                      value: purpose.id.toString(),
+                      value: purpose.id,
                     },
                     completion: emptySelectOption,
                   })
                 }
               >
-                For Rent
+                {purpose.purpose_title}
               </button>
             )}
           </>

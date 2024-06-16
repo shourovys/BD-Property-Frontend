@@ -39,11 +39,11 @@ const Home: NextPage = async () => {
         // bgVideo={data.results.title_videos_data.video}
       />
       <ExclusiveOffers />
-      <HomeGallerySection areaImageData={data.results.area_image_data} />
+      <HomeGallerySection />
       <HomeBanner />
-      <HomeVideoCards videos={data.results.slider_video_data} />
+      <HomeVideoCards />
       <HomeMultiColorCards />
-      <HomeImageCards images={data.results.slider_image_data} />
+      <HomeImageCards />
       <HomePopularLinks />
     </div>
   )

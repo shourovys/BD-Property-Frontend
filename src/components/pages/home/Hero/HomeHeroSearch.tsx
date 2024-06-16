@@ -109,7 +109,7 @@ const HomeHeroSearch: NextPage<IHomeHeroSearchProps> = ({
   }, [])
 
   return (
-    <section className='hidden w-full max-w-sm rounded-3xs border border-salmon bg-white px-4 pb-3 pt-4 font-ubuntu text-sm font-light text-darkslateblue-100 sm:block md:w-3/5 md:min-w-[600px] md:max-w-full md:flex-row md:pb-3 md:pt-3 md:text-sm lg:w-3/6'>
+    <section className='hidden w-full max-w-sm rounded-3xs border border-salmon bg-white px-4 pb-3 pt-4 font-ubuntu text-sm font-light text-darkslateblue-100 sm:block md:w-3/5 md:min-w-[600px] md:max-w-full md:flex-row md:pb-3 md:pt-3 md:text-sm lg:w-3/6 lg:min-w-[750px]'>
       <div className='grid min-w-[200px] grid-cols-1 gap-y-2 md:grid-cols-4 md:gap-x-4 md:gap-y-0'>
         <FlyoutWrapper
           flyoutContent={(close: () => void) => (

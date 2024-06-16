@@ -14,9 +14,9 @@ module.exports = {
       },
       colors: {
         darkslateblue: {
-          100: '#1a2f58',
-          200: 'rgba(26, 47, 88, 0.33)',
-          300: '#cfdfff',
+          100: '#00745C',
+          200: '#E9F7F0',
+          300: '#E9F7F0',
         },
         black: '#000',
         whitesmoke: {
@@ -46,7 +46,7 @@ module.exports = {
           200: 'rgba(214, 214, 214, 0.33)',
         },
         lightskyblue: '#afcaff',
-        cornflowerblue: '#DAE6FE',
+        cornflowerblue: '#E9F7F0',
 
         plum: '#d7beff',
         lightsteelblue: '#bec1ff',

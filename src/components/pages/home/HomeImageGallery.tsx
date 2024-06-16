@@ -1,15 +1,37 @@
-import { IAreaImageData } from '@/types/pages/home'
-import type { NextPage } from 'next'
 import Image from 'next/image'
 
-interface IProps {
-  areaImages?: IAreaImageData['areaimage_content']
-}
+const HomeImageGallery = () => {
+  const areaImages = [
+    {
+      image: '/rectangle-29@2x.png',
+      location: 'Basundhara',
+    },
+    {
+      image: '/rectangle-272@2x.png',
+      location: 'Nikunja',
+    },
+    {
+      image: '/rectangle-30@2x.png',
+      location: 'Khilkhet',
+    },
+    {
+      image: '/rectangle-26@2x.png',
+      location: 'Dhanmondi',
+    },
+    {
+      image: '/rectangle-31@2x.png',
+      location: 'Gulishthan',
+    },
+    {
+      image: '/rectangle-32@2x.png',
+      location: 'Mirpur 10',
+    },
+    {
+      image: '/rectangle-33@2x.png',
+      location: 'Mohammadpur',
+    },
+  ]
 
-const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
-  if (!areaImages?.length) {
-    return null
-  }
   return (
     <>
       <section className='hidden h-full w-full min-w-max grid-cols-5 items-center gap-x-4 sm:grid'>
@@ -22,7 +44,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
           />
           <div className='absolute bottom-2 left-2 font-medium'>
             <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-              {areaImages[0].town}
+              {areaImages[0].location}
             </p>
           </div>
         </div>
@@ -37,7 +59,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[1].town}
+                {areaImages[1].location}
               </p>
             </div>
           </div>
@@ -51,7 +73,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[2].town}
+                {areaImages[2].location}
               </p>
             </div>
           </div>
@@ -65,7 +87,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
           />
           <div className='absolute bottom-2 left-2 font-medium'>
             <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-              {areaImages[3].town}
+              {areaImages[3].location}
             </p>
           </div>
         </div>
@@ -80,7 +102,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[4].town}
+                {areaImages[4].location}
               </p>
             </div>
           </div>
@@ -94,7 +116,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[5].town}
+                {areaImages[5].location}
               </p>
             </div>
           </div>
@@ -108,7 +130,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
           />
           <div className='absolute bottom-2 left-2 font-medium'>
             <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-              {areaImages[6].town}
+              {areaImages[6].location}
             </p>
           </div>
         </div>
@@ -124,7 +146,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[0].town}
+                {areaImages[0].location}
               </p>
             </div>
           </div>
@@ -137,7 +159,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[1].town}
+                {areaImages[1].location}
               </p>
             </div>
           </div>
@@ -150,7 +172,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[2].town}
+                {areaImages[2].location}
               </p>
             </div>
           </div>
@@ -163,7 +185,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
           />
           <div className='absolute bottom-2 left-2 font-medium'>
             <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-              {areaImages[3].town}
+              {areaImages[3].location}
             </p>
           </div>
         </div>
@@ -177,7 +199,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[4].town}
+                {areaImages[4].location}
               </p>
             </div>
           </div>
@@ -190,7 +212,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[5].town}
+                {areaImages[5].location}
               </p>
             </div>
           </div>
@@ -202,7 +224,7 @@ const HomeImageGallery: NextPage<IProps> = ({ areaImages }) => {
             />
             <div className='absolute bottom-2 left-2 font-medium'>
               <p className='rounded-8xs bg-black bg-opacity-40 px-2 py-0.5 text-xs font-medium text-white md:text-base'>
-                {areaImages[6].town}
+                {areaImages[6].location}
               </p>
             </div>
           </div>

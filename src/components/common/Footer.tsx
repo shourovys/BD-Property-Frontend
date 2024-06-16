@@ -1,7 +1,7 @@
-import { homePageApi } from '@/api/urls'
-import { FooterResponse, ISingleServerResponse } from '@/types/pages/common'
-import { IMAGE_URL, SITE_PAGES } from '@/utils/config'
+import { SITE_PAGES } from '@/utils/config'
 import {
+  CallIcon,
+  EmailIcon,
   FacebookIcon,
   InstagramIcon,
   LocationIcon,
@@ -9,9 +9,27 @@ import {
   YoutubeIcon,
 } from '@/utils/icon'
 import Link from 'next/link'
-import ReactHtmlParser from 'react-html-parser'
-import useSWR from 'swr'
 import Section from './Section'
+
+// Mock data
+const data = {
+  results: {
+    logo: '/logo.png',
+    description:
+      'Your property, our priority. Discover your dream home with BD-Property.',
+    contact_us: {
+      location: '1234 Street Name, City, Country',
+      Phone: '+880100000000',
+      Email: 'info@bd-property.com',
+    },
+    social_link: {
+      facebook: 'https://www.facebook.com/BDProperty',
+      twitter: 'https://www.twitter.com/BDProperty',
+      instagram: 'https://www.instagram.com/BDProperty',
+      youtube: 'https://www.youtube.com/BDProperty',
+    },
+  },
+}
 
 export const footerNavigation = {
   solutions: [
@@ -24,13 +42,6 @@ export const footerNavigation = {
 }
 
 const Footer: React.FC = () => {
-  // const data = await fetchData<ISingleServerResponse<FooterResponse>>(
-  //   homePageApi.footer
-  // )
-  const { isLoading, data } = useSWR<ISingleServerResponse<FooterResponse>>(
-    homePageApi.footer
-  )
-
   return (
     <footer className='relative overflow-hidden'>
       {/* footer bg images  */}
@@ -46,20 +57,17 @@ const Footer: React.FC = () => {
           />
         </div>
       </div>
-      <h2 id='footer-heading' className='sr-only'>
-        Footer
-      </h2>
 
       <Section>
         <div className='grid grid-cols-1 justify-items-center gap-8 md:grid-cols-4 lg:gap-8'>
           <div className='flex flex-col items-center gap-4 lg:items-start'>
             <img
-              className='h-10 w-fit lg:h-14'
-              src={IMAGE_URL + data?.results.logo}
-              alt='BD-Property'
+              className='h-5 w-auto md:h-7'
+              alt='BD Property'
+              src='/logo.png'
             />
             <p className='text-bal max-w-md text-center text-sm font-light text-gray-900 md:text-start lg:max-w-xs'>
-              {ReactHtmlParser(data?.results.description || '')}
+              {data.results.description}
             </p>
           </div>
           <div className=''>
@@ -72,10 +80,10 @@ const Footer: React.FC = () => {
               className='grid w-full grid-cols-2 justify-items-center gap-2 gap-x-8 md:grid-cols-1 md:justify-items-start'
             >
               {footerNavigation.solutions.map((item) => (
-                <li key={item.name}>
+                <li key={item.name} className='z-10'>
                   <Link
                     href={item.href}
-                    className='w-fit cursor-pointer text-base font-light text-gray-900 hover:text-gray-700'
+                    className='w-fit cursor-pointer text-base font-light text-gray-900 hover:text-salmon'
                   >
                     {item.name}
                   </Link>
@@ -83,14 +91,22 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
-          <div className=''>
+          <div className='z-10'>
             <h2 className='mb-3 text-center text-lg font-medium md:text-start'>
               Herd Office
             </h2>
-            <div className='flex items-center gap-2'>
-              <LocationIcon />
-              <div className=''>
-                {ReactHtmlParser(data?.results.contact_us || '')}
+            <div className='space-y-2'>
+              <div className='flex items-start gap-2'>
+                <LocationIcon className='mt-1 flex-shrink-0' />
+                <div className=''>{data.results.contact_us.location}</div>
+              </div>
+              <div className='flex items-start gap-2'>
+                <CallIcon className='mt-1 flex-shrink-0' />
+                <div className=''>{data.results.contact_us.Phone}</div>
+              </div>
+              <div className='flex items-start gap-2'>
+                <EmailIcon className='mt-1 flex-shrink-0' />
+                <div className=''>{data.results.contact_us.Email}</div>
               </div>
             </div>
           </div>
@@ -99,58 +115,39 @@ const Footer: React.FC = () => {
               Get Connected
             </h2>
 
-            {/* <h2 className='text-xl font-medium'>Social Network</h2> */}
             <div className='flex space-x-6'>
-              {/* {footerNavigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className='hover:text-gray-800'
-                >
-                  <span className='sr-only'>{item.name}</span>
-                  <item.icon className='h-7 w-7' aria-hidden='true' />
-                </a>
-              ))} */}
-              {data?.results.social_link?.facebook && (
-                <a
-                  href={data?.results.social_link.facebook}
-                  target='_blank'
-                  className=''
-                >
-                  <span className='sr-only'>facebook</span>
-                  <FacebookIcon className='h-7 w-7' aria-hidden='true' />
-                </a>
-              )}
-              {data?.results.social_link?.twitter && (
-                <a
-                  href={data?.results.social_link.twitter}
-                  target='_blank'
-                  className=''
-                >
-                  <span className='sr-only'>twitter</span>
-                  <TwitterIcon className='h-6 w-6' aria-hidden='true' />
-                </a>
-              )}
-              {data?.results.social_link?.instagram && (
-                <a
-                  href={data?.results.social_link.instagram}
-                  target='_blank'
-                  className=''
-                >
-                  <span className='sr-only'>instagram</span>
-                  <InstagramIcon className='h-7 w-7' aria-hidden='true' />
-                </a>
-              )}
-              {data?.results.social_link?.youtube && (
-                <a
-                  href={data?.results.social_link.youtube}
-                  target='_blank'
-                  className=''
-                >
-                  <span className='sr-only'>youtube</span>
-                  <YoutubeIcon className='h-7 w-7' aria-hidden='true' />
-                </a>
-              )}
+              <a
+                href={data.results.social_link.facebook}
+                target='_blank'
+                className='z-10'
+              >
+                <span className='sr-only'>facebook</span>
+                <FacebookIcon className='h-7 w-7' aria-hidden='true' />
+              </a>
+              <a
+                href={data.results.social_link.twitter}
+                target='_blank'
+                className='z-10'
+              >
+                <span className='sr-only'>twitter</span>
+                <TwitterIcon className='h-6 w-6' aria-hidden='true' />
+              </a>
+              <a
+                href={data.results.social_link.instagram}
+                target='_blank'
+                className='z-10'
+              >
+                <span className='sr-only'>instagram</span>
+                <InstagramIcon className='h-7 w-7' aria-hidden='true' />
+              </a>
+              <a
+                href={data.results.social_link.youtube}
+                target='_blank'
+                className='z-10'
+              >
+                <span className='sr-only'>youtube</span>
+                <YoutubeIcon className='h-7 w-7' aria-hidden='true' />
+              </a>
             </div>
           </div>
         </div>
@@ -163,10 +160,12 @@ const Footer: React.FC = () => {
           </p>
           <p className='mt-3 text-sm sm:mt-0 '>
             Developed and maintained by
-            <a rel='noreferrer' target='_blank' href='https://texonltd.com/'>
-              <span className='ml-2 text-sm text-[#ff4810] '>
-                Texon Limited
-              </span>
+            <a
+              rel='noreferrer'
+              target='_blank'
+              href='https://shourovys.netlify.app/'
+            >
+              <span className='ml-1 text-sm text-[#ff4810] '>Shourov Saha</span>
             </a>
           </p>
         </div>

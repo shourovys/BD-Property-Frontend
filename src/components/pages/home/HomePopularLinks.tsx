@@ -12,6 +12,18 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 
+const links = [
+  '1 Bedroom Apartments for sale in Bangladesh',
+  '2 Bedroom Apartments for sale in Bangladesh',
+  '3 Bedroom Apartments for sale in Bangladesh',
+  '4 Bedroom Apartments for sale in Bangladesh',
+  '5 Bedroom Apartments for sale in Bangladesh',
+  'Plots for sale in Bangladesh',
+  'Buildings for sale in Bangladesh',
+  'Duplex for sale in Bangladesh',
+  'Properties for sale in Bangladesh',
+]
+
 const HomePopularLinks: NextPage = () => {
   const [decoratedQuery, setDecoratedQuery] = useState<
     {
@@ -46,13 +58,13 @@ const HomePopularLinks: NextPage = () => {
                 className='h-6 w-full max-w-md animate-pulse rounded-md bg-lightgray-200'
               ></p>
             ))
-          : decoratedQuery?.map((query) => (
+          : links?.map((query) => (
               <Link
                 href={SITE_PAGES.propertyListPage()}
-                key={query.id}
+                key={query}
                 className='max-w-md cursor-pointer break-words text-base hover:text-[#D76147] hover:underline'
               >
-                {query.string}
+                {query}
               </Link>
             ))}
       </div>

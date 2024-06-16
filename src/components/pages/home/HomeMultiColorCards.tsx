@@ -13,24 +13,29 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ bgColor, iconSrc, title, subTitle }) => (
   <div
-    className={`group flex cursor-pointer items-center gap-4 rounded-3xs p-4`}
+    className={`group flex cursor-pointer items-center gap-2 rounded-3xs p-4`}
+    style={{
+      boxShadow:
+        'rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px',
+    }}
   >
     <div
       className={classNames(
-        'flex aspect-square h-[100px] w-[100px] items-center justify-center rounded-md p-4',
+        'flex aspect-square h-[100px] w-[120px] items-center justify-center rounded-md p-4 pr-1',
         bgColor
       )}
     >
-      <Image src={iconSrc} alt={`${title} Icon`} width={50} height={50} />
+      <Image
+        src={iconSrc}
+        alt={`${title} Icon`}
+        width={50}
+        height={50}
+        className='pr-3'
+      />
     </div>
     <div className='space-y-1 text-black'>
       <p className={`text-base font-medium md:text-lg group-hover:${bgColor}`}>
-        {title.split(' ').map((word, index, array) => (
-          <span key={index}>
-            {word + ' '}
-            {index === array.length - 2 && <br />}
-          </span>
-        ))}
+        {title}
       </p>
       <p className='text-xs font-light md:text-sm'>{subTitle}</p>
     </div>
@@ -51,24 +56,24 @@ const HomeMultiColorCards: NextPage = () => {
       title: 'Home Loan Calculator',
       subTitle: 'Find plots in any housing society',
     },
-    {
-      bgColor: 'bg-[#beebff]', // lightblue
-      iconSrc: '/icon-metrocalculator.svg',
-      title: 'Construction Cost Calculator',
-      subTitle: 'Find plots in any housing society',
-    },
+    // {
+    //   bgColor: 'bg-[#beebff]', // lightblue
+    //   iconSrc: '/icon-metrocalculator.svg',
+    //   title: 'Construction Cost Calculator',
+    //   subTitle: 'Find plots in any housing society',
+    // },
     {
       bgColor: 'bg-[#bec1ff]', //lightsteelblue
       iconSrc: '/icon-ionicmdtrendingup.svg',
       title: 'Plot Finder',
       subTitle: 'Find plots in any housing society',
     },
-    // {
-    //   bgColor: 'bg-[#d7beff]', // plum
-    //   iconSrc: '/icon-feathermap.svg',
-    //   title: 'Area Guides',
-    //   subTitle: 'Find plots in any housing society',
-    // },
+    {
+      bgColor: 'bg-[#d7beff]', // plum
+      iconSrc: '/icon-feathermap.svg',
+      title: 'Area Guides',
+      subTitle: 'Find plots in any housing society',
+    },
   ]
 
   return (

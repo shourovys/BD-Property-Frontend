@@ -12,11 +12,22 @@ import { Autoplay, Pagination } from 'swiper/modules' // Correct module import
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 interface IYtVideoSliderProps {
-  videosUrls: string[]
+  // videosUrls: string[]
   controllers?: boolean
 }
 
-const YtVideoSlider: React.FC<IYtVideoSliderProps> = ({ videosUrls }) => {
+const videoUrls = [
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+  'https://youtu.be/biDmwZXJ3KI?si=q_x-dxCIL3nmCBFI',
+]
+
+const YtVideoSlider: React.FC<IYtVideoSliderProps> = () => {
   const [loading, setLoading] = useState(true)
 
   // Function to handle video load event
@@ -59,7 +70,7 @@ const YtVideoSlider: React.FC<IYtVideoSliderProps> = ({ videosUrls }) => {
           modules={[Pagination, Autoplay]}
           className='homeImageCardsSlider'
         >
-          {videosUrls.map((videosUrl, index) => (
+          {videoUrls.map((videosUrl, index) => (
             <SwiperSlide key={videosUrl + index}>
               <YtVideoPlayer
                 videosUrl={videosUrl}
