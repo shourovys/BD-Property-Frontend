@@ -35,7 +35,7 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
         <h2 className='text-base font-normal'>Purpose</h2>
         <BoxTabsUpdate
           tabs={propertyPurposeData.map((purpose) => ({
-            label: purpose.purpose_title,
+            label: purpose.title,
             value: purpose.id.toString(),
           }))}
           selectedTab={selectedPurpose.purpose}
@@ -54,7 +54,7 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
               (purpose) =>
                 purpose.id.toString() === selectedPurpose.purpose.value
             )
-            ?.sub_purpose.map((subPurpose) => (
+            ?.subPurpose.map((subPurpose) => (
               <p
                 key={subPurpose.id}
                 onClick={() => {
@@ -62,7 +62,7 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
                     setSelectedPurpose({
                       purpose: selectedPurpose.purpose,
                       completion: {
-                        label: subPurpose.purpose_title,
+                        label: subPurpose.title,
                         value: subPurpose.id.toString(),
                       },
                     })
@@ -81,7 +81,7 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
                     : undefined
                 }
               >
-                {subPurpose.purpose_title}
+                {subPurpose.title}
               </p>
             ))}
         </div>

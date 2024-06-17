@@ -1,12 +1,12 @@
 export interface IPropertySubPurpose {
   id: string
-  purpose_title: string
+  title: string
 }
 
 export interface IPropertyPurpose {
   id: string
-  purpose_title: string
-  sub_purpose: IPropertySubPurpose[]
+  title: string
+  subPurpose: IPropertySubPurpose[]
 }
 
 export interface IPropertySubType {
@@ -18,7 +18,7 @@ export interface IPropertySubType {
 export interface IPropertyType {
   id: string
   type: string
-  property_sub_type: IPropertySubType[]
+  propertySubType: IPropertySubType[]
 }
 
 export interface IPropertyDetails {

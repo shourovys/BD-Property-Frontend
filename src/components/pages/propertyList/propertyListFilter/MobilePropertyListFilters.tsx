@@ -40,7 +40,7 @@ const MobilePropertyListFilters: React.FC<MobilePropertyListFiltersProps> = ({
       <div className='custom_screen_width space-y-6 py-6'>
         <BoxTabsUpdate
           tabs={propertyPurposeData.map((type) => ({
-            label: type.purpose_title,
+            label: type.title,
             value: type.id.toString(),
           }))}
           selectedTab={selectedPurpose.purpose}

@@ -3,16 +3,16 @@ import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
 export const propertyPurposeData: IPropertyPurpose[] = [
   {
     id: 'rent',
-    purpose_title: 'Rent',
-    sub_purpose: [],
+    title: 'Rent',
+    subPurpose: [],
   },
   {
     id: 'buy',
-    purpose_title: 'Buy',
-    sub_purpose: [
-      { id: 'all', purpose_title: 'All' },
-      { id: 'ready', purpose_title: 'Ready' },
-      { id: 'under-construction', purpose_title: 'Under Construction' },
+    title: 'Buy',
+    subPurpose: [
+      { id: 'all', title: 'All' },
+      { id: 'ready', title: 'Ready' },
+      { id: 'under-construction', title: 'Under Construction' },
     ],
   },
 ]
@@ -21,7 +21,7 @@ export const propertyTypeData: IPropertyType[] = [
   {
     id: 'residential',
     type: 'Residential',
-    property_sub_type: [
+    propertySubType: [
       { id: 'apartment', sub_type: 'Apartment' },
       { id: 'penthouse', sub_type: 'Penthouse' },
       { id: 'plaza', sub_type: 'Plaza' },
@@ -34,7 +34,7 @@ export const propertyTypeData: IPropertyType[] = [
   {
     id: 'commercial',
     type: 'Commercial',
-    property_sub_type: [
+    propertySubType: [
       { id: 'office', sub_type: 'Office' },
       { id: 'floor', sub_type: 'Floor' },
       { id: 'duplex', sub_type: 'Duplex' },

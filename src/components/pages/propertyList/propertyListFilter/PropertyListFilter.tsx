@@ -42,8 +42,8 @@ const PropertyListFilter: React.FC<IProps> = ({
                 (purpose) =>
                   purpose.id.toString() === selectedPurpose.purpose.value
               )
-              ?.sub_purpose.map((subPurpose) => ({
-                label: subPurpose.purpose_title,
+              ?.subPurpose.map((subPurpose) => ({
+                label: subPurpose.title,
                 value: subPurpose.id.toString(),
               })) || []
           }

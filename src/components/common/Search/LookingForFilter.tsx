@@ -35,7 +35,7 @@ const LookingForFilter: React.FC = () => {
           .find(
             (type) => type.id.toString() === selectedPropertyType.type.value
           )
-          ?.property_sub_type.map((subType) => (
+          ?.propertySubType.map((subType) => (
             <div
               key={subType.id}
               onClick={() => {

@@ -14,7 +14,10 @@ interface IProps {
   close: () => void
 }
 
-const PropertyPurposeFlyout: React.FC<IProps> = ({ currentPurpose, close }) => {
+const PropertySubPurposeFlyout: React.FC<IProps> = ({
+  currentPurpose,
+  close,
+}) => {
   const dispatch = useDispatch()
   const selectedPurpose = useAppSelector(
     (state) => state.propertySearch.selectedPurpose
@@ -33,18 +36,18 @@ const PropertyPurposeFlyout: React.FC<IProps> = ({ currentPurpose, close }) => {
       <div className='space-y-2'>
         <h2 className='text-base font-normal'>Completion Status</h2>
         <div className='flex flex-wrap gap-2'>
-          {currentPurpose.sub_purpose.map((subPurpose) => (
+          {currentPurpose.subPurpose.map((subPurpose) => (
             <p
               key={subPurpose.id}
               onClick={() => {
                 dispatch(
                   setSelectedPurpose({
                     purpose: {
-                      label: currentPurpose.purpose_title,
+                      label: currentPurpose.title,
                       value: currentPurpose.id.toString(),
                     },
                     completion: {
-                      label: subPurpose.purpose_title,
+                      label: subPurpose.title,
                       value: subPurpose.id.toString(),
                     },
                   })
@@ -63,7 +66,7 @@ const PropertyPurposeFlyout: React.FC<IProps> = ({ currentPurpose, close }) => {
                   : undefined
               }
             >
-              {subPurpose.purpose_title}
+              {subPurpose.title}
             </p>
           ))}
         </div>
@@ -73,4 +76,4 @@ const PropertyPurposeFlyout: React.FC<IProps> = ({ currentPurpose, close }) => {
   )
 }
 
-export default PropertyPurposeFlyout
+export default PropertySubPurposeFlyout

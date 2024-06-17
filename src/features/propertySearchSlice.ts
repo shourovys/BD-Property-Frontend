@@ -36,7 +36,7 @@ export const propertySearchInitialState: IPropertySearchState = {
   selectedPurpose: {
     purpose: {
       value: propertyPurposeData[0].id,
-      label: propertyPurposeData[0].purpose_title,
+      label: propertyPurposeData[0].title,
     },
     completion: emptySelectOption,
   },

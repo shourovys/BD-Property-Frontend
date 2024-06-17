@@ -142,7 +142,7 @@ const AddPropertyModal: React.FC<AddPropertyModalProps> = ({
             checked={formData.purpose}
             radios={
               propertyPurposeData?.map((purpose) => ({
-                label: purpose.purpose_title,
+                label: purpose.title,
                 value: purpose.id.toString(),
               })) || []
             }

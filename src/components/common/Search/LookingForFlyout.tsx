@@ -49,7 +49,7 @@ const LookingForFlyout: React.FC<LookingForFlyoutProps> = ({ close }) => {
           .find(
             (type) => type.id.toString() === selectedPropertyType.type.value
           )
-          ?.property_sub_type.map((subType) => (
+          ?.propertySubType.map((subType) => (
             <p
               key={subType.id}
               onClick={() => {

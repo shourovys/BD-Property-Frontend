@@ -1,5 +1,5 @@
 import FlyoutWrapper from '@/components/common/Flyout'
-import PropertyPurposeFlyout from '@/components/common/Search/PropertyPurposeFlyout'
+import PropertySubPurposeFlyout from '@/components/common/Search/PropertySubPurposeFlyout'
 import { setSelectedPurpose } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { emptySelectOption } from '@/types/components/common'
@@ -36,13 +36,13 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
               dispatch(
                 setSelectedPurpose({
                   purpose: {
-                    label: purpose.purpose_title,
+                    label: purpose.title,
                     value: purpose.id,
                   },
-                  completion: purpose.sub_purpose.length
+                  completion: purpose.subPurpose.length
                     ? {
-                        label: purpose.sub_purpose[0].purpose_title,
-                        value: purpose.sub_purpose[0].id,
+                        label: purpose.subPurpose[0].title,
+                        value: purpose.subPurpose[0].id,
                       }
                     : emptySelectOption,
                 })
@@ -50,19 +50,19 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
               handleSlideOverOpen()
             }}
           >
-            {purpose.purpose_title}
+            {purpose.title}
           </button>
         ))}
       </div>
       <div className='hidden flex-wrap items-center justify-center gap-2.5 sm:flex sm:gap-4 '>
         {propertyPurposeData?.map((purpose) => (
           <>
-            {purpose.sub_purpose.length ? (
+            {purpose.subPurpose.length ? (
               <FlyoutWrapper
                 key={purpose.id}
                 direction='right'
                 flyoutContent={(close) => (
-                  <PropertyPurposeFlyout
+                  <PropertySubPurposeFlyout
                     currentPurpose={purpose}
                     close={close}
                   />
@@ -75,7 +75,7 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
                       'bg-opacity-100'
                   )}
                 >
-                  {purpose.purpose_title}
+                  {purpose.title}
                   <DownArrowIcon />
                 </div>
               </FlyoutWrapper>
@@ -89,14 +89,14 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
                 onClick={() =>
                   setSelectedPurpose({
                     purpose: {
-                      label: purpose.purpose_title,
+                      label: purpose.title,
                       value: purpose.id,
                     },
                     completion: emptySelectOption,
                   })
                 }
               >
-                {purpose.purpose_title}
+                {purpose.title}
               </button>
             )}
           </>
