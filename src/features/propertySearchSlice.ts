@@ -54,7 +54,7 @@ export const propertySearchInitialState: IPropertySearchState = {
   selectedKeywords: [],
   tourType: '',
   sortBy: propertySortOptions[0].value,
-} as const
+}
 
 const propertySearchSlice = createSlice({
   name: 'propertySearch',

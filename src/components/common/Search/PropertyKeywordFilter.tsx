@@ -1,4 +1,7 @@
-import { setSelectedKeywords } from '@/features/propertySearchSlice'
+import {
+  removeSelectedKeywords,
+  setSelectedKeywords,
+} from '@/features/propertySearchSlice'
 import { useAppSelector } from '@/hooks/reduxHooks'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
@@ -15,17 +18,12 @@ const PropertyKeywordFilter: React.FC = () => {
   }
 
   const handleRemoveKeyword = (keyword: string) => {
-    dispatch(
-      setSelectedKeywords(selectedKeywords.filter((kw) => kw !== keyword))
-    )
+    dispatch(removeSelectedKeywords(keyword))
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && inputKeyword.trim() !== '') {
-      const trimmedKeyword = inputKeyword.trim()
-      if (!selectedKeywords.includes(trimmedKeyword)) {
-        dispatch(setSelectedKeywords([...selectedKeywords, trimmedKeyword]))
-      }
+      dispatch(setSelectedKeywords(inputKeyword))
       setInputKeyword('')
     }
   }

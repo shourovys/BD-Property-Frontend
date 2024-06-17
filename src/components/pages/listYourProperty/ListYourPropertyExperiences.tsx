@@ -19,10 +19,7 @@ const ListYourPropertyExperiences: React.FC<IProps> = ({ experience }) => {
           Over the years, we’ve built a culture of service.
         </p>
         <div className='mt-10'>
-          <YtVideoSlider
-            videosUrls={experience?.map((ex) => ex.video) || []}
-            controllers
-          />
+          <YtVideoSlider controllers />
         </div>
       </div>
     </Section>

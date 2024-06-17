@@ -1,19 +1,9 @@
 'use client'
-import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
 import { useState } from 'react'
 import HomeHeroSearch from './HomeHeroSearch'
 import HomeHeroTabButtons from './HomeHeroTabButtons'
 
-interface IProps {
-  propertyPurposeData: IPropertyPurpose[]
-  propertyTypeData: IPropertyType[]
-  // bgVideo: string
-}
-
-const HomeHeroSection = ({
-  propertyPurposeData,
-  propertyTypeData, // bgVideo,
-}: IProps) => {
+const HomeHeroSection = () => {
   const [openSlideOver, setOpenSlideOver] = useState<boolean>(false)
 
   const handleSlideOverOpen = () => setOpenSlideOver(true)
@@ -69,13 +59,10 @@ const HomeHeroSection = ({
           Search properties for sale and for rent in Bangladesh
         </h1>
         <HomeHeroTabButtons
-          propertyPurposeData={propertyPurposeData}
           openSlideOver={openSlideOver}
           handleSlideOverOpen={handleSlideOverOpen}
         />
         <HomeHeroSearch
-          propertyPurposeData={propertyPurposeData}
-          propertyTypeData={propertyTypeData}
           openSlideOver={openSlideOver}
           handleSlideOverClose={handleSlideOverClose}
         />

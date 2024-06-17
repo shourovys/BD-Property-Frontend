@@ -1,4 +1,4 @@
-import { IPropertySearchState } from './reducers/PropertySearchReducer'
+import { IPropertySearchState } from '@/features/propertySearchSlice'
 
 interface ApiQueryMapping {
   [stateKey: string]: string | { [apiQueryKey: string]: string }

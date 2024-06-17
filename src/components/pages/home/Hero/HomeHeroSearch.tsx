@@ -6,7 +6,6 @@ import LookingForFlyout from '@/components/common/Search/LookingForFlyout'
 import PropertyPriceFlyout from '@/components/common/Search/PropertyPriceFlyout'
 import PropertySizeFlyout from '@/components/common/Search/PropertySizeFlyout'
 import { useAppSelector } from '@/hooks/reduxHooks'
-import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
 import {
   getBedsAndBathsValue,
   getPropertyPriceValue,
@@ -18,15 +17,11 @@ import MobilePropertyListFilters from '../../propertyList/propertyListFilter/Mob
 import LocationSelector from './LocationSelector'
 
 interface IHomeHeroSearchProps {
-  propertyPurposeData: IPropertyPurpose[]
-  propertyTypeData: IPropertyType[]
   openSlideOver: boolean
   handleSlideOverClose: () => void
 }
 
 const HomeHeroSearch: NextPage<IHomeHeroSearchProps> = ({
-  propertyPurposeData,
-  propertyTypeData,
   openSlideOver,
   handleSlideOverClose,
 }) => {

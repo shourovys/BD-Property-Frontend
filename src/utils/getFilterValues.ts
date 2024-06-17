@@ -1,5 +1,5 @@
+import { IPropertySearchState } from '@/features/propertySearchSlice'
 import { ISelectOption } from '@/types/components/common'
-import { IPropertySearchState } from './reducers/PropertySearchReducer'
 
 export const getBedsAndBathsValue = (
   selectedBedsBaths: IPropertySearchState['selectedBedsBaths']

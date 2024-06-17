@@ -7,6 +7,7 @@ import PropertyListLocationInfo from '@/components/pages/propertyList/PropertyLi
 import PropertyListPropertyMap from '@/components/pages/propertyList/PropertyListPropertyMap'
 import PropertyListFilter from '@/components/pages/propertyList/propertyListFilter/PropertyListFilter'
 import PropertyListFilters from '@/components/pages/propertyList/propertyListFilter/PropertyListFilters'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import useLocalStorage from '@/hooks/useLocalStorage'
 import { IListServerResponse } from '@/types/pages/common'
 import {
@@ -14,13 +15,10 @@ import {
   IPropertyPurpose,
   IPropertyType,
 } from '@/types/pages/property'
-import {
-  propertySearchInitialState,
-  propertySearchReducer,
-} from '@/utils/reducers/PropertySearchReducer'
+
 import { useRouter } from 'next/navigation'
 import QueryString from 'qs'
-import { useEffect, useReducer } from 'react'
+import { useEffect } from 'react'
 import useSWR from 'swr'
 
 interface IProps {
@@ -33,11 +31,9 @@ export default function PropertyListPageComponent({
   propertyTypeData,
 }: IProps) {
   const router = useRouter()
+  const dispatch = useAppDispatch()
+  const { propertySearch } = useAppSelector((state) => state)
 
-  const [state, dispatch] = useReducer(
-    propertySearchReducer,
-    propertySearchInitialState
-  )
   const itemPerPage = 20
 
   const [isCardVertical, setIsCardVertical] = useLocalStorage<boolean>(
@@ -45,35 +41,38 @@ export default function PropertyListPageComponent({
     false
   )
 
-  // update browser query on state change
+  // update browser query on propertySearch change
   useEffect(() => {
-    // Stringify the state object as a JSON string
-    const stateString = JSON.stringify(state)
-    router.replace(`/property?state=${encodeURIComponent(stateString)}`)
-  }, [state])
+    // Stringify the propertySearch object as a JSON string
+    const propertySearchString = JSON.stringify(propertySearch)
+    router.replace(
+      `/property?propertySearch=${encodeURIComponent(propertySearchString)}`
+    )
+  }, [propertySearch])
 
   const apiQueryManual = {
-    page: state.page,
+    page: propertySearch.page,
     page_size: itemPerPage,
-    // reference_no__icontains: `Reference no contains: ${state.selectedPurpose.purpose.value}`,
-    // title__icontains: `Title contains: ${state.selectedPurpose.completion.value}`,
-    size__gte: state.selectedPropertySize.min,
-    size__lte: state.selectedPropertySize.max,
-    price__gte: state.selectedPropertyPrice.min,
-    price__lte: state.selectedPropertyPrice.max,
-    // bed__lte: state.selectedBedsBaths.beds.length,
-    // bath__lte: state.selectedBedsBaths.baths.length,
-    bed__lte: state.selectedBedsBaths.beds[0]?.value,
-    bath__lte: state.selectedBedsBaths.baths[0]?.value,
-    // property_features__id: state.selectedKeywords.length > 0 ? 1 : 0,
+    // reference_no__icontains: `Reference no contains: ${propertySearch.selectedPurpose.purpose.value}`,
+    // title__icontains: `Title contains: ${propertySearch.selectedPurpose.completion.value}`,
+    size__gte: propertySearch.selectedPropertySize.min,
+    size__lte: propertySearch.selectedPropertySize.max,
+    price__gte: propertySearch.selectedPropertyPrice.min,
+    price__lte: propertySearch.selectedPropertyPrice.max,
+    // bed__lte: propertySearch.selectedBedsBaths.beds.length,
+    // bath__lte: propertySearch.selectedBedsBaths.baths.length,
+    bed__lte: propertySearch.selectedBedsBaths.beds[0]?.value,
+    bath__lte: propertySearch.selectedBedsBaths.baths[0]?.value,
+    // property_features__id: propertySearch.selectedKeywords.length > 0 ? 1 : 0,
     property_purpose__id:
-      state.selectedPurpose.completion.value ??
-      state.selectedPurpose.purpose.value,
-    property_type__id: state.selectedPropertyType.type.value,
-    property_sub_type__id: state.selectedPropertyType.subType.value,
-    propertyaddress__city: state.selectedPropertyLocation[0]?.value || '',
+      propertySearch.selectedPurpose.completion.value ??
+      propertySearch.selectedPurpose.purpose.value,
+    property_type__id: propertySearch.selectedPropertyType.type.value,
+    property_sub_type__id: propertySearch.selectedPropertyType.subType.value,
+    propertyaddress__city:
+      propertySearch.selectedPropertyLocation[0]?.value || '',
     // propertyaddress__city__icontains: 'No',
-    // propertyaddress__location: state.selectedPropertyLocation[0]?.value || '',
+    // propertyaddress__location: propertySearch.selectedPropertyLocation[0]?.value || '',
     // propertyaddress__location__icontains: 1,
   }
 
@@ -87,12 +86,7 @@ export default function PropertyListPageComponent({
 
   return (
     <div className='w-full space-y-4 bg-gray-100 font-ubuntu text-xl text-black md:space-y-6'>
-      <PropertyListFilters
-        propertyPurposeData={propertyPurposeData}
-        propertyTypeData={propertyTypeData}
-        state={state}
-        dispatch={dispatch}
-      />
+      <PropertyListFilters />
       {/* <Breadcrumbs /> */}
 
       {/* <div className='mt-4 mb-5 space-y-4 sm:mb-7 sm:mt-0 sm:space-y-5 md:-mt-2'>
@@ -106,10 +100,6 @@ export default function PropertyListPageComponent({
         <div className='col-span-5 '>
           {/* list filters  */}
           <PropertyListFilter
-            propertyPurposeData={propertyPurposeData}
-            propertyTypeData={propertyTypeData}
-            state={state}
-            dispatch={dispatch}
             isCardVertical={isCardVertical}
             setIsCardVertical={setIsCardVertical}
           />
@@ -122,7 +112,7 @@ export default function PropertyListPageComponent({
             <Pagination
               itemPerPage={itemPerPage}
               total={data?.count}
-              page={state.page}
+              page={propertySearch.page}
               handleSetPage={handleSetPage}
             />
           )}
