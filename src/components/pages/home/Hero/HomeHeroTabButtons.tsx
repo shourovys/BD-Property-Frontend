@@ -1,9 +1,10 @@
 import FlyoutWrapper from '@/components/common/Flyout'
 import PropertyPurposeFlyout from '@/components/common/Search/PropertyPurposeFlyout'
+import { setSelectedPurpose } from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { emptySelectOption } from '@/types/components/common'
 import { IPropertyPurpose } from '@/types/pages/property'
 import { DownArrowIcon } from '@/utils/icon'
-import { IPropertySearchState } from '@/utils/reducers/PropertySearchReducer'
 import classNames from 'classnames'
 import type { NextPage } from 'next'
 import Link from 'next/link'
@@ -12,36 +13,15 @@ interface IHomeHeroTabButtonsProps {
   propertyPurposeData?: IPropertyPurpose[]
   openSlideOver: boolean
   handleSlideOverOpen: () => void
-  selectedPurpose: IPropertySearchState['selectedPurpose']
-  setSelectedPurpose: (
-    propertyPurpose: IPropertySearchState['selectedPurpose']
-  ) => void
 }
 
 const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
   propertyPurposeData,
   // openSlideOver,
   handleSlideOverOpen,
-  selectedPurpose,
-  setSelectedPurpose,
 }) => {
-  // useEffect(() => {
-  //   setSelectedPurpose({
-  //     purpose: propertyPurposeData?.length
-  //       ? {
-  //           label: propertyPurposeData[0].purpose_title,
-  //           value: propertyPurposeData[0].id,
-  //         }
-  //       : emptySelectOption,
-  //     completion:
-  //       propertyPurposeData?.length && propertyPurposeData[0].sub_purpose.length
-  //         ? {
-  //             label: propertyPurposeData[0].sub_purpose[0].purpose_title,
-  //             value: propertyPurposeData[0].sub_purpose[0].id,
-  //           }
-  //         : emptySelectOption,
-  //   })
-  // }, [propertyPurposeData])
+  const { selectedPurpose } = useAppSelector((state) => state.propertySearch)
+  const dispatch = useAppDispatch()
 
   return (
     <div className='flex flex-wrap items-center justify-center gap-2.5 font-ubuntu text-sm font-light text-black sm:gap-4  md:text-base'>
@@ -55,18 +35,20 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
               selectedPurpose.purpose.value === purpose.id && 'bg-opacity-100'
             )}
             onClick={() => {
-              setSelectedPurpose({
-                purpose: {
-                  label: purpose.purpose_title,
-                  value: purpose.id,
-                },
-                completion: purpose.sub_purpose.length
-                  ? {
-                      label: purpose.sub_purpose[0].purpose_title,
-                      value: purpose.sub_purpose[0].id,
-                    }
-                  : emptySelectOption,
-              })
+              dispatch(
+                setSelectedPurpose({
+                  purpose: {
+                    label: purpose.purpose_title,
+                    value: purpose.id,
+                  },
+                  completion: purpose.sub_purpose.length
+                    ? {
+                        label: purpose.sub_purpose[0].purpose_title,
+                        value: purpose.sub_purpose[0].id,
+                      }
+                    : emptySelectOption,
+                })
+              )
               handleSlideOverOpen()
             }}
           >
@@ -116,10 +98,7 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
                 flyoutContent={(close: () => void) => (
                   <PropertyPurposeFlyout
                     currentPurpose={purpose}
-                    purposeData={propertyPurposeData}
                     close={close}
-                    selectedPurpose={selectedPurpose}
-                    setSelectedPurpose={setSelectedPurpose}
                   />
                 )}
               >

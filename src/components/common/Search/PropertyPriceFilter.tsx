@@ -1,24 +1,19 @@
 import Input from '@/components/atomic/Input'
+import { setSelectedPropertyPrice } from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { THandleInputChange } from '@/types/components/common'
 import React from 'react'
 
-interface IProps {
-  selectedPropertyPrice: {
-    min: string
-    max: string
-  }
-  setSelectedPropertyPrice: (propertyPrice: {
-    min: string
-    max: string
-  }) => void
-}
+const PropertyPriceFilter: React.FC = () => {
+  const dispatch = useAppDispatch()
+  const selectedPropertyPrice = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyPrice
+  )
 
-const PropertyPriceFilter: React.FC<IProps> = ({
-  selectedPropertyPrice,
-  setSelectedPropertyPrice,
-}) => {
   const handleInputChange: THandleInputChange = (name, value) => {
-    setSelectedPropertyPrice({ ...selectedPropertyPrice, [name]: value })
+    dispatch(
+      setSelectedPropertyPrice({ ...selectedPropertyPrice, [name]: value })
+    )
   }
 
   return (

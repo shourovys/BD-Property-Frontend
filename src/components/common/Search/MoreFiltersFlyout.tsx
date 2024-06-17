@@ -1,42 +1,34 @@
 import Input from '@/components/atomic/Input'
-import { THandleInputChange } from '@/types/components/common'
+import { useAppSelector } from '@/hooks/reduxHooks'
 import classNames from 'classnames'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import ApplyAndResetButtons from './ApplyAndResetButtons'
 import KeywordInput from './KeywordsInput'
 
-interface IProps {
-  close: () => void
-  selectedPropertySize: {
-    min: string
-    max: string
-  }
-  setSelectedPropertySize: (propertySize: { min: string; max: string }) => void
-  selectedKeywords: string[]
-  setSelectedKeywords: (keywords: string[]) => void
-  tourType: string
-  setTourType: (tourType: string) => void
-}
+import {
+  resetAll,
+  setSelectedPropertyPrice,
+  setSelectedTourType,
+} from '@/features/propertySearchSlice'
+import { THandleInputChange } from '@/types/components/common'
 
-const MoreFiltersFlyout: React.FC<IProps> = ({
-  close,
-  selectedPropertySize,
-  setSelectedPropertySize,
-  selectedKeywords,
-  setSelectedKeywords,
-  tourType,
-  setTourType,
-}) => {
-  const tourTypeOption: {
-    name: string
-    value: string
-  }[] = [
+const MoreFiltersFlyout: React.FC<{ close: () => void }> = ({ close }) => {
+  const dispatch = useDispatch()
+  const {
+    selectedPropertyPrice,
+    selectedPropertySize,
+    selectedKeywords,
+    tourType,
+  } = useAppSelector((state) => state.propertySearch)
+
+  const tourTypeOption: { name: string; value: string }[] = [
     { name: 'Video tours', value: 'video' },
     { name: 'Virtual tours', value: 'virtual' },
   ]
 
   const handlePriceChange: THandleInputChange = (name, value) => {
-    setSelectedPropertySize({ ...selectedPropertySize, [name]: value })
+    setSelectedPropertyPrice({ ...selectedPropertyPrice, [name]: value })
   }
 
   const handleApply = () => {
@@ -44,7 +36,7 @@ const MoreFiltersFlyout: React.FC<IProps> = ({
   }
 
   const handleReset = () => {
-    setSelectedPropertySize({ min: '', max: '' }) // Reset size range
+    dispatch(resetAll())
   }
 
   return (
@@ -60,7 +52,6 @@ const MoreFiltersFlyout: React.FC<IProps> = ({
             value={selectedPropertySize.min}
             onChange={handlePriceChange}
           />
-
           <Input
             name='max'
             type='number'
@@ -73,27 +64,22 @@ const MoreFiltersFlyout: React.FC<IProps> = ({
       </div>
       <div className='space-y-2'>
         <h2 className='text-base font-normal'>Keywords</h2>
-        <KeywordInput
-          selectedKeywords={selectedKeywords}
-          setSelectedKeywords={(keyword: string[]) => {
-            setSelectedKeywords(keyword)
-          }}
-        />
+        <KeywordInput />
       </div>
       <div className='space-y-2'>
         <h2 className='text-base font-normal'>Tour Type</h2>
         <div className='flex flex-wrap gap-2'>
-          {tourTypeOption.map((completion) => (
+          {tourTypeOption.map((option) => (
             <p
-              key={completion.value}
-              onClick={() => setTourType(completion.value)}
+              key={option.value}
+              onClick={() => dispatch(setSelectedTourType(option.value))}
               className={classNames(
-                completion.value === tourType ? 'bg-cornflowerblue' : '',
+                option.value === tourType ? 'bg-cornflowerblue' : '',
                 'flex w-fit cursor-pointer items-center justify-center rounded-8xs border border-darkslateblue-100 px-3'
               )}
-              aria-current={completion.value === tourType ? 'page' : undefined}
+              aria-current={option.value === tourType ? 'page' : undefined}
             >
-              {completion.name}
+              {option.name}
             </p>
           ))}
         </div>

@@ -1,15 +1,15 @@
+import {
+  removeSelectedKeywords,
+  setSelectedKeywords,
+} from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import classNames from 'classnames'
 import React, { useEffect, useRef, useState } from 'react'
 
-interface IKeywordsInputProps {
-  selectedKeywords: string[]
-  setSelectedKeywords: (keywords: string[]) => void
-}
+const KeywordsInput: React.FC = () => {
+  const dispatch = useAppDispatch()
+  const { selectedKeywords } = useAppSelector((state) => state.propertySearch)
 
-const KeywordsInput: React.FC<IKeywordsInputProps> = ({
-  selectedKeywords,
-  setSelectedKeywords,
-}) => {
   // State to track input focus and input value
   const [isFocused, setIsFocused] = useState<boolean>(false)
   const [inputKeyword, setInputKeyword] = useState<string>('')
@@ -33,8 +33,7 @@ const KeywordsInput: React.FC<IKeywordsInputProps> = ({
 
   // Handle removal of a keyword
   const handleRemoveKeyword = (keyword: string) => {
-    const updatedKeywords = selectedKeywords.filter((kw) => kw !== keyword)
-    setSelectedKeywords(updatedKeywords)
+    dispatch(removeSelectedKeywords(keyword))
     if (searchInputRef.current) {
       searchInputRef.current.focus()
     }
@@ -50,7 +49,7 @@ const KeywordsInput: React.FC<IKeywordsInputProps> = ({
     if (e.key === 'Enter' && inputKeyword.trim() !== '') {
       const trimmedKeyword = inputKeyword.trim()
       if (!selectedKeywords.includes(trimmedKeyword)) {
-        setSelectedKeywords([...selectedKeywords, trimmedKeyword])
+        dispatch(setSelectedKeywords(trimmedKeyword))
       }
       setInputKeyword('')
     }

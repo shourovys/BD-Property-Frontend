@@ -1,19 +1,21 @@
 import { propertyUrls } from '@/api/urls/propertyUrls'
+import {
+  removePropertyLocation,
+  setSelectedPropertyLocation,
+} from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
 import { ISingleServerResponse } from '@/types/pages/common'
 import classNames from 'classnames'
 import React, { useEffect, useRef, useState } from 'react'
 import useSWR from 'swr'
 
-interface IPropertyLocationSearchProps {
-  selectedLocations: ISelectOption[]
-  setSelectedLocations: (propertyLocation: ISelectOption[]) => void
-}
+const PropertyLocationSearch = () => {
+  const dispatch = useAppDispatch()
+  const selectedLocations = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyLocation
+  )
 
-const PropertyLocationSearch: React.FC<IPropertyLocationSearchProps> = ({
-  selectedLocations,
-  setSelectedLocations,
-}) => {
   const [searchTerm, setSearchTerm] = useState<string>('')
   // const [suggestions, setSuggestions] = useState<string[]>([])
   const [isFocused, setIsFocused] = useState<boolean>(false)
@@ -38,18 +40,10 @@ const PropertyLocationSearch: React.FC<IPropertyLocationSearchProps> = ({
   }
 
   const handleLocationSelect = (location: ISelectOption) => {
-    console.log(
-      '🚀 ~ file: PropertyLocationSearchWithBottomSelected.tsx:54 ~ handleLocationSelect ~ location:',
-      location
-    )
     setSearchTerm('')
     setActiveIndex(0)
     // Check if the location is not already selected
-    if (
-      !selectedLocations.some((selected) => selected.value === location.value)
-    ) {
-      setSelectedLocations([...selectedLocations, location])
-    }
+    dispatch(setSelectedPropertyLocation(location))
     if (searchInputRef.current) {
       searchInputRef.current.focus()
     }
@@ -63,10 +57,7 @@ const PropertyLocationSearch: React.FC<IPropertyLocationSearchProps> = ({
   }
 
   const handleRemoveLocation = (location: string) => {
-    const updatedSelectedLocations = selectedLocations.filter(
-      (loc) => loc.value !== location
-    )
-    setSelectedLocations(updatedSelectedLocations)
+    dispatch(removePropertyLocation(location))
     if (searchInputRef.current) {
       searchInputRef.current.focus()
     }

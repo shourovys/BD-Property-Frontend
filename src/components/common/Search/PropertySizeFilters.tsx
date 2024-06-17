@@ -1,21 +1,19 @@
 import Input from '@/components/atomic/Input'
+import { setSelectedPropertySize } from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { THandleInputChange } from '@/types/components/common'
 import React from 'react'
 
-interface IProps {
-  selectedPropertySize: {
-    min: string
-    max: string
-  }
-  setSelectedPropertySize: (propertySize: { min: string; max: string }) => void
-}
+const PropertySizeFilters: React.FC = () => {
+  const dispatch = useAppDispatch()
+  const selectedPropertySize = useAppSelector(
+    (state) => state.propertySearch.selectedPropertySize
+  )
 
-const PropertySizeFilters: React.FC<IProps> = ({
-  selectedPropertySize,
-  setSelectedPropertySize,
-}) => {
-  const handlePriceChange: THandleInputChange = (name, value) => {
-    setSelectedPropertySize({ ...selectedPropertySize, [name]: value })
+  const handleInputChange: THandleInputChange = (name, value) => {
+    dispatch(
+      setSelectedPropertySize({ ...selectedPropertySize, [name]: value })
+    )
   }
 
   return (
@@ -30,7 +28,7 @@ const PropertySizeFilters: React.FC<IProps> = ({
           label='Minimum'
           placeholder='0'
           value={selectedPropertySize.min}
-          onChange={handlePriceChange}
+          onChange={handleInputChange}
         />
 
         <Input
@@ -39,7 +37,7 @@ const PropertySizeFilters: React.FC<IProps> = ({
           label='Maximum'
           placeholder='Any'
           value={selectedPropertySize.max}
-          onChange={handlePriceChange}
+          onChange={handleInputChange}
         />
       </div>
     </div>

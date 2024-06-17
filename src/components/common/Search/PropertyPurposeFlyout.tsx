@@ -1,40 +1,27 @@
-import { emptySelectOption } from '@/types/components/common'
+import {
+  resetSelectedPurpose,
+  setSelectedPurpose,
+} from '@/features/propertySearchSlice'
+import { useAppSelector } from '@/hooks/reduxHooks'
 import { IPropertyPurpose } from '@/types/pages/property'
-import { IPropertySearchState } from '@/utils/reducers/PropertySearchReducer'
 import classNames from 'classnames'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import ApplyAndResetButtons from './ApplyAndResetButtons'
 
 interface IProps {
   currentPurpose: IPropertyPurpose
-  purposeData: IPropertyPurpose[]
   close: () => void
-  selectedPurpose: IPropertySearchState['selectedPurpose']
-  setSelectedPurpose: (
-    propertyPurpose: IPropertySearchState['selectedPurpose']
-  ) => void
 }
 
-const PropertyPurposeFlyout: React.FC<IProps> = ({
-  currentPurpose,
-  purposeData,
-  close,
-  selectedPurpose,
-  setSelectedPurpose,
-}) => {
+const PropertyPurposeFlyout: React.FC<IProps> = ({ currentPurpose, close }) => {
+  const dispatch = useDispatch()
+  const selectedPurpose = useAppSelector(
+    (state) => state.propertySearch.selectedPurpose
+  )
+
   const handleReset = () => {
-    setSelectedPurpose({
-      purpose: {
-        label: purposeData[0].purpose_title,
-        value: purposeData[0].id.toString(),
-      },
-      completion: purposeData[0].sub_purpose.length
-        ? {
-            label: purposeData[0].sub_purpose[0].purpose_title,
-            value: purposeData[0].sub_purpose[0].id.toString(),
-          }
-        : emptySelectOption,
-    })
+    dispatch(resetSelectedPurpose())
   }
 
   const handleApply = () => {
@@ -43,21 +30,6 @@ const PropertyPurposeFlyout: React.FC<IProps> = ({
 
   return (
     <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4 text-black'>
-      {/* {!hidePurposeTabs && (
-        <div className='space-y-2'>
-          <h2 className='text-base font-normal'>Purpose</h2>
-          <BoxTabsUpdate
-            tabs={currentPurpose.sub_purpose.map((subPurpose) => ({
-              label: subPurpose.purpose_title,
-              value: subPurpose.id.toString(),
-            }))}
-            selectedTab={selectedPurpose.purpose}
-            setSelectedTab={(selectedTab: ISelectOption) =>
-              setSelectedPurpose({ ...selectedPurpose, purpose: selectedTab })
-            }
-          />
-        </div>
-      )} */}
       <div className='space-y-2'>
         <h2 className='text-base font-normal'>Completion Status</h2>
         <div className='flex flex-wrap gap-2'>
@@ -65,16 +37,18 @@ const PropertyPurposeFlyout: React.FC<IProps> = ({
             <p
               key={subPurpose.id}
               onClick={() => {
-                setSelectedPurpose({
-                  purpose: {
-                    label: currentPurpose.purpose_title,
-                    value: currentPurpose.id.toString(),
-                  },
-                  completion: {
-                    label: subPurpose.purpose_title,
-                    value: subPurpose.id.toString(),
-                  },
-                })
+                dispatch(
+                  setSelectedPurpose({
+                    purpose: {
+                      label: currentPurpose.purpose_title,
+                      value: currentPurpose.id.toString(),
+                    },
+                    completion: {
+                      label: subPurpose.purpose_title,
+                      value: subPurpose.id.toString(),
+                    },
+                  })
+                )
                 close()
               }}
               className={classNames(

@@ -1,25 +1,22 @@
+import { setSelectedPropertyType } from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption, emptySelectOption } from '@/types/components/common'
-import { IPropertyType } from '@/types/pages/property'
-import { IPropertySearchState } from '@/utils/reducers/PropertySearchReducer'
+import { propertyTypeData } from '@/utils/data/property'
 import React from 'react'
 import BoxTabsUpdate from '../BoxTabsUpdate'
 
-interface LookingForProps {
-  propertyTypeData: IPropertyType[]
-  selectedPropertyType: IPropertySearchState['selectedPropertyType']
-  setSelectedPropertyType: (
-    propertyType: IPropertySearchState['selectedPropertyType']
-  ) => void
-}
+const LookingForFilter: React.FC = () => {
+  const dispatch = useAppDispatch()
+  const selectedPropertyType = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyType
+  )
 
-const LookingForFilter: React.FC<LookingForProps> = ({
-  propertyTypeData,
-  selectedPropertyType,
-  setSelectedPropertyType,
-}) => {
   const setSelectedTab = (selectedTab: ISelectOption) => {
-    setSelectedPropertyType({ type: selectedTab, subType: emptySelectOption })
+    dispatch(
+      setSelectedPropertyType({ type: selectedTab, subType: emptySelectOption })
+    )
   }
+
   return (
     <div className=''>
       <label className='form-label mb-2 inline-block w-full text-sm font-medium md:text-base'>
@@ -42,13 +39,15 @@ const LookingForFilter: React.FC<LookingForProps> = ({
             <div
               key={subType.id}
               onClick={() => {
-                setSelectedPropertyType({
-                  type: selectedPropertyType.type,
-                  subType: {
-                    label: subType.sub_type,
-                    value: subType.id.toString(),
-                  },
-                })
+                dispatch(
+                  setSelectedPropertyType({
+                    type: selectedPropertyType.type,
+                    subType: {
+                      label: subType.sub_type,
+                      value: subType.id.toString(),
+                    },
+                  })
+                )
               }}
               className='flex flex-col items-center justify-center gap-1.5 px-2'
             >
@@ -62,7 +61,7 @@ const LookingForFilter: React.FC<LookingForProps> = ({
                 /> */}
               </div>
               <p
-                className={`text-xs md:text-sm${
+                className={`text-xs md:text-sm ${
                   selectedPropertyType.subType.value === subType.id.toString()
                     ? 'font-normal text-darkslateblue-100'
                     : 'font-light text-black'

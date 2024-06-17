@@ -1,40 +1,32 @@
+import {
+  resetSelectedPropertyType,
+  setSelectedPropertyType,
+} from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption, emptySelectOption } from '@/types/components/common'
-import { IPropertyType } from '@/types/pages/property'
-import { IPropertySearchState } from '@/utils/reducers/PropertySearchReducer'
+import { propertyTypeData } from '@/utils/data/property'
 import React from 'react'
 import TabsUpdate from '../TabsUpdate'
 import ApplyAndResetButtons from './ApplyAndResetButtons'
 
 interface LookingForFlyoutProps {
-  propertyTypeData: IPropertyType[]
   close: () => void
-  selectedPropertyType: IPropertySearchState['selectedPropertyType']
-  setSelectedPropertyType: (
-    propertyType: IPropertySearchState['selectedPropertyType']
-  ) => void
 }
 
-const LookingForFlyout: React.FC<LookingForFlyoutProps> = ({
-  propertyTypeData,
-  close,
-  selectedPropertyType,
-  setSelectedPropertyType,
-}) => {
+const LookingForFlyout: React.FC<LookingForFlyoutProps> = ({ close }) => {
+  const dispatch = useAppDispatch()
+  const selectedPropertyType = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyType
+  )
+
   const setSelectedTab = (selectedTab: ISelectOption) => {
-    setSelectedPropertyType({ type: selectedTab, subType: emptySelectOption })
+    dispatch(
+      setSelectedPropertyType({ type: selectedTab, subType: emptySelectOption })
+    )
   }
 
   const handleReset = () => {
-    const initPropertyType = {
-      type: propertyTypeData.length
-        ? {
-            label: propertyTypeData[0].type,
-            value: propertyTypeData[0].id.toString(),
-          }
-        : emptySelectOption,
-      subType: emptySelectOption,
-    }
-    setSelectedPropertyType(initPropertyType)
+    dispatch(resetSelectedPropertyType())
   }
 
   const handleApply = () => {
@@ -61,13 +53,15 @@ const LookingForFlyout: React.FC<LookingForFlyoutProps> = ({
             <p
               key={subType.id}
               onClick={() => {
-                setSelectedPropertyType({
-                  type: selectedPropertyType.type,
-                  subType: {
-                    label: subType.sub_type,
-                    value: subType.id.toString(),
-                  },
-                })
+                dispatch(
+                  setSelectedPropertyType({
+                    type: selectedPropertyType.type,
+                    subType: {
+                      label: subType.sub_type,
+                      value: subType.id.toString(),
+                    },
+                  })
+                )
                 close()
               }}
               className={`w-full cursor-pointer rounded-xl border px-3 py-1 text-center ${

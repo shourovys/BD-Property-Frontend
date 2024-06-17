@@ -1,52 +1,25 @@
+import {
+  setSelectedBaths,
+  setSelectedBeds,
+} from '@/features/propertySearchSlice'
+import { useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
 import { badsAndBathsFilterOptions } from '@/types/propertyFilter'
-import { IPropertySearchState } from '@/utils/reducers/PropertySearchReducer'
 import React from 'react'
+import { useDispatch } from 'react-redux'
 
-interface IProps {
-  selectedBedsBaths: IPropertySearchState['selectedBedsBaths']
+const BedsAndBathsFilter: React.FC = () => {
+  const dispatch = useDispatch()
+  const selectedBedsBaths = useAppSelector(
+    (state) => state.propertySearch.selectedBedsBaths
+  )
 
-  setSelectedBedsBaths: (
-    bedsBaths: IPropertySearchState['selectedBedsBaths']
-  ) => void
-}
-
-const BedsAndBathsFilter: React.FC<IProps> = ({
-  selectedBedsBaths,
-  setSelectedBedsBaths,
-}) => {
   const toggleBedSelection = (bedValue: ISelectOption) => {
-    if (selectedBedsBaths.beds.find((bed) => bed.value === bedValue.value)) {
-      setSelectedBedsBaths({
-        ...selectedBedsBaths,
-        beds: selectedBedsBaths.beds.filter(
-          (bed) => bed.value !== bedValue.value
-        ),
-      })
-    } else {
-      setSelectedBedsBaths({
-        ...selectedBedsBaths,
-        beds: [...selectedBedsBaths.beds, bedValue],
-      })
-    }
+    dispatch(setSelectedBeds(bedValue))
   }
 
   const toggleBathSelection = (bathValue: ISelectOption) => {
-    if (
-      selectedBedsBaths.baths.find((bath) => bath.value === bathValue.value)
-    ) {
-      setSelectedBedsBaths({
-        ...selectedBedsBaths,
-        baths: selectedBedsBaths.baths.filter(
-          (bath) => bath.value !== bathValue.value
-        ),
-      })
-    } else {
-      setSelectedBedsBaths({
-        ...selectedBedsBaths,
-        baths: [...selectedBedsBaths.baths, bathValue],
-      })
-    }
+    dispatch(setSelectedBaths(bathValue))
   }
 
   return (

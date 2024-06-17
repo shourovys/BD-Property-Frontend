@@ -1,24 +1,26 @@
 import { propertyUrls } from '@/api/urls/propertyUrls'
 import Input from '@/components/atomic/Input'
+import {
+  removePropertyLocation,
+  setSelectedPropertyLocation,
+} from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
 import { ISingleServerResponse } from '@/types/pages/common'
 import classNames from 'classnames'
 import React, { useState } from 'react'
 import useSWR from 'swr'
 
-interface IProps {
-  selectedPropertyLocation: ISelectOption[]
-  setSelectedPropertyLocation: (propertyLocation: ISelectOption[]) => void
-}
+const LocationSelector: React.FC = () => {
+  const selectedPropertyLocation = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyLocation
+  )
+  const dispatch = useAppDispatch()
 
-const LocationSelector: React.FC<IProps> = ({
-  selectedPropertyLocation,
-  setSelectedPropertyLocation,
-}) => {
   const [inputValue, setInputValue] = useState('')
   const [activeIndex, setActiveIndex] = useState<number | null>(0)
 
-  const {  data } = useSWR<
+  const { data } = useSWR<
     ISingleServerResponse<{ id: string; name: string }[]>
   >(propertyUrls.address)
 
@@ -39,16 +41,12 @@ const LocationSelector: React.FC<IProps> = ({
         (selected) => selected.value === location.value
       )
     ) {
-      setSelectedPropertyLocation([...selectedPropertyLocation, location])
+      dispatch(setSelectedPropertyLocation(location))
     }
   }
 
   const handleLocationRemove = (locationToRemove: ISelectOption) => {
-    setSelectedPropertyLocation(
-      selectedPropertyLocation.filter(
-        (location) => location !== locationToRemove
-      )
-    )
+    dispatch(removePropertyLocation(locationToRemove.value))
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {

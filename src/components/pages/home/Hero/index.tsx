@@ -1,11 +1,6 @@
 'use client'
 import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
-import {
-  IPropertySearchState,
-  propertySearchInitialState,
-  propertySearchReducer,
-} from '@/utils/reducers/PropertySearchReducer'
-import { useReducer, useState } from 'react'
+import { useState } from 'react'
 import HomeHeroSearch from './HomeHeroSearch'
 import HomeHeroTabButtons from './HomeHeroTabButtons'
 
@@ -17,20 +12,8 @@ interface IProps {
 
 const HomeHeroSection = ({
   propertyPurposeData,
-  propertyTypeData,
-} // bgVideo,
-: IProps) => {
-  const [state, dispatch] = useReducer(
-    propertySearchReducer,
-    propertySearchInitialState
-  )
-
-  const setSelectedPurpose = (
-    propertyPurpose: IPropertySearchState['selectedPurpose']
-  ) => {
-    dispatch({ type: 'SET_SELECTED_PURPOSE', payload: propertyPurpose })
-  }
-
+  propertyTypeData, // bgVideo,
+}: IProps) => {
   const [openSlideOver, setOpenSlideOver] = useState<boolean>(false)
 
   const handleSlideOverOpen = () => setOpenSlideOver(true)
@@ -87,16 +70,12 @@ const HomeHeroSection = ({
         </h1>
         <HomeHeroTabButtons
           propertyPurposeData={propertyPurposeData}
-          selectedPurpose={state.selectedPurpose}
-          setSelectedPurpose={setSelectedPurpose}
           openSlideOver={openSlideOver}
           handleSlideOverOpen={handleSlideOverOpen}
         />
         <HomeHeroSearch
           propertyPurposeData={propertyPurposeData}
           propertyTypeData={propertyTypeData}
-          state={state}
-          dispatch={dispatch}
           openSlideOver={openSlideOver}
           handleSlideOverClose={handleSlideOverClose}
         />

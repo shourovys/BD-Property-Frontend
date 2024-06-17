@@ -1,4 +1,3 @@
-import { homePageApi } from '@/api/urls'
 import ExclusiveOffers from '@/components/pages/home/ExclusiveOffers/ExclusiveOffers'
 import HomeHeroSection from '@/components/pages/home/Hero'
 import HomeBanner from '@/components/pages/home/HomeBanner'
@@ -7,10 +6,7 @@ import HomeImageCards from '@/components/pages/home/HomeImageCards'
 import HomeMultiColorCards from '@/components/pages/home/HomeMultiColorCards'
 import HomePopularLinks from '@/components/pages/home/HomePopularLinks'
 import HomeVideoCards from '@/components/pages/home/HomeVideoCards'
-import { ISingleServerResponse } from '@/types/pages/common'
-import { ILandingPageData } from '@/types/pages/home'
 import { propertyPurposeData, propertyTypeData } from '@/utils/data/property'
-import fetchData from '@/utils/fetchData'
 import type { NextPage } from 'next'
 
 const Home: NextPage = async () => {
@@ -19,9 +15,9 @@ const Home: NextPage = async () => {
   //   data,
   // } = useSWR<IListServerResponse<ILogResult[]>>(homePageApi.landing)
 
-  const data = await fetchData<ISingleServerResponse<ILandingPageData>>(
-    homePageApi.landing
-  )
+  // const data = await fetchData<ISingleServerResponse<ILandingPageData>>(
+  //   homePageApi.landing
+  // )
 
   // const propertyPurposeData = await fetchData<
   //   ISingleServerResponse<IPropertyPurpose[]>

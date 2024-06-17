@@ -1,59 +1,53 @@
+import { setSelectedKeywords } from '@/features/propertySearchSlice'
+import { useAppSelector } from '@/hooks/reduxHooks'
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
 
-interface IProps {
-  selectedKeywords: string[]
-  setSelectedKeywords: (keywords: string[]) => void
-}
-
-const PropertyKeywordFilter: React.FC<IProps> = ({
-  selectedKeywords,
-  setSelectedKeywords,
-}) => {
-  // State to track input focus and input value
+const PropertyKeywordFilter: React.FC = () => {
+  const dispatch = useDispatch()
+  const selectedKeywords = useAppSelector(
+    (state) => state.propertySearch.selectedKeywords
+  )
   const [inputKeyword, setInputKeyword] = useState<string>('')
 
-  // Handle input value change
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputKeyword(e.target.value)
   }
 
-  // Handle removal of a keyword
   const handleRemoveKeyword = (keyword: string) => {
-    const updatedKeywords = selectedKeywords.filter((kw) => kw !== keyword)
-    setSelectedKeywords(updatedKeywords)
+    dispatch(
+      setSelectedKeywords(selectedKeywords.filter((kw) => kw !== keyword))
+    )
   }
 
-  // Handle Enter key press to add a keyword
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && inputKeyword.trim() !== '') {
       const trimmedKeyword = inputKeyword.trim()
       if (!selectedKeywords.includes(trimmedKeyword)) {
-        setSelectedKeywords([...selectedKeywords, trimmedKeyword])
+        dispatch(setSelectedKeywords([...selectedKeywords, trimmedKeyword]))
       }
       setInputKeyword('')
     }
   }
 
-  const renderSelectedKeywords = () => {
-    return (
-      <div className='mt-3 flex flex-wrap gap-1 text-sm font-light md:text-base'>
-        {selectedKeywords.map((keyword, index) => (
-          <span
-            key={index}
-            className='flex items-center justify-center gap-2 rounded-full bg-[#F5F5F5] px-3 py-1 text-sm'
+  const renderSelectedKeywords = () => (
+    <div className='mt-3 flex flex-wrap gap-1 text-sm font-light md:text-base'>
+      {selectedKeywords.map((keyword, index) => (
+        <span
+          key={index}
+          className='flex items-center justify-center gap-2 rounded-full bg-[#F5F5F5] px-3 py-1 text-sm'
+        >
+          {keyword}
+          <button
+            className='remove-keyword flex aspect-square h-4 max-h-min items-center justify-center rounded-full bg-black pb-0.5 font-medium text-white hover:text-red-500'
+            onClick={() => handleRemoveKeyword(keyword)}
           >
-            {keyword}
-            <button
-              className='remove-keyword flex aspect-square h-4 max-h-min items-center justify-center rounded-full bg-black pb-0.5 font-medium text-white hover:text-red-500'
-              onClick={() => handleRemoveKeyword(keyword)}
-            >
-              &#215;
-            </button>
-          </span>
-        ))}
-      </div>
-    )
-  }
+            &#215;
+          </button>
+        </span>
+      ))}
+    </div>
+  )
 
   return (
     <div className='overflow-hidden'>

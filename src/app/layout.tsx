@@ -1,13 +1,10 @@
 'use client'
-import { swrConfig } from '@/api/swrConfig'
 import Footer from '@/components/common/Footer'
 import Header from '@/components/common/Header'
-import AuthProvider from '@/context/AuthContext/AuthContextProvider'
+import { Providers } from '@/components/HOC/Provider'
 import classNames from 'classnames'
 import { Inter } from 'next/font/google'
 import React from 'react'
-import { Toaster } from 'react-hot-toast'
-import { SWRConfig } from 'swr'
 import './globals.scss'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,16 +23,13 @@ export default function RootLayout({
           'max-w-[100vw] overflow-x-hidden'
         )}
       >
-        <SWRConfig value={swrConfig}>
-          <AuthProvider>
-            <Toaster position='bottom-center' />
-            <div className='flex min-h-screen max-w-[100vw] flex-col justify-between'>
-              <Header />
-              {children}
-              <Footer />
-            </div>
-          </AuthProvider>
-        </SWRConfig>
+        <Providers>
+          <div className='flex min-h-screen max-w-[100vw] flex-col justify-between'>
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   )

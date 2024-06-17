@@ -1,4 +1,9 @@
 import { propertyUrls } from '@/api/urls/propertyUrls'
+import {
+  removePropertyLocation,
+  setSelectedPropertyLocation,
+} from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
 import { ISingleServerResponse } from '@/types/pages/common'
 import { LocationIcon } from '@/utils/icon'
@@ -8,13 +13,16 @@ import useSWR from 'swr'
 
 interface IPropertyLocationSearchProps {
   label?: string
-  selectedLocations: ISelectOption[]
-  setSelectedLocations: (propertyLocation: ISelectOption[]) => void
 }
 
 const PropertyLocationSearchWithBottomSelected: React.FC<
   IPropertyLocationSearchProps
-> = ({ label = '', selectedLocations, setSelectedLocations }) => {
+> = ({ label = '' }) => {
+  const dispatch = useAppDispatch()
+  const selectedLocations = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyLocation
+  )
+
   const [searchTerm, setSearchTerm] = useState<string>('')
   // const [suggestions, setSuggestions] = useState<string[]>([])
   // const [isFocused, setIsFocused] = useState<boolean>(false)
@@ -54,11 +62,7 @@ const PropertyLocationSearchWithBottomSelected: React.FC<
     setSearchTerm('')
     setActiveIndex(0)
     // Check if the location is not already selected
-    if (
-      !selectedLocations.some((selected) => selected.value === location.value)
-    ) {
-      setSelectedLocations([...selectedLocations, location])
-    }
+    dispatch(setSelectedPropertyLocation(location))
     if (searchInputRef.current) {
       searchInputRef.current.focus()
     }
@@ -72,10 +76,7 @@ const PropertyLocationSearchWithBottomSelected: React.FC<
   // }
 
   const handleRemoveLocation = (location: string) => {
-    const updatedSelectedLocations = selectedLocations.filter(
-      (loc) => loc.value !== location
-    )
-    setSelectedLocations(updatedSelectedLocations)
+    dispatch(removePropertyLocation(location))
     if (searchInputRef.current) {
       searchInputRef.current.focus()
     }

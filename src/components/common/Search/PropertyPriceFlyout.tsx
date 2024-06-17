@@ -1,27 +1,27 @@
 import Input from '@/components/atomic/Input'
+import {
+  resetSelectedPropertyPrice,
+  setSelectedPropertyPrice,
+} from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { THandleInputChange } from '@/types/components/common'
 import React from 'react'
 import ApplyAndResetButtons from './ApplyAndResetButtons'
 
 interface IProps {
   close: () => void
-  selectedPropertyPrice: {
-    min: string
-    max: string
-  }
-  setSelectedPropertyPrice: (propertyPrice: {
-    min: string
-    max: string
-  }) => void
 }
 
-const PropertyPriceFlyout: React.FC<IProps> = ({
-  close,
-  selectedPropertyPrice,
-  setSelectedPropertyPrice,
-}) => {
+const PropertyPriceFlyout: React.FC<IProps> = ({ close }) => {
+  const dispatch = useAppDispatch()
+  const selectedPropertyPrice = useAppSelector(
+    (state) => state.propertySearch.selectedPropertyPrice
+  )
+
   const handleInputChange: THandleInputChange = (name, value) => {
-    setSelectedPropertyPrice({ ...selectedPropertyPrice, [name]: value })
+    dispatch(
+      setSelectedPropertyPrice({ ...selectedPropertyPrice, [name]: value })
+    )
   }
 
   const handleApply = () => {
@@ -29,27 +29,27 @@ const PropertyPriceFlyout: React.FC<IProps> = ({
   }
 
   const handleReset = () => {
-    setSelectedPropertyPrice({ min: '', max: '' }) // Reset price range
+    dispatch(resetSelectedPropertyPrice()) // Reset price range
   }
 
   return (
-    <div className="w-screen max-w-xs p-4 bg-white min-h-[100px] space-y-4 overflow-hidden">
-      <h2 className="text-base font-normal">Property Price</h2>
-      <div className="flex gap-3">
+    <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4'>
+      <h2 className='text-base font-normal'>Property Price</h2>
+      <div className='flex gap-3'>
         <Input
-          name="min"
-          type="number"
-          label="Min Size"
-          placeholder="0"
+          name='min'
+          type='number'
+          label='Min Price'
+          placeholder='0'
           value={selectedPropertyPrice.min}
           onChange={handleInputChange}
         />
 
         <Input
-          name="max"
-          type="number"
-          label="Max Size"
-          placeholder="Any"
+          name='max'
+          type='number'
+          label='Max Price'
+          placeholder='Any'
           value={selectedPropertyPrice.max}
           onChange={handleInputChange}
         />
