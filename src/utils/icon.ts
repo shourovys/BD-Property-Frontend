@@ -1,3 +1,4 @@
+import { IconType } from 'react-icons'
 import {
   AiOutlineClose,
   AiOutlineHome,
@@ -110,3 +111,5 @@ export const TwitterIcon = BsTwitterX
 export const YoutubeIcon = FaYoutube
 export const FacebookIcon = MdFacebook
 export const InstagramIcon = FaInstagram
+
+export type IIconType = IconType

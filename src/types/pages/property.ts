@@ -1,3 +1,5 @@
+import { IIconType } from '@/utils/icon'
+
 export interface IPropertySubPurpose {
   id: string
   title: string
@@ -12,7 +14,7 @@ export interface IPropertyPurpose {
 export interface IPropertySubType {
   id: string
   sub_type: string
-  // property_type: number
+  icon: IIconType
 }
 
 export interface IPropertyType {

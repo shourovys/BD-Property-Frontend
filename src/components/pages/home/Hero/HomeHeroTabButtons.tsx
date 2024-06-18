@@ -10,12 +10,10 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 
 interface IHomeHeroTabButtonsProps {
-  openSlideOver: boolean
   handleSlideOverOpen: () => void
 }
 
 const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
-  // openSlideOver,
   handleSlideOverOpen,
 }) => {
   const { selectedPurpose } = useAppSelector((state) => state.propertySearch)
@@ -29,8 +27,8 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
           <button
             key={purpose.id}
             className={classNames(
-              'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white bg-opacity-60 px-4 py-3 font-normal sm:font-light md:px-6 md:py-2',
-              selectedPurpose.purpose.value === purpose.id && 'bg-opacity-100'
+              'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white px-4 py-3 font-normal sm:font-light md:px-6 md:py-2',
+              selectedPurpose.purpose.value !== purpose.id && 'bg-opacity-60'
             )}
             onClick={() => {
               dispatch(
@@ -70,9 +68,9 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
               >
                 <div
                   className={classNames(
-                    'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white bg-opacity-60 px-4 py-3 md:px-6 md:py-2',
-                    selectedPurpose.purpose.value === purpose.id &&
-                      'bg-opacity-100'
+                    'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
+                    selectedPurpose.purpose.value !== purpose.id &&
+                      'bg-opacity-60'
                   )}
                 >
                   {purpose.title}
@@ -82,18 +80,20 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
             ) : (
               <button
                 className={classNames(
-                  'flex items-center justify-center rounded-3xs border border-white bg-white bg-opacity-60 px-4 py-3 md:px-6 md:py-2',
-                  selectedPurpose.purpose.value === purpose.id &&
-                    'bg-opacity-100'
+                  'flex items-center justify-center rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
+                  selectedPurpose.purpose.value !== purpose.id &&
+                    'bg-opacity-60'
                 )}
                 onClick={() =>
-                  setSelectedPurpose({
-                    purpose: {
-                      label: purpose.title,
-                      value: purpose.id,
-                    },
-                    completion: emptySelectOption,
-                  })
+                  dispatch(
+                    setSelectedPurpose({
+                      purpose: {
+                        label: purpose.title,
+                        value: purpose.id,
+                      },
+                      completion: emptySelectOption,
+                    })
+                  )
                 }
               >
                 {purpose.title}

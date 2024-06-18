@@ -1,6 +1,6 @@
 import { setSortBy } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
-import { propertySortOptions } from '@/types/propertyFilter'
+import { propertySortOptions } from '@/utils/data/property'
 import React from 'react'
 
 interface IPropertyListSortFlyoutProps {

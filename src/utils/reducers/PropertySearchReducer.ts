@@ -1,5 +1,5 @@
 // import { emptySelectOption } from '@/types/components/common'
-// import { propertySortOptions } from '@/types/propertyFilter'
+// import { propertyPurposeData, propertySortOptions } from '@/utils/data/property'
 // import { propertyPurposeData, propertyTypeData } from '../data/property'
 
 // interface ISelectOption {

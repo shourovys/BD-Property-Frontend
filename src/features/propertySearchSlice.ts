@@ -1,6 +1,9 @@
 import { emptySelectOption, ISelectOption } from '@/types/components/common'
-import { propertySortOptions } from '@/types/propertyFilter'
-import { propertyPurposeData, propertyTypeData } from '@/utils/data/property'
+import {
+  propertyPurposeData,
+  propertySortOptions,
+  propertyTypeData,
+} from '@/utils/data/property'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export interface IPropertySearchState {

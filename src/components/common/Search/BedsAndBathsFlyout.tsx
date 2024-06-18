@@ -5,7 +5,7 @@ import {
 } from '@/features/propertySearchSlice'
 import { useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
-import { badsAndBathsFilterOptions } from '@/types/propertyFilter'
+import { badsAndBathsFilterOptions } from '@/utils/data/property'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import ApplyAndResetButtons from './ApplyAndResetButtons'

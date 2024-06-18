@@ -4,6 +4,7 @@ import {
 } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption, emptySelectOption } from '@/types/components/common'
+import { IPropertySubType } from '@/types/pages/property'
 import { propertyTypeData } from '@/utils/data/property'
 import React from 'react'
 import TabsUpdate from '../TabsUpdate'
@@ -33,12 +34,25 @@ const LookingForFlyout: React.FC<LookingForFlyoutProps> = ({ close }) => {
     close() // Close the flyout after applying selections
   }
 
+  const handleSubTypeSelection = (subType: IPropertySubType) => {
+    dispatch(
+      setSelectedPropertyType({
+        type: selectedPropertyType.type,
+        subType: {
+          label: subType.sub_type,
+          value: subType.id,
+        },
+      })
+    )
+    close()
+  }
+
   return (
     <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4'>
       <TabsUpdate
         tabs={propertyTypeData.map((type) => ({
           label: type.type,
-          value: type.id.toString(),
+          value: type.id,
         }))}
         fullWidth
         selectedTab={selectedPropertyType.type}
@@ -46,26 +60,13 @@ const LookingForFlyout: React.FC<LookingForFlyoutProps> = ({ close }) => {
       />
       <div className='grid grid-cols-2 justify-items-stretch gap-3'>
         {propertyTypeData
-          .find(
-            (type) => type.id.toString() === selectedPropertyType.type.value
-          )
+          .find((type) => type.id === selectedPropertyType.type.value)
           ?.propertySubType.map((subType) => (
             <p
               key={subType.id}
-              onClick={() => {
-                dispatch(
-                  setSelectedPropertyType({
-                    type: selectedPropertyType.type,
-                    subType: {
-                      label: subType.sub_type,
-                      value: subType.id.toString(),
-                    },
-                  })
-                )
-                close()
-              }}
+              onClick={() => handleSubTypeSelection(subType)}
               className={`w-full cursor-pointer rounded-xl border px-3 py-1 text-center ${
-                selectedPropertyType.subType.value === subType.id.toString()
+                selectedPropertyType.subType.value === subType.id
                   ? 'border-darkslateblue-100 bg-darkslateblue-300 font-normal text-darkslateblue-100'
                   : 'border-gray-200 font-light'
               }`}

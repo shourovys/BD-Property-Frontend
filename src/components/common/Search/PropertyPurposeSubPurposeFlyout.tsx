@@ -4,12 +4,13 @@ import {
 } from '@/features/propertySearchSlice'
 import { useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
+import { IPropertyPurpose, IPropertySubPurpose } from '@/types/pages/property'
 import { propertyPurposeData } from '@/utils/data/property'
-import classNames from 'classnames'
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useDispatch } from 'react-redux'
 import BoxTabsUpdate from '../BoxTabsUpdate'
 import ApplyAndResetButtons from './ApplyAndResetButtons'
+import { RenderPropertySubPurposes } from './PropertySubPurposeFlyout'
 
 interface IProps {
   close: () => void
@@ -21,12 +22,39 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
     (state) => state.propertySearch.selectedPurpose
   )
 
-  const handleReset = () => {
-    dispatch(resetSelectedPurpose())
+  const handleReset = () => dispatch(resetSelectedPurpose())
+
+  const purposeOptions = propertyPurposeData.map(
+    (purpose: IPropertyPurpose) => ({
+      label: purpose.title,
+      value: purpose.id.toString(),
+    })
+  )
+
+  const selectedPurposeData = useMemo(
+    () =>
+      propertyPurposeData.find(
+        (purpose: IPropertyPurpose) =>
+          purpose.id === selectedPurpose.purpose.value
+      ),
+    [selectedPurpose.purpose.value]
+  )
+
+  const handlePurposeTabSelect = (selectedTab: ISelectOption) => {
+    dispatch(setSelectedPurpose({ ...selectedPurpose, purpose: selectedTab }))
   }
 
-  const handleApply = () => {
-    close() // Close the flyout after applying selections
+  const handleSubPurposeClick = (subPurpose: IPropertySubPurpose) => {
+    dispatch(
+      setSelectedPurpose({
+        purpose: selectedPurpose.purpose,
+        completion: {
+          label: subPurpose.title,
+          value: subPurpose.id.toString(),
+        },
+      })
+    )
+    close()
   }
 
   return (
@@ -34,59 +62,16 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
       <div className='space-y-2'>
         <h2 className='text-base font-normal'>Purpose</h2>
         <BoxTabsUpdate
-          tabs={propertyPurposeData.map((purpose) => ({
-            label: purpose.title,
-            value: purpose.id.toString(),
-          }))}
+          tabs={purposeOptions}
           selectedTab={selectedPurpose.purpose}
-          setSelectedTab={(selectedTab: ISelectOption) =>
-            dispatch(
-              setSelectedPurpose({ ...selectedPurpose, purpose: selectedTab })
-            )
-          }
+          setSelectedTab={handlePurposeTabSelect}
         />
       </div>
-      <div className='space-y-2'>
-        <h2 className='text-base font-normal'>Completion Status</h2>
-        <div className='flex flex-wrap gap-2'>
-          {propertyPurposeData
-            .find(
-              (purpose) =>
-                purpose.id.toString() === selectedPurpose.purpose.value
-            )
-            ?.subPurpose.map((subPurpose) => (
-              <p
-                key={subPurpose.id}
-                onClick={() => {
-                  dispatch(
-                    setSelectedPurpose({
-                      purpose: selectedPurpose.purpose,
-                      completion: {
-                        label: subPurpose.title,
-                        value: subPurpose.id.toString(),
-                      },
-                    })
-                  )
-                  close()
-                }}
-                className={classNames(
-                  subPurpose.id.toString() === selectedPurpose.completion.value
-                    ? 'bg-cornflowerblue'
-                    : '',
-                  'flex w-fit cursor-pointer items-center justify-center rounded-8xs border border-darkslateblue-100 px-3'
-                )}
-                aria-current={
-                  subPurpose.id.toString() === selectedPurpose.completion.value
-                    ? 'page'
-                    : undefined
-                }
-              >
-                {subPurpose.title}
-              </p>
-            ))}
-        </div>
-      </div>
-      <ApplyAndResetButtons onApply={handleApply} onReset={handleReset} />
+      <RenderPropertySubPurposes
+        subPurpose={selectedPurposeData?.subPurpose || []}
+        handleSubPurposeClick={handleSubPurposeClick}
+      />
+      <ApplyAndResetButtons onApply={close} onReset={handleReset} />
     </div>
   )
 }

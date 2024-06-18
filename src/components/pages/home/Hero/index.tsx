@@ -58,10 +58,7 @@ const HomeHeroSection = () => {
         <h1 className='max-w-xs text-center text-2xl text-white sm:hidden'>
           Search properties for sale and for rent in Bangladesh
         </h1>
-        <HomeHeroTabButtons
-          openSlideOver={openSlideOver}
-          handleSlideOverOpen={handleSlideOverOpen}
-        />
+        <HomeHeroTabButtons handleSlideOverOpen={handleSlideOverOpen} />
         <HomeHeroSearch
           openSlideOver={openSlideOver}
           handleSlideOverClose={handleSlideOverClose}

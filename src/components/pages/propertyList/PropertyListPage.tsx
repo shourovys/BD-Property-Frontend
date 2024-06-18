@@ -10,26 +10,14 @@ import PropertyListFilters from '@/components/pages/propertyList/propertyListFil
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import useLocalStorage from '@/hooks/useLocalStorage'
 import { IListServerResponse } from '@/types/pages/common'
-import {
-  IListPropertyResponse,
-  IPropertyPurpose,
-  IPropertyType,
-} from '@/types/pages/property'
+import { IListPropertyResponse } from '@/types/pages/property'
 
 import { useRouter } from 'next/navigation'
 import QueryString from 'qs'
 import { useEffect } from 'react'
 import useSWR from 'swr'
 
-interface IProps {
-  propertyPurposeData: IPropertyPurpose[]
-  propertyTypeData: IPropertyType[]
-}
-
-export default function PropertyListPageComponent({
-  propertyPurposeData,
-  propertyTypeData,
-}: IProps) {
+export default function PropertyListPageComponent() {
   const router = useRouter()
   const dispatch = useAppDispatch()
   const { propertySearch } = useAppSelector((state) => state)

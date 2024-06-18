@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ bgColor, iconSrc, title, subTitle }) => (
   >
     <div
       className={classNames(
-        'flex aspect-square h-[100px] w-[120px] items-center justify-center rounded-md p-4 pr-1',
+        'flex aspect-square h-[80px] w-[100px] items-center justify-center rounded-md p-3 pr-1 sm:h-[100px] sm:w-[120px] sm:p-4',
         bgColor
       )}
     >
@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ bgColor, iconSrc, title, subTitle }) => (
         alt={`${title} Icon`}
         width={50}
         height={50}
-        className='pr-3'
+        className='pr-2 sm:pr-3'
       />
     </div>
     <div className='space-y-1 text-black'>
