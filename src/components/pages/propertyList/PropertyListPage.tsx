@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation'
 import QueryString from 'qs'
 import { useEffect } from 'react'
 import useSWR from 'swr'
+import PropertyListLocationSelector from './propertyListFilter/PropertyListLocationSelector'
 
 export default function PropertyListPageComponent() {
   const router = useRouter()
@@ -77,12 +78,12 @@ export default function PropertyListPageComponent() {
       <PropertyListFilters />
       {/* <Breadcrumbs /> */}
 
-      {/* <div className='mt-4 mb-5 space-y-4 sm:mb-7 sm:mt-0 sm:space-y-5 md:-mt-2'>
-        <h1 className='text-base font-medium custom_screen_width md:text-lg '>
+      <div className='mb-5 mt-4 space-y-4 sm:mb-7 sm:mt-0 sm:space-y-5 md:-mt-2'>
+        <h1 className='custom_screen_width text-base font-medium md:text-lg '>
           Apartment for sale in Basundhara
         </h1>
         <PropertyListLocationSelector />
-      </div> */}
+      </div>
 
       <div className='custom_screen_width col-span-1 w-full gap-6 md:grid-cols-7 lg:grid'>
         <div className='col-span-5 '>

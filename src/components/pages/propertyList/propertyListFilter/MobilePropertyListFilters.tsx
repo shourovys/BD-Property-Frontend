@@ -1,12 +1,12 @@
 import BoxTabsUpdate from '@/components/common/BoxTabsUpdate'
 import BedsAndBathsFilter from '@/components/common/Search/BedsAndBathsFilter'
-import CompletionFilter from '@/components/common/Search/CompletionFilter'
 import PropertyListLink from '@/components/common/Search/HOC/PropertyListLink'
 import LookingForFilter from '@/components/common/Search/LookingForFilter'
 import PropertyKeywordFilter from '@/components/common/Search/PropertyKeywordFilter'
 import PropertyLocationSearchWithBottomSelected from '@/components/common/Search/PropertyLocationSearchWithBottomSelected'
 import PropertyPriceFilter from '@/components/common/Search/PropertyPriceFilter'
 import PropertySizeFilters from '@/components/common/Search/PropertySizeFilters'
+import PropertySubPurposeFilter from '@/components/common/Search/PropertySubPurposeFilter'
 import { resetAll, setSelectedPurpose } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
@@ -55,7 +55,14 @@ const MobilePropertyListFilters: React.FC<MobilePropertyListFiltersProps> = ({
         />
         <PropertyLocationSearchWithBottomSelected label='Location' />
         <LookingForFilter />
-        <CompletionFilter />
+        <div className='overflow-hidden text-black'>
+          <h2 className='form-label mb-2 inline-block w-full text-sm font-medium md:text-base'>
+            Occupancy Status:
+          </h2>
+          <div className='flex flex-wrap gap-x-2 gap-y-3 overflow-x-auto'>
+            <PropertySubPurposeFilter />
+          </div>
+        </div>
         <BedsAndBathsFilter />
         <PropertyPriceFilter />
         <PropertySizeFilters />
