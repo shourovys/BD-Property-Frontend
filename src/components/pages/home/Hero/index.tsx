@@ -54,9 +54,10 @@ const HomeHeroSection = () => {
       </video>
       {/* Black overlay */}
       <div className='absolute inset-0 bg-black opacity-70 sm:opacity-50'></div>
-      <div className='custom_screen_width relative flex h-full w-full flex-col items-center justify-center gap-4 pb-20 sm:pb-0'>
-        <h1 className='max-w-xs text-center text-2xl text-white sm:hidden'>
-          Search properties for sale and for rent in Bangladesh
+      <div className='custom_screen_width relative flex h-full w-full flex-col items-center justify-center gap-4 pb-20 sm:pb-44'>
+        <h1 className='max-w-xl text-center text-2xl text-white sm:mb-6 md:max-w-2xl lg:max-w-3xl lg:text-3xl'>
+          Discover Your Perfect Property: Buy, Rent, Renovate, and Interior
+          Design Solutions in Bangladesh
         </h1>
         <HomeHeroTabButtons handleSlideOverOpen={handleSlideOverOpen} />
         <HomeHeroSearch
