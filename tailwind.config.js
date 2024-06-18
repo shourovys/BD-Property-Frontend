@@ -78,7 +78,7 @@ module.exports = {
         'all-side': '0px 0px 4px rgba(0, 0, 0, 0.14)',
       },
       gridTemplateColumns: {
-        29: 'repeat(29, minmax(0, 1fr))',
+        14: 'repeat(14, minmax(0, 1fr))',
       },
     },
     // Reduced font sizes (25% smaller)

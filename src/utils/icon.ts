@@ -36,6 +36,7 @@ import {
 import { FiFilter } from 'react-icons/fi'
 import { GrFormDown } from 'react-icons/gr'
 import { ImOffice } from 'react-icons/im'
+import { IoSaveOutline } from 'react-icons/io5'
 import {
   MdCall,
   MdEmail,
@@ -78,6 +79,7 @@ export const CloseIcon = AiOutlineClose
 export const LeftArrowIcon = AiOutlineLeft
 export const BoldPlusIcon = FaPlus
 export const BoldMinusIcon = FaMinus
+export const SaveIcon = IoSaveOutline
 
 //
 export const newProjectIcon = FaBuilding
