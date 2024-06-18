@@ -42,7 +42,7 @@ const PropertyListFilters: React.FC = () => {
   }, [queryState])
 
   return (
-    <>
+    <div className='bg-gray-100 '>
       <div className='custom_screen_width mt-3 grid grid-cols-4 gap-2 sm:grid-cols-5 lg:hidden'>
         <div className='col-span-3 sm:col-span-4'>
           <PropertyLocationSearch />
@@ -68,7 +68,7 @@ const PropertyListFilters: React.FC = () => {
       <div className='hidden lg:block'>
         <DesktopPropertyListFilters />
       </div>
-    </>
+    </div>
   )
 }
 
