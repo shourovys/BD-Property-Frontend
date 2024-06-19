@@ -24,10 +24,13 @@ export const getBedsAndBathsValue = (
   }
 }
 
-export const getPropertySizeValue = (propertySize: {
-  min: string
-  max: string
-}): string => {
+export const getPropertySizeValue = (
+  propertySize: {
+    min: string
+    max: string
+  },
+  defaultValue = 'Any'
+): string => {
   const { min, max } = propertySize
 
   if (min && !max) {
@@ -37,14 +40,17 @@ export const getPropertySizeValue = (propertySize: {
   } else if (min || max) {
     return `${min} - ${max} sqft`
   } else {
-    return 'Any'
+    return defaultValue
   }
 }
 
-export const getPropertyPriceValue = (propertyPrice: {
-  min: string
-  max: string
-}): string => {
+export const getPropertyPriceValue = (
+  propertyPrice: {
+    min: string
+    max: string
+  },
+  defaultValue = 'Any'
+): string => {
   const { min, max } = propertyPrice
 
   const formatShortValue = (value: string): string => {
@@ -62,6 +68,6 @@ export const getPropertyPriceValue = (propertyPrice: {
   } else if (min || max) {
     return `BDT ${formatShortValue(min)} - ${formatShortValue(max)}`
   } else {
-    return 'Any'
+    return defaultValue
   }
 }

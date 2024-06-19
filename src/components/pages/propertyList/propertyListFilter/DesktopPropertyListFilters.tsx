@@ -70,7 +70,9 @@ const DesktopPropertyListFilters: React.FC = () => {
                   name='bedsAndBaths'
                   placeholder='Beds & Baths'
                   className='placeholder-text-black w-full truncate border-0 bg-transparent text-black'
-                  value={getBedsAndBathsValue(selectedBedsBaths)}
+                  value={
+                    (getBedsAndBathsValue(selectedBedsBaths), 'Beds & Baths')
+                  }
                   readOnly
                 />
                 <DownArrowIcon className='text-xl' />
@@ -88,7 +90,10 @@ const DesktopPropertyListFilters: React.FC = () => {
                 name='propertyPrice'
                 placeholder='Price (BDT)'
                 className='placeholder-text-black w-full truncate border-0 bg-transparent text-black'
-                value={getPropertyPriceValue(selectedPropertyPrice)}
+                value={getPropertyPriceValue(
+                  selectedPropertyPrice,
+                  'Price (BDT)'
+                )}
                 readOnly
               />
               <DownArrowIcon className='text-xl' />
@@ -106,7 +111,10 @@ const DesktopPropertyListFilters: React.FC = () => {
                   name='propertySize'
                   placeholder='Size (BDT)'
                   className='placeholder-text-black w-full truncate border-0 bg-transparent text-black'
-                  value={getPropertySizeValue(selectedPropertySize)}
+                  value={getPropertySizeValue(
+                    selectedPropertySize,
+                    'Area (sqft)'
+                  )}
                   readOnly
                 />
                 <DownArrowIcon className='text-xl' />
