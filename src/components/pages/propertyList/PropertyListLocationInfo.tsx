@@ -1,6 +1,6 @@
 const PropertyListLocationInfo = () => {
   return (
-    <div className='flex gap-2 rounded-6xs border border-darkslateblue-200 p-2'>
+    <div className='flex gap-2 rounded-6xs border border-lightgray-100 p-2'>
       <img
         className='h-[104px] w-[114px] rounded-6xs object-cover'
         alt=''

@@ -72,7 +72,7 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
         className={classNames(
           isCardVertical
             ? 'max-w-xs'
-            : 'grid grid-cols-1 gap-4 border-darkslateblue-200 md:grid-cols-[324px,1fr] md:border',
+            : 'grid grid-cols-1 gap-4 border-lightgray-100 md:grid-cols-[324px,1fr] md:border',
           'w-full overflow-hidden rounded-6xs font-ubuntu text-sm md:text-base'
         )}
       >

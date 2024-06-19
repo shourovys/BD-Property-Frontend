@@ -31,7 +31,7 @@ const PropertyListHeader: React.FC = () => {
     location || 'Bangladesh'
   }`
 
-  return <h1 className='text-base font-medium md:text-lg'>{title}</h1>
+  return <h1 className='text-base md:text-lg lg:text-[22px]'>{title}</h1>
 }
 
 export default PropertyListHeader

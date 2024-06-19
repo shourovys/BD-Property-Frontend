@@ -29,6 +29,7 @@ const PropertySizeFilters: React.FC = () => {
           placeholder='0'
           value={selectedPropertySize.min}
           onChange={handleInputChange}
+          size='small'
         />
 
         <Input
@@ -38,6 +39,7 @@ const PropertySizeFilters: React.FC = () => {
           placeholder='Any'
           value={selectedPropertySize.max}
           onChange={handleInputChange}
+          size='small'
         />
       </div>
     </div>

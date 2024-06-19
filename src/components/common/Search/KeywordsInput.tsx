@@ -168,7 +168,7 @@ const KeywordsInput: React.FC = () => {
     >
       <div
         className={classNames(
-          'custom_transition border-gray-border rounded-6xs border bg-gray-100 px-3 py-1.5 '
+          'custom_transition border-gray-border rounded-6xs border bg-gray-100 px-3 py-2 '
         )}
       >
         {!!selectedKeywords.length && renderSelectedKeywords()}
