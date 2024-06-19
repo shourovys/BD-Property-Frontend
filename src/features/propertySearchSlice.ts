@@ -76,23 +76,49 @@ const propertySearchSlice = createSlice({
     ) {
       state.page = 1
 
-      if (!state.selectedPurpose.completion.value) {
-        const selectedSubPurposeData = propertyPurposeData.find(
-          (purpose: IPropertyPurpose) => purpose.id === action.payload.value
-        )?.subPurpose[0]
-        const completion = selectedSubPurposeData
-          ? {
-              label: selectedSubPurposeData.title,
-              value: selectedSubPurposeData.id,
-            }
-          : emptySelectOption
+      const selectedSubPurposeData = propertyPurposeData.find(
+        (purpose: IPropertyPurpose) => purpose.id === action.payload.value
+      )?.subPurpose[0]
+      if (selectedSubPurposeData?.id) {
+        const completion =
+          // state.selectedPurpose.purpose.value !== action.payload.value &&
+          !state.selectedPurpose.completion.value
+            ? {
+                label: selectedSubPurposeData.title,
+                value: selectedSubPurposeData.id,
+              }
+            : state.selectedPurpose.completion
 
         state.selectedPurpose = {
           purpose: action.payload,
           completion,
         }
+      } else {
+        state.selectedPurpose = {
+          purpose: action.payload,
+          completion: emptySelectOption,
+        }
       }
-      state.selectedPurpose.purpose = action.payload
+
+      // this code will not change completion
+      // if (!state.selectedPurpose.completion.value) {
+      //   const selectedSubPurposeData = propertyPurposeData.find(
+      //     (purpose: IPropertyPurpose) => purpose.id === action.payload.value
+      //   )?.subPurpose[0]
+      //   const completion = selectedSubPurposeData
+      //     ? {
+      //         label: selectedSubPurposeData.title,
+      //         value: selectedSubPurposeData.id,
+      //       }
+      //     : emptySelectOption
+
+      //   state.selectedPurpose = {
+      //     purpose: action.payload,
+      //     completion,
+      //   }
+      // } else {
+      //   state.selectedPurpose.purpose = action.payload
+      // }
     },
     setSelectedPurposeWithSub(
       state,
