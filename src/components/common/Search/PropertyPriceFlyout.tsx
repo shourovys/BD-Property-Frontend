@@ -33,13 +33,13 @@ const PropertyPriceFlyout: React.FC<IProps> = ({ close }) => {
   }
 
   return (
-    <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4'>
-      <h2 className='text-base font-normal'>Property Price</h2>
+    <div className='min-h-[100px] w-screen max-w-xs overflow-hidden bg-white p-4'>
+      {/* <h2 className='text-base font-normal'>Property Price</h2> */}
       <div className='flex gap-3'>
         <Input
           name='min'
           type='number'
-          label='Min Price'
+          label='Minimum'
           placeholder='0'
           value={selectedPropertyPrice.min}
           onChange={handleInputChange}
@@ -48,7 +48,7 @@ const PropertyPriceFlyout: React.FC<IProps> = ({ close }) => {
         <Input
           name='max'
           type='number'
-          label='Max Price'
+          label='Maximum'
           placeholder='Any'
           value={selectedPropertyPrice.max}
           onChange={handleInputChange}

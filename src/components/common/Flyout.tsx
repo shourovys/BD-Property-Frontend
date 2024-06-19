@@ -26,7 +26,7 @@ const FlyoutWrapper: React.FC<IProps> = ({
   }
 
   return (
-    <Popover className='relative'>
+    <Popover className='relative flex-1'>
       {({ open, close }) => (
         <>
           <Popover.Button

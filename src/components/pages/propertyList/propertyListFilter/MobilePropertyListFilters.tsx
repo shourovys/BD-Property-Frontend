@@ -10,7 +10,7 @@ import PropertySubPurposeFilter from '@/components/common/Search/PropertySubPurp
 import { resetAll, setSelectedPurpose } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
-import { propertyPurposeData } from '@/utils/data/property'
+import { propertyPurposeData, propertyTypeData } from '@/utils/data/property'
 import { CloseIcon } from '@/utils/icon'
 import React from 'react'
 
@@ -22,7 +22,9 @@ const MobilePropertyListFilters: React.FC<MobilePropertyListFiltersProps> = ({
   onSlideOverClose,
 }) => {
   const dispatch = useAppDispatch()
-  const { selectedPurpose } = useAppSelector((state) => state.propertySearch)
+  const { selectedPropertyType, selectedPurpose } = useAppSelector(
+    (state) => state.propertySearch
+  )
 
   const handleReset = () => {
     dispatch(resetAll())
@@ -63,7 +65,11 @@ const MobilePropertyListFilters: React.FC<MobilePropertyListFiltersProps> = ({
             <PropertySubPurposeFilter />
           </div>
         </div>
-        <BedsAndBathsFilter />
+
+        {selectedPropertyType.type.value === propertyTypeData[0].id && (
+          <BedsAndBathsFilter />
+        )}
+
         <PropertyPriceFilter />
         <PropertySizeFilters />
         <PropertyKeywordFilter />

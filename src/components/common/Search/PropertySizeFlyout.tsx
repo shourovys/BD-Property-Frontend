@@ -39,7 +39,7 @@ const PropertySizeFlyout: React.FC<IProps> = ({ close }) => {
         <Input
           name='min'
           type='number'
-          label='Min Size'
+          label='Minimum sqft'
           placeholder='0'
           value={selectedPropertySize.min}
           onChange={handleInputChange}
@@ -48,7 +48,7 @@ const PropertySizeFlyout: React.FC<IProps> = ({ close }) => {
         <Input
           name='max'
           type='number'
-          label='Max Size'
+          label='Maximum sqft'
           placeholder='Any'
           value={selectedPropertySize.max}
           onChange={handleInputChange}

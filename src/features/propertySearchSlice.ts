@@ -86,6 +86,9 @@ const propertySearchSlice = createSlice({
     ) {
       state.page = 1
       state.selectedPropertyType = action.payload
+      if (action.payload.type.value !== propertyTypeData[0].id) {
+        state.selectedBedsBaths = propertySearchInitialState.selectedBedsBaths
+      }
     },
     resetSelectedPropertyType(state) {
       state.page = 1

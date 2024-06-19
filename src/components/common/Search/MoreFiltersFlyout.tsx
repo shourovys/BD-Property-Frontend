@@ -12,13 +12,14 @@ import {
   setSelectedTourType,
 } from '@/features/propertySearchSlice'
 import { THandleInputChange } from '@/types/components/common'
+import { propertyTypeData } from '@/utils/data/property'
 
 const MoreFiltersFlyout: React.FC<{ close: () => void }> = ({ close }) => {
   const dispatch = useDispatch()
   const {
+    selectedPropertyType,
     selectedPropertyPrice,
     selectedPropertySize,
-    selectedKeywords,
     tourType,
   } = useAppSelector((state) => state.propertySearch)
 
@@ -41,27 +42,29 @@ const MoreFiltersFlyout: React.FC<{ close: () => void }> = ({ close }) => {
 
   return (
     <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4'>
-      <div className='space-y-2'>
-        <h2 className='text-base font-normal'>Property Size</h2>
-        <div className='flex gap-3'>
-          <Input
-            name='min'
-            type='number'
-            label='Min Size'
-            placeholder='0'
-            value={selectedPropertySize.min}
-            onChange={handlePriceChange}
-          />
-          <Input
-            name='max'
-            type='number'
-            label='Max Size'
-            placeholder='Any'
-            value={selectedPropertySize.max}
-            onChange={handlePriceChange}
-          />
+      {selectedPropertyType.type.label === propertyTypeData[0].id && (
+        <div className='space-y-2'>
+          <h2 className='text-base font-normal'>Property Size</h2>
+          <div className='flex gap-3'>
+            <Input
+              name='min'
+              type='number'
+              label='Min Size'
+              placeholder='0'
+              value={selectedPropertySize.min}
+              onChange={handlePriceChange}
+            />
+            <Input
+              name='max'
+              type='number'
+              label='Max Size'
+              placeholder='Any'
+              value={selectedPropertySize.max}
+              onChange={handlePriceChange}
+            />
+          </div>
         </div>
-      </div>
+      )}
       <div className='space-y-2'>
         <h2 className='text-base font-normal'>Keywords</h2>
         <KeywordInput />

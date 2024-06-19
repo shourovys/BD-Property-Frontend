@@ -5,10 +5,13 @@ import MoreFiltersFlyout from '@/components/common/Search/MoreFiltersFlyout'
 import PropertyLocationSearch from '@/components/common/Search/PropertyLocationSearch'
 import PropertyPriceFlyout from '@/components/common/Search/PropertyPriceFlyout'
 import PropertyPurposeSubPurposeFlyout from '@/components/common/Search/PropertyPurposeSubPurposeFlyout'
+import PropertySizeFlyout from '@/components/common/Search/PropertySizeFlyout'
 import { useAppSelector } from '@/hooks/reduxHooks'
+import { propertyTypeData } from '@/utils/data/property'
 import {
   getBedsAndBathsValue,
   getPropertyPriceValue,
+  getPropertySizeValue,
 } from '@/utils/getFilterValues'
 import { DownArrowIcon, FilterIcon, SaveIcon } from '@/utils/icon'
 import React from 'react'
@@ -19,6 +22,7 @@ const DesktopPropertyListFilters: React.FC = () => {
     selectedBedsBaths,
     selectedPurpose,
     selectedPropertyPrice,
+    selectedPropertySize,
   } = useAppSelector((state) => state.propertySearch)
 
   return (
@@ -56,22 +60,24 @@ const DesktopPropertyListFilters: React.FC = () => {
           </FlyoutWrapper>
         </div>
 
-        <div className='col-span-2'>
-          <FlyoutWrapper
-            flyoutContent={(close) => <BedsAndBathsFlyout close={close} />}
-          >
-            <div className='flex w-full items-center justify-between gap-0.5 rounded-6xs border border-gray-400 px-4 py-3'>
-              <input
-                name='bedsAndBaths'
-                placeholder='Beds & Baths'
-                className='placeholder-text-black w-full truncate border-0 bg-transparent text-black'
-                value={getBedsAndBathsValue(selectedBedsBaths)}
-                readOnly
-              />
-              <DownArrowIcon className='text-xl' />
-            </div>
-          </FlyoutWrapper>
-        </div>
+        {selectedPropertyType.type.value === propertyTypeData[0].id && (
+          <div className='col-span-2'>
+            <FlyoutWrapper
+              flyoutContent={(close) => <BedsAndBathsFlyout close={close} />}
+            >
+              <div className='flex w-full items-center justify-between gap-0.5 rounded-6xs border border-gray-400 px-4 py-3'>
+                <input
+                  name='bedsAndBaths'
+                  placeholder='Beds & Baths'
+                  className='placeholder-text-black w-full truncate border-0 bg-transparent text-black'
+                  value={getBedsAndBathsValue(selectedBedsBaths)}
+                  readOnly
+                />
+                <DownArrowIcon className='text-xl' />
+              </div>
+            </FlyoutWrapper>
+          </div>
+        )}
 
         <div className='col-span-2'>
           <FlyoutWrapper
@@ -89,6 +95,25 @@ const DesktopPropertyListFilters: React.FC = () => {
             </div>
           </FlyoutWrapper>
         </div>
+
+        {selectedPropertyType.type.value !== propertyTypeData[0].id && (
+          <div className='col-span-2'>
+            <FlyoutWrapper
+              flyoutContent={(close) => <PropertySizeFlyout close={close} />}
+            >
+              <div className='flex w-full items-center justify-between gap-0.5 rounded-6xs border border-gray-400 px-4 py-3'>
+                <input
+                  name='propertySize'
+                  placeholder='Size (BDT)'
+                  className='placeholder-text-black w-full truncate border-0 bg-transparent text-black'
+                  value={getPropertySizeValue(selectedPropertySize)}
+                  readOnly
+                />
+                <DownArrowIcon className='text-xl' />
+              </div>
+            </FlyoutWrapper>
+          </div>
+        )}
 
         <div className='col-span-2'>
           <FlyoutWrapper
