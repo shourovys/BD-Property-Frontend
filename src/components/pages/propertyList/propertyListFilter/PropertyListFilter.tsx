@@ -21,10 +21,7 @@ const PropertyListFilter: React.FC<IProps> = ({
 
   return (
     <div className='mt-3 flex items-end justify-between gap-4 text-sm font-light md:mt-0 md:items-center md:text-base'>
-      <div className='flex flex-shrink flex-wrap items-center gap-x-4 gap-y-1'>
-        <h2 className='hidden sm:block'>Occupancy Status:</h2>
-        <PropertySubPurposeFilter />
-      </div>
+      <PropertySubPurposeFilter showInline />
 
       <div className='flex items-center gap-5 self-end'>
         <FlyoutWrapper

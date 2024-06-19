@@ -4,13 +4,12 @@ import {
 } from '@/features/propertySearchSlice'
 import { useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
-import { IPropertyPurpose, IPropertySubPurpose } from '@/types/pages/property'
+import { IPropertyPurpose } from '@/types/pages/property'
 import { propertyPurposeData } from '@/utils/data/property'
 import React, { useMemo } from 'react'
 import { useDispatch } from 'react-redux'
 import BoxTabsUpdate from '../BoxTabsUpdate'
 import ApplyAndResetButtons from './ApplyAndResetButtons'
-import { RenderPropertySubPurposes } from './PropertySubPurposeFlyout'
 
 interface IProps {
   close: () => void
@@ -27,7 +26,7 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
   const purposeOptions = propertyPurposeData.map(
     (purpose: IPropertyPurpose) => ({
       label: purpose.title,
-      value: purpose.id.toString(),
+      value: purpose.id,
     })
   )
 
@@ -41,21 +40,21 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
   )
 
   const handlePurposeTabSelect = (selectedTab: ISelectOption) => {
-    dispatch(setSelectedPurpose({ ...selectedPurpose, purpose: selectedTab }))
+    dispatch(setSelectedPurpose(selectedTab))
   }
 
-  const handleSubPurposeClick = (subPurpose: IPropertySubPurpose) => {
-    dispatch(
-      setSelectedPurpose({
-        purpose: selectedPurpose.purpose,
-        completion: {
-          label: subPurpose.title,
-          value: subPurpose.id.toString(),
-        },
-      })
-    )
-    close()
-  }
+  // const handleSubPurposeClick = (subPurpose: IPropertySubPurpose) => {
+  //   dispatch(
+  //     setSelectedSubPurpose({
+  //       purpose: selectedPurpose.purpose,
+  //       completion: {
+  //         label: subPurpose.title,
+  //         value: subPurpose.id,
+  //       },
+  //     })
+  //   )
+  //   close()
+  // }
 
   return (
     <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4 text-black'>
@@ -67,10 +66,10 @@ const PropertyPurposeSubPurposeFlyout: React.FC<IProps> = ({ close }) => {
           setSelectedTab={handlePurposeTabSelect}
         />
       </div>
-      <RenderPropertySubPurposes
+      {/* <RenderPropertySubPurposes
         subPurpose={selectedPurposeData?.subPurpose || []}
         handleSubPurposeClick={handleSubPurposeClick}
-      />
+      /> */}
       <ApplyAndResetButtons onApply={close} onReset={handleReset} />
     </div>
   )

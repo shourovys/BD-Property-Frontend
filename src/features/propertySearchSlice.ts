@@ -1,4 +1,5 @@
 import { emptySelectOption, ISelectOption } from '@/types/components/common'
+import { IPropertyPurpose } from '@/types/pages/property'
 import {
   propertyPurposeData,
   propertySortOptions,
@@ -70,6 +71,30 @@ const propertySearchSlice = createSlice({
       state.page = action.payload
     },
     setSelectedPurpose(
+      state,
+      action: PayloadAction<IPropertySearchState['selectedPurpose']['purpose']>
+    ) {
+      state.page = 1
+
+      if (!state.selectedPurpose.completion.value) {
+        const selectedSubPurposeData = propertyPurposeData.find(
+          (purpose: IPropertyPurpose) => purpose.id === action.payload.value
+        )?.subPurpose[0]
+        const completion = selectedSubPurposeData
+          ? {
+              label: selectedSubPurposeData.title,
+              value: selectedSubPurposeData.id,
+            }
+          : emptySelectOption
+
+        state.selectedPurpose = {
+          purpose: action.payload,
+          completion,
+        }
+      }
+      state.selectedPurpose.purpose = action.payload
+    },
+    setSelectedPurposeWithSub(
       state,
       action: PayloadAction<IPropertySearchState['selectedPurpose']>
     ) {
@@ -207,6 +232,7 @@ export const {
   setFullState,
   setPage,
   setSelectedPurpose,
+  setSelectedPurposeWithSub,
   resetSelectedPurpose,
   setSelectedPropertyType,
   resetSelectedPropertyType,

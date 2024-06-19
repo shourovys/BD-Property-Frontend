@@ -5,6 +5,7 @@ const store = configureStore({
   reducer: {
     propertySearch: propertySearchSlice,
   },
+  devTools: process.env.NODE_ENV !== 'production',
 })
 
 export default store

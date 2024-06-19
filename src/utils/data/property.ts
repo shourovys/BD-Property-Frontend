@@ -1,3 +1,4 @@
+import { ISelectOption } from '@/types/components/common'
 import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
 
 import {
@@ -90,7 +91,7 @@ export const badsAndBathsFilterOptions = {
   ],
 } as const
 
-export const propertySortOptions = [
+export const propertySortOptions: ISelectOption[] = [
   { label: 'Popular', value: 'popular' },
   { label: 'Newest', value: 'newest' },
   { label: 'Lowest Price', value: 'lowestPrice' },

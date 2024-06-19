@@ -47,23 +47,13 @@ const MobilePropertyListFilters: React.FC<MobilePropertyListFiltersProps> = ({
           }))}
           selectedTab={selectedPurpose.purpose}
           setSelectedTab={(selectedTab: ISelectOption) =>
-            dispatch(
-              setSelectedPurpose({
-                ...selectedPurpose,
-                purpose: selectedTab,
-              })
-            )
+            dispatch(setSelectedPurpose(selectedTab))
           }
         />
         <PropertyLocationSearchWithBottomSelected label='Location' />
         <LookingForFilter />
         <div className='overflow-hidden text-black'>
-          <h2 className='form-label mb-2 inline-block w-full text-sm font-medium md:text-base'>
-            Occupancy Status:
-          </h2>
-          <div className='flex flex-wrap gap-x-2 gap-y-3 overflow-x-auto'>
-            <PropertySubPurposeFilter />
-          </div>
+          <PropertySubPurposeFilter showInline={false} />
         </div>
 
         {selectedPropertyType.type.value === propertyTypeData[0].id && (

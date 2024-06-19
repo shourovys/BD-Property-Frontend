@@ -4,7 +4,6 @@ import LinkCard from '@/components/common/LinkCard'
 import Pagination from '@/components/common/Pagination'
 import PropertyList from '@/components/pages/propertyList/PropertyList'
 import PropertyListLocationInfo from '@/components/pages/propertyList/PropertyListLocationInfo'
-import PropertyListPropertyMap from '@/components/pages/propertyList/PropertyListPropertyMap'
 import PropertyListFilter from '@/components/pages/propertyList/propertyListFilter/PropertyListFilter'
 import PropertyListFilters from '@/components/pages/propertyList/propertyListFilter/PropertyListFilters'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
@@ -108,7 +107,7 @@ export default function PropertyListPageComponent() {
           {/* <WhyThisLocation /> */}
         </div>
         <div className='col-span-1 space-y-6 font-ubuntu text-sm md:col-span-2 md:text-base'>
-          <PropertyListPropertyMap />
+          {/* <PropertyListPropertyMap /> */}
           <PropertyListLocationInfo />
           <LinkCard />
         </div>

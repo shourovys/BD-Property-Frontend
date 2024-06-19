@@ -1,6 +1,6 @@
 import {
   resetSelectedPurpose,
-  setSelectedPurpose,
+  setSelectedPurposeWithSub,
 } from '@/features/propertySearchSlice'
 import { useAppSelector } from '@/hooks/reduxHooks'
 import { IPropertyPurpose, IPropertySubPurpose } from '@/types/pages/property'
@@ -28,15 +28,13 @@ export const RenderPropertySubPurposes = ({
             key={sub.id}
             onClick={() => handleSubPurposeClick(sub)}
             className={classNames(
-              sub.id.toString() === selectedPurpose.completion.value
+              sub.id === selectedPurpose.completion.value
                 ? 'bg-cornflowerblue'
                 : '',
               'flex w-fit cursor-pointer items-center justify-center rounded-8xs border border-darkslateblue-100 px-3'
             )}
             aria-current={
-              sub.id.toString() === selectedPurpose.completion.value
-                ? 'page'
-                : undefined
+              sub.id === selectedPurpose.completion.value ? 'page' : undefined
             }
           >
             {sub.title}
@@ -57,9 +55,6 @@ const PropertySubPurposeFlyout: React.FC<IProps> = ({
   close,
 }) => {
   const dispatch = useDispatch()
-  const selectedPurpose = useAppSelector(
-    (state) => state.propertySearch.selectedPurpose
-  )
 
   const handleReset = () => {
     dispatch(resetSelectedPurpose())
@@ -71,14 +66,14 @@ const PropertySubPurposeFlyout: React.FC<IProps> = ({
 
   const handleSubPurposeClick = (subPurpose: IPropertySubPurpose) => {
     dispatch(
-      setSelectedPurpose({
+      setSelectedPurposeWithSub({
         purpose: {
           label: currentPurpose.title,
-          value: currentPurpose.id.toString(),
+          value: currentPurpose.id,
         },
         completion: {
           label: subPurpose.title,
-          value: subPurpose.id.toString(),
+          value: subPurpose.id,
         },
       })
     )

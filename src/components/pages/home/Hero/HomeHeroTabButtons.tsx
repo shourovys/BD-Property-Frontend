@@ -2,7 +2,6 @@ import FlyoutWrapper from '@/components/common/Flyout'
 import PropertySubPurposeFlyout from '@/components/common/Search/PropertySubPurposeFlyout'
 import { setSelectedPurpose } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
-import { emptySelectOption } from '@/types/components/common'
 import { propertyPurposeData } from '@/utils/data/property'
 import { DownArrowIcon } from '@/utils/icon'
 import classNames from 'classnames'
@@ -33,16 +32,8 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
             onClick={() => {
               dispatch(
                 setSelectedPurpose({
-                  purpose: {
-                    label: purpose.title,
-                    value: purpose.id,
-                  },
-                  completion: purpose.subPurpose.length
-                    ? {
-                        label: purpose.subPurpose[0].title,
-                        value: purpose.subPurpose[0].id,
-                      }
-                    : emptySelectOption,
+                  label: purpose.title,
+                  value: purpose.id,
                 })
               )
               handleSlideOverOpen()
@@ -72,6 +63,14 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
                     selectedPurpose.purpose.value !== purpose.id &&
                       'bg-opacity-60'
                   )}
+                  onClick={() =>
+                    dispatch(
+                      setSelectedPurpose({
+                        label: purpose.title,
+                        value: purpose.id,
+                      })
+                    )
+                  }
                 >
                   {purpose.title}
                   <DownArrowIcon />
@@ -87,11 +86,8 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
                 onClick={() =>
                   dispatch(
                     setSelectedPurpose({
-                      purpose: {
-                        label: purpose.title,
-                        value: purpose.id,
-                      },
-                      completion: emptySelectOption,
+                      label: purpose.title,
+                      value: purpose.id,
                     })
                   )
                 }
