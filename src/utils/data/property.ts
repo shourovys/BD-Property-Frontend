@@ -34,7 +34,7 @@ export const propertyPurposeData: IPropertyPurpose[] = [
       { id: 'under-construction', title: 'Under Construction' },
     ],
   },
-]
+] as const
 
 export const propertyTypeData: IPropertyType[] = [
   {
@@ -66,7 +66,7 @@ export const propertyTypeData: IPropertyType[] = [
       { id: 'factory', sub_type: 'Factory', icon: FactoryIcon },
     ],
   },
-]
+] as const
 
 export const badsAndBathsFilterOptions = {
   beds: [
@@ -88,11 +88,11 @@ export const badsAndBathsFilterOptions = {
     { label: '5', value: '5' },
     { label: '6+', value: '6plus' },
   ],
-}
+} as const
 
 export const propertySortOptions = [
   { label: 'Popular', value: 'popular' },
   { label: 'Newest', value: 'newest' },
   { label: 'Lowest Price', value: 'lowestPrice' },
   { label: 'Highest Price', value: 'highestPrice' },
-]
+] as const

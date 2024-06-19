@@ -12,10 +12,12 @@ import useLocalStorage from '@/hooks/useLocalStorage'
 import { IListServerResponse } from '@/types/pages/common'
 import { IListPropertyResponse } from '@/types/pages/property'
 
+import { setPage } from '@/features/propertySearchSlice'
 import { useRouter } from 'next/navigation'
 import QueryString from 'qs'
 import { useEffect } from 'react'
 import useSWR from 'swr'
+import PropertyListHeader from './propertyListFilter/PropertyListHeader'
 import PropertyListLocationSelector from './propertyListFilter/PropertyListLocationSelector'
 
 export default function PropertyListPageComponent() {
@@ -70,7 +72,7 @@ export default function PropertyListPageComponent() {
   >(`${propertyUrls.property}?${QueryString.stringify(apiQueryManual)}`)
 
   const handleSetPage = (page: number) => {
-    dispatch({ type: 'SET_PAGE', payload: page })
+    dispatch(setPage(page))
   }
 
   return (
@@ -78,15 +80,13 @@ export default function PropertyListPageComponent() {
       <PropertyListFilters />
       {/* <Breadcrumbs /> */}
 
-      <div className='mb-5 mt-4 space-y-4 sm:mb-7 sm:mt-0 sm:space-y-5 md:-mt-2'>
-        <h1 className='custom_screen_width text-base font-medium md:text-lg '>
-          Apartment for sale in Basundhara
-        </h1>
-        <PropertyListLocationSelector />
-      </div>
-
       <div className='custom_screen_width col-span-1 w-full gap-6 md:grid-cols-7 lg:grid'>
         <div className='col-span-5 '>
+          <div className='mb-5 mt-4 space-y-4 sm:mb-7 sm:mt-0 sm:space-y-5 md:-mt-2'>
+            <PropertyListHeader />
+            <PropertyListLocationSelector />
+          </div>
+
           {/* list filters  */}
           <PropertyListFilter
             isCardVertical={isCardVertical}
