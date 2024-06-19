@@ -8,7 +8,7 @@ import KeywordInput from './KeywordsInput'
 
 import {
   resetAll,
-  setSelectedPropertyPrice,
+  setSelectedPropertySize,
   setSelectedTourType,
 } from '@/features/propertySearchSlice'
 import { THandleInputChange } from '@/types/components/common'
@@ -16,20 +16,18 @@ import { propertyTypeData } from '@/utils/data/property'
 
 const MoreFiltersFlyout: React.FC<{ close: () => void }> = ({ close }) => {
   const dispatch = useDispatch()
-  const {
-    selectedPropertyType,
-    selectedPropertyPrice,
-    selectedPropertySize,
-    tourType,
-  } = useAppSelector((state) => state.propertySearch)
+  const { selectedPropertyType, selectedPropertySize, tourType } =
+    useAppSelector((state) => state.propertySearch)
 
   const tourTypeOption: { name: string; value: string }[] = [
     { name: 'Video tours', value: 'video' },
     { name: 'Virtual tours', value: 'virtual' },
   ]
 
-  const handlePriceChange: THandleInputChange = (name, value) => {
-    setSelectedPropertyPrice({ ...selectedPropertyPrice, [name]: value })
+  const handleSizeChange: THandleInputChange = (name, value) => {
+    dispatch(
+      setSelectedPropertySize({ ...selectedPropertySize, [name]: value })
+    )
   }
 
   const handleApply = () => {
@@ -42,25 +40,25 @@ const MoreFiltersFlyout: React.FC<{ close: () => void }> = ({ close }) => {
 
   return (
     <div className='min-h-[100px] w-screen max-w-xs space-y-4 overflow-hidden bg-white p-4'>
-      {selectedPropertyType.type.label === propertyTypeData[0].id && (
+      {selectedPropertyType.type.value === propertyTypeData[0].id && (
         <div className='space-y-2'>
           <h2 className='text-base font-normal'>Property Size</h2>
           <div className='flex gap-3'>
             <Input
               name='min'
               type='number'
-              label='Min Size'
+              label='Minimum sqft'
               placeholder='0'
               value={selectedPropertySize.min}
-              onChange={handlePriceChange}
+              onChange={handleSizeChange}
             />
             <Input
               name='max'
               type='number'
-              label='Max Size'
+              label='Maximum sqft'
               placeholder='Any'
               value={selectedPropertySize.max}
-              onChange={handlePriceChange}
+              onChange={handleSizeChange}
             />
           </div>
         </div>

@@ -179,7 +179,7 @@ const PropertyLocationSearchWithBottomSelected: React.FC<
       )}
       <div
         // onClick={handleBoxClick}
-        className='custom_transition flex w-full items-center gap-0 rounded-6xs border border-gray-400 bg-gray-100'
+        className='custom_transition border-gray-border flex w-full items-center gap-0 rounded-6xs border bg-gray-100'
       >
         <LocationIcon className='ml-1.5 flex-grow text-2xl text-gray-200' />
         <input

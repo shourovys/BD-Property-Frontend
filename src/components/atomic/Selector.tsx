@@ -80,7 +80,7 @@ function Selector({
             menuButton: (arg) =>
               classNames(
                 'flex overflow-hidden pl-0.5 h-auto items-center justify-between text-sm md:text-base font-normal bg-white border border-gray-300 rounded-md focus:text-gray-700 mb-0.5',
-                showBorder && 'border border-gray-400',
+                showBorder && 'border border-gray-border',
                 !arg?.isDisabled && label && 'shadow-all-side text-gray-600',
                 isValuePresent ? 'text-black' : 'custom_text_gray',
                 !arg?.isDisabled &&

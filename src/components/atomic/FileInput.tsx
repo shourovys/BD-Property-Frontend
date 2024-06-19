@@ -59,7 +59,7 @@ function FileInput({
             size === 'base' && 'file:py-2',
             // overall input styling
             'rounded-lg border text-gray-400 hover:cursor-pointer',
-            !disabled && label && 'shadow-all-side',
+
             error && ERROR_CLASS
           )}
           style={{ height: size === 'base' ? '40px' : '38px' }}

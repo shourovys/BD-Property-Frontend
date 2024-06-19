@@ -63,7 +63,7 @@ const PropertyKeywordFilter: React.FC = () => {
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
           placeholder='Add relevant keywords'
-          className='custom_transition flex w-full items-center gap-0 rounded-6xs border border-gray-400 bg-gray-100 px-3 py-1.5 text-sm placeholder:font-light focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base'
+          className='custom_transition border-gray-border flex w-full items-center gap-0 rounded-6xs border bg-gray-100 px-3 py-1.5 text-sm placeholder:font-light focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base'
         />
         {!!selectedKeywords.length && renderSelectedKeywords()}
       </div>

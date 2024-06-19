@@ -54,7 +54,7 @@ function Textarea({
           onChange={(e) => (onChange ? onChange(name, e.target.value) : null)}
           className={classNames(
             'form-control focus:border-primary m-0 mb-0.5 block w-full rounded-md border border-gray-300 bg-white bg-clip-padding px-3 text-sm font-normal text-black transition ease-in-out focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base',
-            !disabled && label && 'shadow-all-side',
+
             size === 'small' && 'py-1.5',
             size === 'base' && 'py-2',
             error && ERROR_CLASS

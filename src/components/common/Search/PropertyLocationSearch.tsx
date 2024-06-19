@@ -10,7 +10,10 @@ import classNames from 'classnames'
 import React, { useEffect, useRef, useState } from 'react'
 import useSWR from 'swr'
 
-const PropertyLocationSearch = () => {
+interface IProps {
+  showActiveBorder?: boolean
+}
+const PropertyLocationSearch: React.FC<IProps> = ({ showActiveBorder }) => {
   const dispatch = useAppDispatch()
   const selectedLocations = useAppSelector(
     (state) => state.propertySearch.selectedPropertyLocation
@@ -207,8 +210,11 @@ const PropertyLocationSearch = () => {
     >
       <div
         className={classNames(
-          'location-search custom_transition absolute left-0 right-0 top-0 rounded-6xs border border-gray-400 bg-gray-100 px-3 py-1.5 sm:px-4 sm:py-3',
-          isFocused ? 'h-auto' : 'h-full'
+          'location-search custom_transition absolute left-0 right-0 top-0 rounded-6xs border  bg-gray-100 px-3 py-1.5 sm:px-4 sm:py-3',
+          isFocused ? 'h-auto' : 'h-full',
+          showActiveBorder && selectedLocations.length
+            ? 'border-darkslateblue-100'
+            : 'border-gray-border'
         )}
       >
         {!!selectedLocations.length && renderSelectedLocations()}

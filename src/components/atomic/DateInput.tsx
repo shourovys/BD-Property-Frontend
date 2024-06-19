@@ -69,7 +69,7 @@ function DateInput({
             }
             inputClassName={classNames(
               'form-control w-full px-3 text-sm md:text-base font-normal text-black bg-white bg-clip-padding border border-gray-300 focus:border-gray-300 dark:border-gray-300 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none focus:ring-0 ',
-              !disabled && label && 'shadow-all-side',
+
               disabled &&
                 'important_disable_color important_disable_bg custom_opacity_100 custom_cursor_default',
               size === 'small' && 'h-[37.6px]',

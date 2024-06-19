@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         darkslateblue: {
-          100: '#00745C',
+          100: '#006A50',
           200: '#E9F7F0',
           300: '#E9F7F0',
         },
@@ -30,6 +30,7 @@ module.exports = {
           100: '#fcfcfc',
           200: '#8b8b8b',
           300: 'rgba(255, 255, 255, 0.33)',
+          border: '#DEDEDE',
         },
         gainsboro: '#e3e3e3',
         salmon: '#d76147',

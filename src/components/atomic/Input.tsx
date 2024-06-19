@@ -61,8 +61,8 @@ function Input({
           onChange={(e) => (onChange ? onChange(name, e.target.value) : null)}
           className={classNames(
             'form-control focus:border-primary m-0 mb-0.5 block w-full overflow-hidden overflow-ellipsis whitespace-nowrap rounded-md bg-white bg-clip-padding px-3 text-sm text-black transition ease-in-out focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base',
-            'border border-gray-400',
-            !disabled && label && 'shadow-all-side',
+            'border-gray-border border',
+
             error && ERROR_CLASS,
             !value &&
               placeholder &&

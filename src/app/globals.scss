@@ -101,7 +101,7 @@
 
   // otp input class
   .otpInput {
-    @apply block aspect-square h-10 w-full overflow-hidden overflow-ellipsis whitespace-nowrap rounded-md border border-gray-400 bg-white text-sm text-black transition ease-in-out focus:border-salmon focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base;
+    @apply border-gray-border block aspect-square h-10 w-full overflow-hidden overflow-ellipsis whitespace-nowrap rounded-md border bg-white text-sm text-black transition ease-in-out focus:border-salmon focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base;
     width: 40px !important;
   }
 

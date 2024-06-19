@@ -2,7 +2,8 @@ import { IPropertySearchState } from '@/features/propertySearchSlice'
 import { ISelectOption } from '@/types/components/common'
 
 export const getBedsAndBathsValue = (
-  selectedBedsBaths: IPropertySearchState['selectedBedsBaths']
+  selectedBedsBaths: IPropertySearchState['selectedBedsBaths'],
+  defaultValue = 'Any'
 ): string => {
   const { beds, baths } = selectedBedsBaths
 
@@ -20,7 +21,7 @@ export const getBedsAndBathsValue = (
   } else if (baths.length > 0) {
     return `${formatListValue(baths)} Baths`
   } else {
-    return 'Any'
+    return defaultValue
   }
 }
 
