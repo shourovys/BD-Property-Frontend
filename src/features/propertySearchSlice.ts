@@ -215,7 +215,7 @@ const propertySearchSlice = createSlice({
     setSelectedPropertyLocation(state, action: PayloadAction<ISelectOption>) {
       state.page = 1
       if (
-        state.selectedPropertyLocation.some(
+        !state.selectedPropertyLocation.some(
           (selected) => selected.value === action.payload.value
         )
       ) {

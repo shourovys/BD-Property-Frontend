@@ -1,15 +1,13 @@
-import { propertyUrls } from '@/api/urls/propertyUrls'
 import {
   removePropertyLocation,
   setSelectedPropertyLocation,
 } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
-import { ISingleServerResponse } from '@/types/pages/common'
 import { LocationIcon } from '@/utils/icon'
 import classNames from 'classnames'
-import React, { useRef, useState } from 'react'
-import useSWR from 'swr'
+import React, { useEffect, useRef, useState } from 'react'
+import { ILocationData } from './PropertyLocationSearch'
 
 interface IPropertyLocationSearchProps {
   label?: string
@@ -23,6 +21,7 @@ const PropertyLocationSearchWithBottomSelected: React.FC<
     (state) => state.propertySearch.selectedPropertyLocation
   )
 
+  const [data, setData] = useState<ILocationData[]>([])
   const [searchTerm, setSearchTerm] = useState<string>('')
   // const [suggestions, setSuggestions] = useState<string[]>([])
   // const [isFocused, setIsFocused] = useState<boolean>(false)
@@ -30,11 +29,25 @@ const PropertyLocationSearchWithBottomSelected: React.FC<
   const searchInputRef = useRef<HTMLInputElement | null>(null)
   const searchBoxRef = useRef<HTMLDivElement | null>(null)
 
-  const { data } = useSWR<
-    ISingleServerResponse<{ id: number; name: string }[]>
-  >(propertyUrls.address)
+  // const { data } = useSWR<
+  //   ISingleServerResponse<{ id: number; name: string }[]>
+  // >(propertyUrls.address)
 
-  const filteredLocations = data?.results?.filter(
+  useEffect(() => {
+    const fetchDataAsync = async () => {
+      try {
+        const res = await fetch('/data/location.json')
+        const parsedData = (await res.json()) as ILocationData[]
+        setData(parsedData)
+      } catch (error) {
+        console.log('Failed to fetch data:', error)
+      }
+    }
+
+    fetchDataAsync()
+  }, [])
+
+  const filteredLocations = data.filter(
     (location) =>
       location.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
       !selectedLocations.some(
@@ -179,7 +192,7 @@ const PropertyLocationSearchWithBottomSelected: React.FC<
       )}
       <div
         // onClick={handleBoxClick}
-        className='custom_transition border-gray-border flex w-full items-center gap-0 rounded-6xs border bg-gray-100'
+        className='custom_transition flex w-full items-center gap-0 rounded-6xs border border-gray-border bg-gray-100'
       >
         <LocationIcon className='ml-1.5 flex-grow text-2xl text-gray-200' />
         <input

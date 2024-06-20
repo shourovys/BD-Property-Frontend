@@ -1,14 +1,18 @@
-import { propertyUrls } from '@/api/urls/propertyUrls'
 import {
   removePropertyLocation,
   setSelectedPropertyLocation,
 } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
-import { ISingleServerResponse } from '@/types/pages/common'
 import classNames from 'classnames'
 import React, { useEffect, useRef, useState } from 'react'
-import useSWR from 'swr'
+
+export interface ILocationData {
+  id: string
+  name: string
+  ward: number
+  district: string
+}
 
 interface IProps {
   showActiveBorder?: boolean
@@ -19,6 +23,7 @@ const PropertyLocationSearch: React.FC<IProps> = ({ showActiveBorder }) => {
     (state) => state.propertySearch.selectedPropertyLocation
   )
 
+  const [data, setData] = useState<ILocationData[]>([])
   const [searchTerm, setSearchTerm] = useState<string>('')
   // const [suggestions, setSuggestions] = useState<string[]>([])
   const [isFocused, setIsFocused] = useState<boolean>(false)
@@ -26,16 +31,28 @@ const PropertyLocationSearch: React.FC<IProps> = ({ showActiveBorder }) => {
   const searchInputRef = useRef<HTMLInputElement | null>(null)
   const searchBoxRef = useRef<HTMLDivElement | null>(null)
 
-  const { data } = useSWR<
-    ISingleServerResponse<{ id: number; name: string }[]>
-  >(propertyUrls.address)
+  // const { data } = useSWR<
+  //   ISingleServerResponse<{ id: number; name: string }[]>
+  // >(propertyUrls.address)
 
-  const filteredLocations = data?.results?.filter(
+  useEffect(() => {
+    const fetchDataAsync = async () => {
+      try {
+        const res = await fetch('/data/location.json')
+        const parsedData = (await res.json()) as ILocationData[]
+        setData(parsedData)
+      } catch (error) {
+        console.log('Failed to fetch data:', error)
+      }
+    }
+
+    fetchDataAsync()
+  }, [])
+
+  const filteredLocations = data.filter(
     (location) =>
       location.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      !selectedLocations.some(
-        (selected) => selected.value === location.id.toString()
-      )
+      !selectedLocations.some((selected) => selected.value === location.id)
   )
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -117,7 +134,7 @@ const PropertyLocationSearch: React.FC<IProps> = ({ showActiveBorder }) => {
           if (activeIndex !== null && filteredLocations[activeIndex]) {
             handleLocationSelect({
               label: filteredLocations[activeIndex].name,
-              value: filteredLocations[activeIndex].id.toString(),
+              value: filteredLocations[activeIndex].id,
             })
           }
           break
@@ -249,7 +266,7 @@ const PropertyLocationSearch: React.FC<IProps> = ({ showActiveBorder }) => {
               onClick={() =>
                 handleLocationSelect({
                   label: location.name,
-                  value: location.id.toString(),
+                  value: location.id,
                 })
               }
             >
