@@ -174,6 +174,16 @@ const propertySearchSlice = createSlice({
         state.selectedBedsBaths.baths.push(action.payload)
       }
     },
+    resetSelectedBeds(state) {
+      state.page = 1
+      state.selectedBedsBaths.beds =
+        propertySearchInitialState.selectedBedsBaths.beds
+    },
+    resetSelectedBaths(state) {
+      state.page = 1
+      state.selectedBedsBaths.baths =
+        propertySearchInitialState.selectedBedsBaths.baths
+    },
     resetSelectedBedsBaths(state) {
       state.page = 1
       state.selectedBedsBaths = propertySearchInitialState.selectedBedsBaths
@@ -241,6 +251,10 @@ const propertySearchSlice = createSlice({
       state.page = 1
       state.tourType = action.payload
     },
+    resetSelectedTourType(state) {
+      state.page = 1
+      state.tourType = propertySearchInitialState.tourType
+    },
     setSortBy(state, action: PayloadAction<string>) {
       state.page = 1
       state.sortBy = action.payload
@@ -264,6 +278,8 @@ export const {
   resetSelectedPropertyType,
   setSelectedBeds,
   setSelectedBaths,
+  resetSelectedBeds,
+  resetSelectedBaths,
   resetSelectedBedsBaths,
   setSelectedPropertySize,
   resetSelectedPropertySize,
@@ -275,6 +291,7 @@ export const {
   setSelectedKeywords,
   removeSelectedKeywords,
   setSelectedTourType,
+  resetSelectedTourType,
   setSortBy,
   applyAll,
   resetAll,

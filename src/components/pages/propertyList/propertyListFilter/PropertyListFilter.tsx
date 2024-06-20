@@ -21,7 +21,9 @@ const PropertyListFilter: React.FC<IProps> = ({
 
   return (
     <div className='mt-3 flex items-end justify-between gap-4 text-sm font-light md:mt-0 md:items-center md:text-base'>
-      <PropertySubPurposeFilter showInline />
+      <div className=''>
+        <PropertySubPurposeFilter showInline />
+      </div>
 
       <div className='flex items-center gap-5 self-end'>
         <FlyoutWrapper

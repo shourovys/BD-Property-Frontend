@@ -144,7 +144,7 @@ const DesktopPropertyListFilters: React.FC = () => {
             >
               <div
                 className={classNames(
-                  'border-gray-border flex w-full items-center justify-between rounded-6xs border px-4 py-3',
+                  'flex w-full items-center justify-between rounded-6xs border px-4 py-3',
                   selectedPropertySize.max || selectedPropertySize.min
                     ? 'border-darkslateblue-100 text-darkslateblue-100'
                     : 'border-gray-border'

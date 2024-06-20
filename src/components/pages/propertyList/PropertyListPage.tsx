@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation'
 import QueryString from 'qs'
 import { useEffect } from 'react'
 import useSWR from 'swr'
+import PropertyActiveFilters from './propertyListFilter/PropertyActiveFilters'
 import PropertyListHeader from './propertyListFilter/PropertyListHeader'
 import PropertyListLocationSelector from './propertyListFilter/PropertyListLocationSelector'
 
@@ -81,8 +82,11 @@ export default function PropertyListPageComponent() {
 
       <div className='custom_screen_width col-span-1 w-full gap-6 md:grid-cols-7 lg:grid'>
         <div className='col-span-5 '>
-          <div className='mb-5 mt-4 space-y-4 sm:mb-7 sm:mt-0 sm:space-y-5 md:-mt-2'>
-            <PropertyListHeader />
+          <div className='my-4 space-y-4 sm:mb-5 sm:mt-0 sm:space-y-5'>
+            <div className='pb-1'>
+              <PropertyListHeader />
+            </div>
+            <PropertyActiveFilters />
             <PropertyListLocationSelector />
           </div>
 
@@ -106,7 +110,7 @@ export default function PropertyListPageComponent() {
           )}
           {/* <WhyThisLocation /> */}
         </div>
-        <div className='col-span-1 space-y-6 font-ubuntu text-sm md:col-span-2 md:text-base'>
+        <div className='col-span-1 space-y-4 font-ubuntu text-sm md:col-span-2 md:space-y-6 md:text-base'>
           {/* <PropertyListPropertyMap /> */}
           <PropertyListLocationInfo />
           <LinkCard />
