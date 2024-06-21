@@ -1,6 +1,6 @@
 'use client'
-import LinkCard from '@/components/common/LinkCard'
 import Pagination from '@/components/common/Pagination'
+import RecommendedSearches from '@/components/common/RecommendedSearches'
 import PropertyList from '@/components/pages/propertyList/PropertyList'
 import PropertyListLocationInfo from '@/components/pages/propertyList/PropertyListLocationInfo'
 import PropertyListFilter from '@/components/pages/propertyList/propertyListFilter/PropertyListFilter'
@@ -10,6 +10,7 @@ import useLocalStorage from '@/hooks/useLocalStorage'
 import { IListServerResponse } from '@/types/pages/common'
 import { IListPropertyResponse } from '@/types/pages/property'
 
+import PopularSearches from '@/components/common/PopularSearches'
 import { setPage } from '@/features/propertySearchSlice'
 import React from 'react'
 import PropertyActiveFilters from './propertyListFilter/PropertyActiveFilters'
@@ -76,7 +77,8 @@ const PropertyListPageComponent: React.FC<IProps> = ({
         <div className='col-span-1 space-y-4 font-ubuntu text-sm md:col-span-2 md:space-y-6 md:text-base'>
           {/* <PropertyListPropertyMap /> */}
           <PropertyListLocationInfo />
-          <LinkCard />
+          <RecommendedSearches />
+          <PopularSearches />
         </div>
       </div>
     </div>

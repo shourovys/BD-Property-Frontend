@@ -160,6 +160,10 @@ const propertySearchSlice = createSlice({
         state.selectedBedsBaths.beds.push(action.payload)
       }
     },
+    setSelectedSingleBed(state, action: PayloadAction<ISelectOption>) {
+      state.page = 1
+      state.selectedBedsBaths.beds = [action.payload]
+    },
     setSelectedBaths(state, action: PayloadAction<ISelectOption>) {
       state.page = 1
       if (
@@ -284,6 +288,7 @@ export const {
   setSelectedPropertyType,
   resetSelectedPropertyType,
   setSelectedBeds,
+  setSelectedSingleBed,
   setSelectedBaths,
   resetSelectedBeds,
   resetSelectedBaths,

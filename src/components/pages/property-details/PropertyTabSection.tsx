@@ -1,7 +1,7 @@
 'use client'
 import Modal from '@/components/HOC/Modal'
 import CardActions from '@/components/common/ActionCard'
-import LinkCard from '@/components/common/LinkCard'
+import PopularSearches from '@/components/common/PopularSearches'
 import PropertyRecommendedList from '@/components/common/PropertyRecommendedList'
 import PropertyDetailsBlog from '@/components/pages/property-details/PropertyDetailsBlog'
 import PropertyDetailsInfo from '@/components/pages/property-details/PropertyDetailsInfo'
@@ -64,7 +64,7 @@ const PropertyTabSection: React.FC<IProps> = ({
             handleOpenEmailModal={handleOpenEmailModal}
             handleOpenCallModal={handleOpenCallModal}
           />
-          <LinkCard />
+          <PopularSearches />
         </div>
       </div>
       <PropertyRecommendedList recommendedProperty={recommendedProperty} />

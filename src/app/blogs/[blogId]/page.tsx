@@ -1,7 +1,7 @@
 import { blogUrls } from '@/api/urls/blogUrls'
 import ContactCard from '@/components/common/ContactCard'
-import LinkCard from '@/components/common/LinkCard'
 import NewsletterForm from '@/components/common/NewsletterForm'
+import PopularSearches from '@/components/common/PopularSearches'
 import BlogDetailsSection from '@/components/pages/blog-details/BlogDetailsSection'
 import BlogsDetailsHero from '@/components/pages/blog-details/BlogsDetailsHero'
 import RelatedBlogs from '@/components/pages/blog-details/RelatedBlogs'
@@ -33,7 +33,7 @@ const Blog: NextPage<IProps> = async ({ params: { blogId } }) => {
             <ContactCard />
             <NewsletterForm />
           </div>
-          <LinkCard />
+          <PopularSearches />
         </div>
       </div>
       <RelatedBlogs relatedBlogs={blogDetailsData.results.related_post} />

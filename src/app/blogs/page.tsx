@@ -1,7 +1,7 @@
 import { blogUrls } from '@/api/urls/blogUrls'
 import ContactCard from '@/components/common/ContactCard'
-import LinkCard from '@/components/common/LinkCard'
 import NewsletterForm from '@/components/common/NewsletterForm'
+import PopularSearches from '@/components/common/PopularSearches'
 import ServerPagination from '@/components/common/ServerPagination'
 import BlogList from '@/components/pages/blogs/BlogList'
 import BlogsHeroImage from '@/components/pages/blogs/BlogsHeroImage'
@@ -38,7 +38,7 @@ const Blogs: NextPage<IProps> = async ({ searchParams: { page } }) => {
             <ContactCard />
             <NewsletterForm />
           </div>
-          <LinkCard />
+          <PopularSearches />
         </div>
       </div>
     </div>
