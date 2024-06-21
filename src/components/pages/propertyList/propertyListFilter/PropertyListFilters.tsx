@@ -1,45 +1,14 @@
 import SlideOver from '@/components/atomic/SlideOver'
 import PropertyLocationSearch from '@/components/common/Search/PropertyLocationSearch'
-import {
-  resetSelectedPropertyType,
-  resetSelectedPurpose,
-  setFullState,
-} from '@/features/propertySearchSlice'
-import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { FilterIcon } from '@/utils/icon'
-import { useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import DesktopPropertyListFilters from './DesktopPropertyListFilters'
 import MobilePropertyListFilters from './MobilePropertyListFilters'
 
 const PropertyListFilters: React.FC = () => {
-  const dispatch = useAppDispatch()
-  const { selectedPurpose } = useAppSelector((state) => state.propertySearch)
-
   const [openSlideOver, setOpenSlideOver] = useState<boolean>(false)
 
   const handleSlideOverClose = () => setOpenSlideOver(false)
-
-  // update from search params or by server data
-  const searchParams = useSearchParams()
-  const queryState = searchParams.get('state')
-
-  useEffect(() => {
-    if (queryState) {
-      try {
-        // Parse the 'state' parameter using qs
-        const parsedState = JSON.parse(decodeURIComponent(queryState))
-        // Dispatch an action to update the state in our reducer
-        dispatch(setFullState(parsedState))
-      } catch (error) {
-        // Handle potential errors during parsing
-        console.error('Error parsing state from query:', error)
-      }
-    } else {
-      dispatch(resetSelectedPurpose())
-      dispatch(resetSelectedPropertyType())
-    }
-  }, [queryState])
 
   return (
     <div className='bg-gray-100 '>

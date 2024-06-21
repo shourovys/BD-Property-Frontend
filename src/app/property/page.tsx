@@ -2,27 +2,52 @@
 
 import { propertyUrls } from '@/api/urls/propertyUrls'
 import PropertyListPageComponent from '@/components/pages/propertyList/PropertyListPage'
-import { useAppSelector } from '@/hooks/reduxHooks'
+import { setFullState } from '@/features/propertySearchSlice'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { IListServerResponse } from '@/types/pages/common'
 import { IListPropertyResponse } from '@/types/pages/property'
 import type { NextPage } from 'next'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import QueryString from 'qs'
 import { useEffect } from 'react'
 import useSWR from 'swr'
 
 const PropertyListPage: NextPage = () => {
   const router = useRouter()
+  const dispatch = useAppDispatch()
+
   const { propertySearch } = useAppSelector((state) => state)
 
   const itemPerPage = 20
+
+  // update from search params or by server data
+  const searchParams = useSearchParams()
+  const queryState = searchParams.get('state')
+
+  useEffect(() => {
+    if (queryState) {
+      try {
+        // Parse the 'state' parameter using qs
+        const parsedState = JSON.parse(decodeURIComponent(queryState))
+        // Dispatch an action to update the state in our reducer
+        dispatch(setFullState(parsedState))
+      } catch (error) {
+        // Handle potential errors during parsing
+        console.log('Error parsing state from query:', error)
+      }
+    }
+    // else {
+    //   dispatch(resetSelectedPurpose())
+    //   dispatch(resetSelectedPropertyType())
+    // }
+  }, [])
 
   // update browser query on propertySearch change
   useEffect(() => {
     // Stringify the propertySearch object as a JSON string
     const propertySearchString = JSON.stringify(propertySearch)
     router.replace(
-      `/property?propertySearch=${encodeURIComponent(propertySearchString)}`
+      `/property?state=${encodeURIComponent(propertySearchString)}`
     )
   }, [propertySearch])
 
