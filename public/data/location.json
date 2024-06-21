@@ -6,6 +6,228 @@
     "division": "dhaka"
   },
   {
+    "id": "1",
+    "name": "Gulshan",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "2",
+    "name": "Banani",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "3",
+    "name": "Baridhara",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "4",
+    "name": "Bashundhara",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "5",
+    "name": "Dhanmondi",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "6",
+    "name": "Uttara",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "7",
+    "name": "Mirpur",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "8",
+    "name": "Mohammadpur",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "9",
+    "name": "Tejgaon",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "10",
+    "name": "Puran Dhaka",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "11",
+    "name": "Motijheel",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "12",
+    "name": "Paltan",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "13",
+    "name": "Kawran Bazar",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "14",
+    "name": "Banasree",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "15",
+    "name": "Wari",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "16",
+    "name": "Jatrabari",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "17",
+    "name": "Moghbazar",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "18",
+    "name": "Eskaton",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "19",
+    "name": "Khilkhet",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "20",
+    "name": "Rampura",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "21",
+    "name": "Shantinagar",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "22",
+    "name": "Farmgate",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "23",
+    "name": "Shahbagh",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "24",
+    "name": "Segunbagicha",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "25",
+    "name": "Kakrail",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "26",
+    "name": "Malibagh",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "27",
+    "name": "Badda",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "28",
+    "name": "Hatirjheel",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "29",
+    "name": "Gendaria",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "30",
+    "name": "Demra",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "31",
+    "name": "Keraniganj",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "32",
+    "name": "Turag",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "33",
+    "name": "Dakshinkhan",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "34",
+    "name": "Uttar Khan",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "35",
+    "name": "Hazaribagh",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "36",
+    "name": "Nawabganj",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
+    "id": "37",
+    "name": "Kamrangirchar",
+    "ward": null,
+    "division": "dhaka"
+  },
+  {
     "id": "e004c2f-f817-6e40-2f07-d05e2ae62a",
     "name": "Uttara Model Town (Sector 1 to 10)",
     "ward": "1",

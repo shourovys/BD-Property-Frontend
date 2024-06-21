@@ -222,6 +222,13 @@ const propertySearchSlice = createSlice({
         state.selectedPropertyLocation.push(action.payload)
       }
     },
+    setSingleSelectedPropertyLocation(
+      state,
+      action: PayloadAction<ISelectOption>
+    ) {
+      state.page = 1
+      state.selectedPropertyLocation = [action.payload]
+    },
     removePropertyLocation(state, action: PayloadAction<string>) {
       state.page = 1
       state.selectedPropertyLocation = state.selectedPropertyLocation.filter(
@@ -286,6 +293,7 @@ export const {
   setSelectedPropertyPrice,
   resetSelectedPropertyPrice,
   setSelectedPropertyLocation,
+  setSingleSelectedPropertyLocation,
   removePropertyLocation,
   resetSelectedPropertyLocation,
   setSelectedKeywords,

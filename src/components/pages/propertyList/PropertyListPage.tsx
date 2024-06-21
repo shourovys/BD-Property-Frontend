@@ -45,8 +45,8 @@ const PropertyListPageComponent: React.FC<IProps> = ({
 
       <div className='custom_screen_width col-span-1 w-full gap-6 md:grid-cols-7 lg:grid'>
         <div className='col-span-5 '>
-          <div className='my-4 space-y-4 sm:mb-5 sm:mt-0 sm:space-y-5'>
-            <div className='pb-1'>
+          <div className='my-4 space-y-4 sm:mb-5 sm:mt-0 md:space-y-5'>
+            <div className='md:pb-1'>
               <PropertyListHeader />
             </div>
             <PropertyActiveFilters />
