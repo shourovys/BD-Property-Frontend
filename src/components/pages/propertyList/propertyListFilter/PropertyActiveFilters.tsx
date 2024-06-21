@@ -9,7 +9,6 @@ import {
 } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import formatPrice from '@/utils/formatPrice'
-import { CloseIcon } from '@/utils/icon'
 import React from 'react'
 
 const PropertyActiveFilters: React.FC = () => {
@@ -25,10 +24,13 @@ const PropertyActiveFilters: React.FC = () => {
 
   // Helper function to generate filter item with close button
   const generateFilterItem = (label: string, onReset: () => void) => (
-    <li className='flex items-center gap-1 rounded-6xs border border-darkslateblue-100 bg-darkslateblue-300 py-1 pl-2 pr-1.5'>
+    <li className='rounded-6xs border border-darkslateblue-100 bg-darkslateblue-300 px-2 py-0.5'>
       {label}
-      <button onClick={onReset}>
-        <CloseIcon className='rounded-full text-salmon/95 hover:text-salmon' />
+      <button
+        className='pl-1.5 text-lg text-gray-800 hover:text-red-500 md:text-xl'
+        onClick={onReset}
+      >
+        &#215;
       </button>
     </li>
   )
@@ -110,7 +112,7 @@ const PropertyActiveFilters: React.FC = () => {
 
   return (
     <div className='flex flex-wrap items-center gap-3 text-sm'>
-      <ul className='flex flex-wrap gap-2 text-darkslateblue-100'>
+      <ul className='flex flex-wrap gap-1.5 text-sm font-light md:text-base'>
         {priceFilter}
         {bedsFilter}
         {bathsFilter}
