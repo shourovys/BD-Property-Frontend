@@ -1,0 +1,7053 @@
+[
+  {
+    "id": "1",
+    "referenceNo": "PROP12345",
+    "title": "Luxurious Apartment in Gulshan",
+    "size": 1500,
+    "price": 1500000,
+    "video": "https://example.com/video.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans.pdf",
+    "description": "A luxurious 3-bedroom apartment located in the heart of Gulshan, featuring modern amenities and a beautiful view of the city.",
+    "status": "Available",
+    "keywords": ["luxurious", "apartment", "Gulshan"],
+    "user": {
+      "id": "user123",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "features": [
+      { "id": "1", "name": "View" },
+      { "id": "2", "name": "Balcony or Terrace" },
+      { "id": "5", "name": "Parking Spaces" },
+      { "id": "6", "name": "Floor Level" },
+      { "id": "7", "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 1,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.7808875,90.4228285"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "https://example.com/images/property1.jpg"
+      },
+      {
+        "id": 2,
+        "image": "https://example.com/images/property2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "referenceNo": "PROP67890",
+    "title": "Modern Duplex in Banani",
+    "size": 2500,
+    "price": 60000,
+    "video": "https://example.com/video2.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans2.pdf",
+    "description": "A spacious 4-bedroom duplex in Banani, offering contemporary design and excellent amenities.",
+    "status": "Available",
+    "keywords": ["modern", "duplex", "Banani"],
+    "user": {
+      "id": "user456",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Lobby in Building" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 9, "name": "Central Heating" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "vacant",
+        "name": "Vacant"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "duplex",
+      "name": "Duplex"
+    },
+    "address": {
+      "id": 2,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793510,90.406410"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1472224371017-08207f84aaae"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1493663284031-b7e3aefcae8e"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "referenceNo": "PROP78901",
+    "title": "Spacious Villa in Dhanmondi",
+    "size": 3500,
+    "price": 35000000,
+    "video": "https://example.com/video3.mp4",
+    "bed": 5,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans3.pdf",
+    "description": "A luxurious 5-bedroom villa located in the prestigious area of Dhanmondi, featuring a private garden and a swimming pool.",
+    "status": "Available",
+    "keywords": ["spacious", "villa", "Dhanmondi"],
+    "user": {
+      "id": "user789",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 4, "name": "Elevators in Building" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "under-construction",
+        "name": "Under Construction"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 3,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746466,90.376015"
+    },
+    "images": [
+      {
+        "id": 10,
+        "image": "/photo-1512699355324-f07e3106dae5"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "referenceNo": "PROP89012",
+    "title": "Cozy Studio in Mirpur",
+    "size": 600,
+    "price": 6000,
+    "video": "https://example.com/video4.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans4.pdf",
+    "description": "A cozy studio apartment in Mirpur, perfect for singles or couples, offering great connectivity and amenities.",
+    "status": "Available",
+    "keywords": ["cozy", "studio", "Mirpur"],
+    "user": {
+      "id": "user234",
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Lobby in Building" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 11, "name": "24 Hours Concierge" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "occupied",
+        "name": "Occupied"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "studio",
+      "name": "Studio"
+    },
+    "address": {
+      "id": 4,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.804544,90.366775"
+    },
+    "images": [
+      {
+        "id": 15,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 1,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "referenceNo": "PROP90123",
+    "title": "Elegant Penthouse in Uttara",
+    "size": 2000,
+    "price": 20000000,
+    "video": "https://example.com/video5.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans5.pdf",
+    "description": "An elegant 4-bedroom penthouse in Uttara with stunning views and top-notch facilities.",
+    "status": "Available",
+    "keywords": ["elegant", "penthouse", "Uttara"],
+    "user": {
+      "id": "user345",
+      "name": "Charlie Davis",
+      "email": "charlie.davis@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "penthouse",
+      "name": "Penthouse"
+    },
+    "address": {
+      "id": 5,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.874123,90.398756"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 2,
+        "image": "/photo-1516455590571-18256e5bb9ff"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1564767609342-620cb19b2357"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "referenceNo": "PROP01234",
+    "title": "Modern Office Space in Gulshan",
+    "size": 5000,
+    "price": 100000,
+    "video": "https://example.com/video6.mp4",
+    "bed": 5,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans6.pdf",
+    "description": "A modern and spacious office space in Gulshan, suitable for corporate headquarters or large businesses.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Gulshan"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 3, "name": "Lobby in Building" },
+      { "id": 4, "name": "Elevators in Building" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "any",
+        "name": "Any"
+      }
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 6,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1512917774080-9991f1c4c750"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560184897-ae75f418493e"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "referenceNo": "PROP12345",
+    "title": "Modern Apartment in Banani",
+    "size": 1800,
+    "price": 18000000,
+    "video": "https://example.com/video7.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans7.pdf",
+    "description": "A modern 3-bedroom apartment in Banani with contemporary design and convenient access to local amenities.",
+    "status": "Available",
+    "keywords": ["modern", "apartment", "Banani"],
+    "user": {
+      "id": "user789",
+      "name": "Emily Smith",
+      "email": "emily.smith@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 9, "name": "Central Heating" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 7,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794648,90.412101"
+    },
+    "images": [
+      {
+        "id": 7,
+        "image": "/photo-1493663284031-b7e3aefcae8e"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1512917774080-9991f1c4c750"
+      },
+      {
+        "id": 1,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "referenceNo": "PROP23456",
+    "title": "Luxury Duplex in Gulshan",
+    "size": 3900,
+    "price": 40000000,
+    "video": "https://example.com/video8.mp4",
+    "bed": 5,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans8.pdf",
+    "description": "A luxurious 5-bedroom duplex in Gulshan, offering spacious living areas and high-end finishes.",
+    "status": "Available",
+    "keywords": ["luxury", "duplex", "Gulshan"],
+    "user": {
+      "id": "user890",
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "duplex",
+      "name": "Duplex"
+    },
+    "address": {
+      "id": 8,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1472224371017-08207f84aaae"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "referenceNo": "PROP34567",
+    "title": "Commercial Floor in Motijheel",
+    "size": 8000,
+    "price": 8000000,
+    "video": "https://example.com/video9.mp4",
+    "bed": 0,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans9.pdf",
+    "description": "A spacious commercial floor in Motijheel, suitable for offices or retail outlets, with excellent visibility and accessibility.",
+    "status": "Available",
+    "keywords": ["commercial", "floor", "Motijheel"],
+    "user": {
+      "id": "user901",
+      "name": "Oliver Taylor",
+      "email": "oliver.taylor@example.com"
+    },
+    "features": [
+      { "id": 3, "name": "Lobby in Building" },
+      { "id": 4, "name": "Elevators in Building" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "vacant",
+        "name": "Vacant"
+      }
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "floor",
+      "name": "Floor"
+    },
+    "address": {
+      "id": 9,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.731633,90.414854"
+    },
+    "images": [
+      {
+        "id": 4,
+        "image": "/photo-1512917774080-9991f1c4c750"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560184897-ae75f418493e"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "referenceNo": "PROP45678",
+    "title": "Charming Plaza in Mirpur",
+    "size": 2100,
+    "price": 10000000,
+    "video": "https://example.com/video10.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans10.pdf",
+    "description": "A charming plaza in Mirpur offering a blend of retail spaces and entertainment venues, strategically located for high foot traffic.",
+    "status": "Available",
+    "keywords": ["charming", "plaza", "Mirpur"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 3, "name": "Lobby in Building" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" },
+      { "id": 11, "name": "24 Hours Concierge" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "plaza",
+      "name": "Plaza"
+    },
+    "address": {
+      "id": 10,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 13,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1564767609342-620cb19b2357"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "referenceNo": "PROP56789",
+    "title": "Luxurious Apartment in Dhanmondi",
+    "size": 2100,
+    "price": 22000000,
+    "video": "https://example.com/video11.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans11.pdf",
+    "description": "A luxurious 4-bedroom apartment in Dhanmondi with panoramic views and premium amenities.",
+    "status": "Available",
+    "keywords": ["luxurious", "apartment", "Dhanmondi"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 9, "name": "Central Heating" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 11,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746536,90.374488"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1493663284031-b7e3aefcae8e"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1512699355324-f07e3106dae5"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "referenceNo": "PROP67890",
+    "title": "Office Space in Uttara",
+    "size": 3000,
+    "price": 3000000,
+    "video": "https://example.com/video12.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans12.pdf",
+    "description": "A spacious office space in Uttara, designed for productivity and comfort, with modern amenities and easy accessibility.",
+    "status": "Available",
+    "keywords": ["office", "space", "Uttara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 3, "name": "Lobby in Building" },
+      { "id": 4, "name": "Elevators in Building" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "vacant",
+        "name": "Vacant"
+      }
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 12,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.875863,90.391082"
+    },
+    "images": [
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1472224371017-08207f84aaae"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560184897-ae75f418493e"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "referenceNo": "PROP78901",
+    "title": "Warehouse in Tejgaon",
+    "size": 13000,
+    "price": 120000000,
+    "video": "https://example.com/video13.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans13.pdf",
+    "description": "A spacious warehouse in Tejgaon, ideal for storage and distribution, with ample space and good connectivity.",
+    "status": "Available",
+    "keywords": ["warehouse", "Tejgaon", "storage"],
+    "user": {
+      "id": "user234",
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 9, "name": "Central Heating" },
+      { "id": 10, "name": "Electricity Backup" },
+      { "id": 11, "name": "24 Hours Concierge" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "warehouse",
+      "name": "Warehouse"
+    },
+    "address": {
+      "id": 13,
+      "city": "Dhaka",
+      "location": "Tejgaon",
+      "coordinates": "23.754876,90.394932"
+    },
+    "images": [
+      {
+        "id": 18,
+        "image": "/photo-1564767609342-620cb19b2357"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 2,
+        "image": "/photo-1516455590571-18256e5bb9ff"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "referenceNo": "PROP89012",
+    "title": "Spacious Plot in Uttara",
+    "size": 15000,
+    "price": 15000000,
+    "video": "https://example.com/video14.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans14.pdf",
+    "description": "A spacious plot of land in Uttara, suitable for residential or commercial development, with excellent potential and prime location.",
+    "status": "Available",
+    "keywords": ["plot", "Uttara", "development"],
+    "user": {
+      "id": "user123",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "features": [
+      { "id": 10, "name": "Electricity Backup" },
+      { "id": 11, "name": "24 Hours Concierge" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "land",
+      "name": "Land"
+    },
+    "subType": {
+      "id": "plot",
+      "name": "Plot"
+    },
+    "address": {
+      "id": 14,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.874138,90.379372"
+    },
+    "images": [
+      {
+        "id": 19,
+        "image": "/photo-1560184897-ae75f418493e"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1512699355324-f07e3106dae5"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "referenceNo": "PROP90123",
+    "title": "Cozy Studio Apartment in Banani",
+    "size": 900,
+    "price": 10000,
+    "video": "https://example.com/video15.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans15.pdf",
+    "description": "A cozy studio apartment in Banani, perfect for singles or young professionals, offering a comfortable living space and convenience.",
+    "status": "Available",
+    "keywords": ["studio", "apartment", "Banani"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 15,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794648,90.412101"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1472224371017-08207f84aaae"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1564767609342-620cb19b2357"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1493663284031-b7e3aefcae8e"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "referenceNo": "PROP01234",
+    "title": "Lake View Villa in Gulshan",
+    "size": 5000,
+    "price": 56000000,
+    "video": "https://example.com/video16.mp4",
+    "bed": 6,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans16.pdf",
+    "description": "A luxurious 6-bedroom villa in Gulshan with breathtaking views of the lake, featuring spacious rooms and top-notch amenities.",
+    "status": "Available",
+    "keywords": ["villa", "lake view", "Gulshan"],
+    "user": {
+      "id": "user456",
+      "name": "James Anderson",
+      "email": "james.anderson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 16,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1516455590571-18256e5bb9ff"
+      },
+      {
+        "id": 1,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1512917774080-9991f1c4c750"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "referenceNo": "PROP12345",
+    "title": "Exclusive Penthouse in Banani",
+    "size": 2800,
+    "price": 20800000,
+    "video": "https://example.com/video17.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans17.pdf",
+    "description": "An exclusive 3-bedroom penthouse in Banani offering panoramic views and luxurious living spaces.",
+    "status": "Available",
+    "keywords": ["penthouse", "exclusive", "Banani"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "penthouse",
+      "name": "Penthouse"
+    },
+    "address": {
+      "id": 17,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794648,90.412101"
+    },
+    "images": [
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "referenceNo": "PROP23456",
+    "title": "Retail Space in Dhanmondi",
+    "size": 1800,
+    "price": 400000,
+    "video": "https://example.com/video18.mp4",
+    "bed": 0,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans18.pdf",
+    "description": "A versatile retail space in Dhanmondi, ideal for a variety of businesses, with excellent visibility and foot traffic.",
+    "status": "Available",
+    "keywords": ["retail", "space", "Dhanmondi"],
+    "user": {
+      "id": "user789",
+      "name": "Emily Smith",
+      "email": "emily.smith@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "retail",
+      "name": "Retail"
+    },
+    "address": {
+      "id": 18,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746536,90.374488"
+    },
+    "images": [
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "referenceNo": "PROP34567",
+    "title": "Modern Residential Plot in Mirpur",
+    "size": 12000,
+    "price": 102000000,
+    "video": "https://example.com/video19.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans19.pdf",
+    "description": "A modern residential plot in Mirpur, with excellent development potential and close to major amenities.",
+    "status": "Available",
+    "keywords": ["residential", "plot", "Mirpur"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 10, "name": "Electricity Backup" },
+      { "id": 11, "name": "24 Hours Concierge" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "land",
+      "name": "Land"
+    },
+    "subType": {
+      "id": "plot",
+      "name": "Plot"
+    },
+    "address": {
+      "id": 19,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 1,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "referenceNo": "PROP45678",
+    "title": "Chic Condo in Gulshan",
+    "size": 1500,
+    "price": 60000,
+    "video": "https://example.com/video20.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans20.pdf",
+    "description": "A chic and modern 3-bedroom condo in Gulshan, offering urban living with comfort and style.",
+    "status": "Available",
+    "keywords": ["chic", "condo", "Gulshan"],
+    "user": {
+      "id": "user234",
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "condo",
+      "name": "Condo"
+    },
+    "address": {
+      "id": 20,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "referenceNo": "PROP56789",
+    "title": "Spacious Family Home in Mirpur",
+    "size": 2500,
+    "price": 2500000,
+    "video": "https://example.com/video21.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans21.pdf",
+    "description": "A spacious 4-bedroom family home in Mirpur with ample living space, a modern kitchen, and a large garden area.",
+    "status": "Available",
+    "keywords": ["family home", "Mirpur", "residential"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 9, "name": "Central Heating" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 21,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 17,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 1,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "referenceNo": "PROP67890",
+    "title": "Luxurious Office Space in Gulshan",
+    "size": 4000,
+    "price": 4000000,
+    "video": "https://example.com/video22.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans22.pdf",
+    "description": "A luxurious office space in Gulshan, with high-end finishes, expansive workspaces, and stunning city views.",
+    "status": "Available",
+    "keywords": ["office", "space", "Gulshan"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 22,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1497366754035-f2001e6b520d"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "referenceNo": "PROP78901",
+    "title": "Lakefront House in Gulshan",
+    "size": 3200,
+    "price": 3200000,
+    "video": "https://example.com/video23.mp4",
+    "bed": 5,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans23.pdf",
+    "description": "A stunning 5-bedroom lakefront house in Gulshan with panoramic views, spacious living areas, and a beautifully landscaped garden.",
+    "status": "Available",
+    "keywords": ["lakefront", "house", "Gulshan"],
+    "user": {
+      "id": "user123",
+      "name": "Olivia Taylor",
+      "email": "olivia.taylor@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 23,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1497366754035-f2001e6b520d"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1570129477492-45c003edd2be"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "referenceNo": "PROP89012",
+    "title": "Waterfront House in Dhanmondi",
+    "size": 4000,
+    "price": 38000000,
+    "video": "https://example.com/video24.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans24.pdf",
+    "description": "A waterfront 4-bedroom house in Dhanmondi, offering tranquil living spaces, stunning waterfront views, and a spacious deck.",
+    "status": "Available",
+    "keywords": ["waterfront", "house", "Dhanmondi"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 24,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746536,90.374488"
+    },
+    "images": [
+      {
+        "id": 15,
+        "image": "/photo-1512699355324-f07e3106dae5"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 2,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "referenceNo": "PROP90123",
+    "title": "Family Home in Dhanmondi",
+    "size": 3200,
+    "price": 30200000,
+    "video": "https://example.com/video25.mp4",
+    "bed": 5,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans25.pdf",
+    "description": "A charming 5-bedroom family home in Dhanmondi with classic architecture, spacious rooms, and a large backyard garden.",
+    "status": "Available",
+    "keywords": ["family home", "Dhanmondi", "house"],
+    "user": {
+      "id": "user234",
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 9, "name": "Central Heating" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 25,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746536,90.374488"
+    },
+    "images": [
+      {
+        "id": 4,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1570129477492-45c003edd2be"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "referenceNo": "PROP01234",
+    "title": "Industrial Warehouse in Tejgaon",
+    "size": 12000,
+    "price": 170000,
+    "video": "https://example.com/video26.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans26.pdf",
+    "description": "A spacious industrial warehouse in Tejgaon, suitable for storage and manufacturing with ample space and modern facilities.",
+    "status": "Available",
+    "keywords": ["industrial", "warehouse", "Tejgaon"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "warehouse",
+      "name": "Warehouse"
+    },
+    "address": {
+      "id": 26,
+      "city": "Dhaka",
+      "location": "Tejgaon",
+      "coordinates": "23.764937,90.387381"
+    },
+    "images": [
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "referenceNo": "PROP12345",
+    "title": "Modern Residential Plot in Dhanmondi",
+    "size": 1500,
+    "price": 1500000,
+    "video": "https://example.com/video27.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans27.pdf",
+    "description": "A modern residential plot in Dhanmondi, offering a great opportunity for development with convenient access to city facilities.",
+    "status": "Available",
+    "keywords": ["residential", "plot", "Dhanmondi"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 10, "name": "Electricity Backup" },
+      { "id": 11, "name": "24 Hours Concierge" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "land",
+      "name": "Land"
+    },
+    "subType": {
+      "id": "plot",
+      "name": "Plot"
+    },
+    "address": {
+      "id": 27,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746536,90.374488"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 1,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "referenceNo": "PROP23456",
+    "title": "Elegant Condo in Gulshan",
+    "size": 1800,
+    "price": 1800000,
+    "video": "https://example.com/video28.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans28.pdf",
+    "description": "An elegant 3-bedroom condo in Gulshan, offering luxurious urban living with modern amenities and breathtaking city views.",
+    "status": "Available",
+    "keywords": ["elegant", "condo", "Gulshan"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "condo",
+      "name": "Condo"
+    },
+    "address": {
+      "id": 28,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "referenceNo": "PROP34567",
+    "title": "Luxurious Office Space in Mirpur",
+    "size": 4500,
+    "price": 250000,
+    "video": "https://example.com/video29.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans29.pdf",
+    "description": "A luxurious office space in Mirpur, featuring state-of-the-art facilities, stylish interiors, and scenic city views.",
+    "status": "Available",
+    "keywords": ["office", "space", "Mirpur"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 29,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 7,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "referenceNo": "PROP45678",
+    "title": "Lakefront House in Mirpur",
+    "size": 2800,
+    "price": 20800000,
+    "video": "https://example.com/video30.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans30.pdf",
+    "description": "A spacious 4-bedroom lakefront house in Mirpur with scenic views, beautifully designed interiors, and modern amenities.",
+    "status": "Available",
+    "keywords": ["lakefront", "house", "Mirpur"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 30,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 5,
+        "image": "/photo-1497366754035-f2001e6b520d"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "referenceNo": "PROP56789",
+    "title": "Waterfront House in Banani",
+    "size": 3600,
+    "price": 30600000,
+    "video": "https://example.com/video31.mp4",
+    "bed": 4,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans31.pdf",
+    "description": "A luxurious 4-bedroom waterfront house in Banani with stunning views, spacious rooms, and beautifully landscaped gardens.",
+    "status": "Available",
+    "keywords": ["waterfront", "house", "Banani"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 31,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794510,90.406181"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 2,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+
+  {
+    "id": "32",
+    "referenceNo": "PROP67890",
+    "title": "Prime Commercial Office in Motijheel",
+    "size": 4000,
+    "price": 82000,
+    "video": "https://example.com/video32.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans32.pdf",
+    "description": "A prime commercial office space in Motijheel, featuring excellent facilities, a central location, and modern interiors.",
+    "status": "Available",
+    "keywords": ["office", "space", "Motijheel"],
+    "user": {
+      "id": "user123",
+      "name": "Olivia Taylor",
+      "email": "olivia.taylor@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 32,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.634540,90.506847"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "referenceNo": "PROP78901",
+    "title": "Stylish Apartment in Banani",
+    "size": 2100,
+    "price": 41000,
+    "video": "https://example.com/video33.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans33.pdf",
+    "description": "A stylish 3-bedroom apartment in Banani, featuring modern designs, spacious rooms, and a fantastic city view.",
+    "status": "Available",
+    "keywords": ["stylish", "apartment", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": {
+        "id": "ready",
+        "name": "Ready"
+      }
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 33,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794510,90.406181"
+    },
+    "images": [
+      {
+        "id": 17,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "referenceNo": "PROP89012",
+    "title": "Prime Commercial Office in Uttara",
+    "size": 4800,
+    "price": 2800000,
+    "video": "https://example.com/video34.mp4",
+    "bed": 0,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans34.pdf",
+    "description": "A prime commercial office space in Uttara, offering spacious interiors, state-of-the-art facilities, and a central location.",
+    "status": "Available",
+    "keywords": ["office", "space", "Uttara"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 34,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.875116,90.390516"
+    },
+    "images": [
+      {
+        "id": 18,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "referenceNo": "PROP90123",
+    "title": "Spacious Warehouse in Tejgaon",
+    "size": 7200,
+    "price": 500000,
+    "video": "https://example.com/video35.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans35.pdf",
+    "description": "A spacious warehouse in Tejgaon, ideal for storage or manufacturing, with excellent access and modern infrastructure.",
+    "status": "Available",
+    "keywords": ["warehouse", "Tejgaon"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "warehouse",
+      "name": "Warehouse"
+    },
+    "address": {
+      "id": 35,
+      "city": "Dhaka",
+      "location": "Tejgaon",
+      "coordinates": "23.764937,90.387381"
+    },
+    "images": [
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "referenceNo": "PROP12347",
+    "title": "Elegant Condo in Gulshan",
+    "size": 1900,
+    "price": 69000,
+    "video": "https://example.com/video36.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans36.pdf",
+    "description": "An elegant 3-bedroom condo in Gulshan, offering luxurious urban living with modern amenities and breathtaking city views.",
+    "status": "Available",
+    "keywords": ["elegant", "condo", "Gulshan"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "condo",
+      "name": "Condo"
+    },
+    "address": {
+      "id": 36,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+
+  {
+    "id": "37",
+    "referenceNo": "PROP23457",
+    "title": "Luxurious Office Space in Mirpur",
+    "size": 4900,
+    "price": 119000,
+    "video": "https://example.com/video37.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans37.pdf",
+    "description": "A luxurious office space in Mirpur, featuring state-of-the-art facilities, stylish interiors, and scenic city views.",
+    "status": "Available",
+    "keywords": ["office", "space", "Mirpur"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 37,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 7,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "referenceNo": "PROP34568",
+    "title": "Lakefront House in Mirpur",
+    "size": 3000,
+    "price": 38000000,
+    "video": "https://example.com/video38.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans38.pdf",
+    "description": "A charming lakefront house in Mirpur, offering serene views, spacious rooms, and modern amenities.",
+    "status": "Available",
+    "keywords": ["lakefront", "house", "Mirpur"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 38,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 5,
+        "image": "/photo-1497366754035-f2001e6b520d"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+
+  {
+    "id": "39",
+    "referenceNo": "PROP45679",
+    "title": "Lakeside Apartment in Banani",
+    "size": 2700,
+    "price": 20700000,
+    "video": "https://example.com/video39.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans39.pdf",
+    "description": "A lakeside apartment in Banani with serene views, modern amenities, and spacious rooms, ideal for urban living.",
+    "status": "Available",
+    "keywords": ["lakeside", "apartment", "Banani"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 39,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794510,90.406181"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "referenceNo": "PROP56780",
+    "title": "Newly Built Apartment in Dhanmondi",
+    "size": 2400,
+    "price": 20400000,
+    "video": "https://example.com/video40.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans40.pdf",
+    "description": "A newly built 3-bedroom apartment in Dhanmondi, featuring modern interiors, plenty of natural light, and easy access to amenities.",
+    "status": "Available",
+    "keywords": ["newly built", "apartment", "Dhanmondi"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 40,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.740644,90.371473"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "referenceNo": "PROP67891",
+    "title": "Modern Condo in Gulshan",
+    "size": 2100,
+    "price": 20100000,
+    "video": "https://example.com/video41.mp4",
+    "bed": 2,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans41.pdf",
+    "description": "A modern 2-bedroom condo in Gulshan, featuring a contemporary design, high-quality finishes, and great amenities.",
+    "status": "Available",
+    "keywords": ["modern", "condo", "Gulshan"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "condo",
+      "name": "Condo"
+    },
+    "address": {
+      "id": 41,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 4,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 2,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "referenceNo": "PROP78902",
+    "title": "Modern Office Space in Motijheel",
+    "size": 3300,
+    "price": 34300000,
+    "video": "https://example.com/video42.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans42.pdf",
+    "description": "A modern office space in Motijheel, with sleek interiors, excellent facilities, and a prime location in Dhaka's financial district.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Motijheel"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 42,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.635284,90.637764"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "referenceNo": "PROP89012",
+    "title": "Stylish Office Space in Uttara",
+    "size": 4600,
+    "price": 40600000,
+    "video": "https://example.com/video43.mp4",
+    "bed": 0,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans43.pdf",
+    "description": "A stylish office space in Uttara, offering spacious interiors, state-of-the-art facilities, and a central location.",
+    "status": "Available",
+    "keywords": ["office", "space", "Uttara"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 43,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.875116,90.390516"
+    },
+    "images": [
+      {
+        "id": 18,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "referenceNo": "PROP90123",
+    "title": "Spacious Warehouse in Tejgaon",
+    "size": 7200,
+    "price": 70200000,
+    "video": "https://example.com/video44.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans44.pdf",
+    "description": "A spacious warehouse in Tejgaon, ideal for storage or manufacturing, with excellent access and modern infrastructure.",
+    "status": "Available",
+    "keywords": ["warehouse", "Tejgaon"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "warehouse",
+      "name": "Warehouse"
+    },
+    "address": {
+      "id": 44,
+      "city": "Dhaka",
+      "location": "Tejgaon",
+      "coordinates": "23.764937,90.387381"
+    },
+    "images": [
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "referenceNo": "PROP12347",
+    "title": "Elegant Condo in Gulshan",
+    "size": 1900,
+    "price": 10900000,
+    "video": "https://example.com/video45.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans45.pdf",
+    "description": "An elegant 3-bedroom condo in Gulshan, offering luxurious urban living with modern amenities and breathtaking city views.",
+    "status": "Available",
+    "keywords": ["elegant", "condo", "Gulshan"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "condo",
+      "name": "Condo"
+    },
+    "address": {
+      "id": 45,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 8,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "referenceNo": "PROP23457",
+    "title": "Luxurious Office Space in Mirpur",
+    "size": 3500,
+    "price": 32500000,
+    "video": "https://example.com/video46.mp4",
+    "bed": 0,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans46.pdf",
+    "description": "A luxurious office space in Mirpur, featuring opulent interiors, premium facilities, and a prestigious location for top-tier business operations.",
+    "status": "Available",
+    "keywords": ["luxurious", "office", "Mirpur"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 46,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 18,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "referenceNo": "PROP34567",
+    "title": "Charming Warehouse in Tejgaon",
+    "size": 6200,
+    "price": 60200000,
+    "video": "https://example.com/video47.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans47.pdf",
+    "description": "A charming warehouse in Tejgaon, perfect for storage or small manufacturing, with spacious facilities and easy logistics access.",
+    "status": "Available",
+    "keywords": ["charming", "warehouse", "Tejgaon"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "warehouse",
+      "name": "Warehouse"
+    },
+    "address": {
+      "id": 47,
+      "city": "Dhaka",
+      "location": "Tejgaon",
+      "coordinates": "23.764937,90.387381"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "/photo-1500051638674-ffaa6fba1fca"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "referenceNo": "PROP45678",
+    "title": "Spectacular Lakefront House in Mirpur",
+    "size": 2900,
+    "price": 22900000,
+    "video": "https://example.com/video48.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans48.pdf",
+    "description": "A spectacular lakefront house in Mirpur, offering serene lake views, modern architecture, and spacious rooms ideal for a luxurious lifestyle.",
+    "status": "Available",
+    "keywords": ["lakefront", "house", "Mirpur"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 48,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822311,90.365417"
+    },
+    "images": [
+      {
+        "id": 5,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "referenceNo": "PROP56789",
+    "title": "Stylish Lakeview Apartment in Banani",
+    "size": 2500,
+    "price": 2500000,
+    "video": "https://example.com/video49.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans49.pdf",
+    "description": "A stylish lakeview apartment in Banani with serene views, modern interiors, and great amenities for a comfortable lifestyle.",
+    "status": "Available",
+    "keywords": ["stylish", "lakeview", "apartment", "Banani"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 49,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794510,90.406181"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "referenceNo": "PROP56789",
+    "title": "Stylish Lakeview Apartment in Banani",
+    "size": 2500,
+    "price": 25500000,
+    "video": "https://example.com/video49.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans49.pdf",
+    "description": "A stylish lakeview apartment in Banani with serene views, modern interiors, and great amenities for a comfortable lifestyle.",
+    "status": "Available",
+    "keywords": ["stylish", "lakeview", "apartment", "Banani"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 49,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794510,90.406181"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "referenceNo": "PROP67890",
+    "title": "Lakeside Family House in Dhanmondi",
+    "size": 3000,
+    "price": 30600000,
+    "video": "https://example.com/video50.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans50.pdf",
+    "description": "A lakeside family house in Dhanmondi, featuring spacious rooms, scenic views, and a serene environment perfect for family living.",
+    "status": "Available",
+    "keywords": ["lakeside", "family", "house", "Dhanmondi"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 50,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.745564,90.385732"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "referenceNo": "PROP78901",
+    "title": "Classic Office Space in Gulshan",
+    "size": 4000,
+    "price": 38000000,
+    "video": "https://example.com/video51.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans51.pdf",
+    "description": "A classic office space in Gulshan, featuring sophisticated designs, premium facilities, and a prime location ideal for corporate operations.",
+    "status": "Available",
+    "keywords": ["classic", "office", "Gulshan"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 51,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 12,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "referenceNo": "PROP89012",
+    "title": "Modern Office Space in Motijheel",
+    "size": 3000,
+    "price": 33300000,
+    "video": "https://example.com/video52.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans52.pdf",
+    "description": "A modern office space in Motijheel, with sleek interiors, excellent facilities, and a prime location in Dhaka's financial district.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Motijheel"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 52,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.635284,90.637764"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "referenceNo": "PROP90123",
+    "title": "Contemporary Apartment in Banani",
+    "size": 1800,
+    "price": 180000,
+    "video": "https://example.com/video53.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans53.pdf",
+    "description": "A contemporary 4-bedroom apartment in Banani, offering luxurious urban living with modern amenities and convenient access to city attractions.",
+    "status": "Available",
+    "keywords": ["contemporary", "apartment", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 53,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.794510,90.406181"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "referenceNo": "PROP90124",
+    "title": "Modern Office Space in Gulshan-2",
+    "size": 2500,
+    "price": 1000000,
+    "video": "https://example.com/video54.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans54.pdf",
+    "description": "A modern office space in Gulshan-2, featuring contemporary interiors, advanced facilities, and a strategic location for business operations.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Gulshan-2"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 54,
+      "city": "Dhaka",
+      "location": "Gulshan-2",
+      "coordinates": "23.792504,90.407806"
+    },
+    "images": [
+      {
+        "id": 12,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "referenceNo": "PROP90125",
+    "title": "Exclusive Villa in Baridhara",
+    "size": 6000,
+    "price": 45000000,
+    "video": "https://example.com/video55.mp4",
+    "bed": 5,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans55.pdf",
+    "description": "An exclusive 5-bedroom villa in Baridhara, offering luxury living with spacious rooms, lush green surroundings, and top-notch amenities.",
+    "status": "Available",
+    "keywords": ["exclusive", "villa", "Baridhara"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 55,
+      "city": "Dhaka",
+      "location": "Baridhara",
+      "coordinates": "23.807253,90.415619"
+    },
+    "images": [
+      {
+        "id": 7,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "referenceNo": "PROP90126",
+    "title": "Spacious Warehouse in Tongi",
+    "size": 8000,
+    "price": 20000000,
+    "video": "https://example.com/video56.mp4",
+    "bed": 0,
+    "bath": 0,
+    "floorPlans": "https://example.com/floorplans56.pdf",
+    "description": "A spacious warehouse in Tongi, ideal for storage or manufacturing, with excellent access and modern infrastructure.",
+    "status": "Available",
+    "keywords": ["warehouse", "Tongi"],
+    "user": {
+      "id": "user890",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "warehouse",
+      "name": "Warehouse"
+    },
+    "address": {
+      "id": 56,
+      "city": "Dhaka",
+      "location": "Tongi",
+      "coordinates": "23.889315,90.406157"
+    },
+    "images": [
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "referenceNo": "PROP90127",
+    "title": "Luxurious Penthouse in Uttara",
+    "size": 3500,
+    "price": 35000000,
+    "video": "https://example.com/video57.mp4",
+    "bed": 5,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans57.pdf",
+    "description": "A luxurious 5-bedroom penthouse in Uttara, offering panoramic city views, lavish interiors, and exclusive amenities for an upscale lifestyle.",
+    "status": "Available",
+    "keywords": ["luxurious", "penthouse", "Uttara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "penthouse",
+      "name": "Penthouse"
+    },
+    "address": {
+      "id": 57,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.874357,90.390016"
+    },
+    "images": [
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "referenceNo": "PROP90128",
+    "title": "Cozy Apartment in Mirpur-11",
+    "size": 1400,
+    "price": 80000,
+    "video": "https://example.com/video58.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans58.pdf",
+    "description": "A cozy 3-bedroom apartment in Mirpur-11, offering comfort and convenience with modern amenities and easy access to local facilities.",
+    "status": "Available",
+    "keywords": ["cozy", "apartment", "Mirpur-11"],
+    "user": {
+      "id": "user456",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 58,
+      "city": "Dhaka",
+      "location": "Mirpur-11",
+      "coordinates": "23.802588,90.368625"
+    },
+    "images": [
+      {
+        "id": 19,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1570129477492-45c003edd2be"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "referenceNo": "PROP90129",
+    "title": "Prime Office Space in Motijheel",
+    "size": 4000,
+    "price": 40000000,
+    "video": "https://example.com/video59.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans59.pdf",
+    "description": "A prime office space in Motijheel, offering spacious layouts, modern facilities, and a prestigious address for corporate headquarters.",
+    "status": "Available",
+    "keywords": ["prime", "office", "Motijheel"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 59,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.635284,90.637764"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "referenceNo": "PROP90130",
+    "title": "Elegant Lakefront House in Uttara",
+    "size": 3200,
+    "price": 32000000,
+    "video": "https://example.com/video60.mp4",
+    "bed": 4,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans60.pdf",
+    "description": "An elegant lakefront house in Uttara, offering tranquil lake views, spacious rooms, and luxurious amenities for a sophisticated lifestyle.",
+    "status": "Available",
+    "keywords": ["elegant", "lakefront", "house", "Uttara"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 60,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.874357,90.390016"
+    },
+    "images": [
+      {
+        "id": 13,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "referenceNo": "PROP90131",
+    "title": "Classic Villa in Dhanmondi",
+    "size": 5000,
+    "price": 50000000,
+    "video": "https://example.com/video61.mp4",
+    "bed": 6,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans61.pdf",
+    "description": "A classic 6-bedroom villa in Dhanmondi, featuring timeless architecture, spacious interiors, and a serene environment perfect for family living.",
+    "status": "Available",
+    "keywords": ["classic", "villa", "Dhanmondi"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 61,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.745564,90.385732"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "referenceNo": "PROP90132",
+    "title": "Modern Office Space in Mirpur",
+    "size": 2200,
+    "price": 100000,
+    "video": "https://example.com/video62.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans62.pdf",
+    "description": "A modern office space in Mirpur, featuring contemporary designs, efficient layout, and excellent amenities, ideal for corporate offices.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Mirpur"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 62,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.822873,90.365417"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "referenceNo": "PROP90133",
+    "title": "Scenic Lake House in Mirpur-12",
+    "size": 2800,
+    "price": 30000000,
+    "video": "https://example.com/video63.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans63.pdf",
+    "description": "A scenic 4-bedroom lake house in Mirpur-12, offering picturesque views, spacious living areas, and a serene environment for relaxation.",
+    "status": "Available",
+    "keywords": ["scenic", "lake house", "Mirpur-12"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 63,
+      "city": "Dhaka",
+      "location": "Mirpur-12",
+      "coordinates": "23.829112,90.363554"
+    },
+    "images": [
+      {
+        "id": 18,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 4,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "referenceNo": "PROP90134",
+    "title": "Charming Duplex in Banani",
+    "size": 2400,
+    "price": 24000000,
+    "video": "https://example.com/video64.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans64.pdf",
+    "description": "A charming 4-bedroom duplex in Banani, featuring elegant design, spacious interiors, and a vibrant neighborhood with easy access to amenities.",
+    "status": "Available",
+    "keywords": ["charming", "duplex", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "duplex",
+      "name": "Duplex"
+    },
+    "address": {
+      "id": 64,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793993,90.408491"
+    },
+    "images": [
+      {
+        "id": 20,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "referenceNo": "PROP90135",
+    "title": "Commercial Building in Gulshan-2",
+    "size": 5500,
+    "price": 75000000,
+    "video": "https://example.com/video65.mp4",
+    "bed": 0,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans65.pdf",
+    "description": "A commercial building in Gulshan-2, featuring extensive office space, modern facilities, and a strategic location in the commercial hub of Dhaka.",
+    "status": "Available",
+    "keywords": ["commercial", "building", "Gulshan-2"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "building",
+      "name": "Building"
+    },
+    "address": {
+      "id": 65,
+      "city": "Dhaka",
+      "location": "Gulshan-2",
+      "coordinates": "23.790827,90.409949"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "referenceNo": "PROP90135",
+    "title": "Commercial Building in Gulshan-2",
+    "size": 5500,
+    "price": 75000000,
+    "video": "https://example.com/video65.mp4",
+    "bed": 0,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans65.pdf",
+    "description": "A commercial building in Gulshan-2, featuring extensive office space, modern facilities, and a strategic location in the commercial hub of Dhaka.",
+    "status": "Available",
+    "keywords": ["commercial", "building", "Gulshan-2"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "building",
+      "name": "Building"
+    },
+    "address": {
+      "id": 65,
+      "city": "Dhaka",
+      "location": "Gulshan-2",
+      "coordinates": "23.790827,90.409949"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 3,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "referenceNo": "PROP90136",
+    "title": "Furnished Apartment in Baridhara",
+    "size": 1600,
+    "price": 60000,
+    "video": "https://example.com/video66.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans66.pdf",
+    "description": "A furnished 3-bedroom apartment in Baridhara, offering a comfortable living space, modern amenities, and a peaceful neighborhood close to the diplomatic zone.",
+    "status": "Available",
+    "keywords": ["furnished", "apartment", "Baridhara"],
+    "user": {
+      "id": "user456",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 66,
+      "city": "Dhaka",
+      "location": "Baridhara",
+      "coordinates": "23.812903,90.414076"
+    },
+    "images": [
+      {
+        "id": 4,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 6,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "referenceNo": "PROP90137",
+    "title": "Lakefront Bungalow in Banani",
+    "size": 3000,
+    "price": 28000000,
+    "video": "https://example.com/video67.mp4",
+    "bed": 4,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans67.pdf",
+    "description": "A lakefront 4-bedroom bungalow in Banani, featuring stunning lake views, elegant design, and serene surroundings, ideal for modern living.",
+    "status": "Available",
+    "keywords": ["lakefront", "bungalow", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "bungalow",
+      "name": "Bungalow"
+    },
+    "address": {
+      "id": 67,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793993,90.408491"
+    },
+    "images": [
+      {
+        "id": 17,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "referenceNo": "PROP90137",
+    "title": "Lakefront Bungalow in Banani",
+    "size": 3000,
+    "price": 28000000,
+    "video": "https://example.com/video67.mp4",
+    "bed": 4,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans67.pdf",
+    "description": "A lakefront 4-bedroom bungalow in Banani, featuring stunning lake views, elegant design, and serene surroundings, ideal for modern living.",
+    "status": "Available",
+    "keywords": ["lakefront", "bungalow", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "bungalow",
+      "name": "Bungalow"
+    },
+    "address": {
+      "id": 67,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793993,90.408491"
+    },
+    "images": [
+      {
+        "id": 17,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "referenceNo": "PROP90138",
+    "title": "Luxurious Apartment in Uttara",
+    "size": 1800,
+    "price": 60000,
+    "video": "https://example.com/video68.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans68.pdf",
+    "description": "A luxurious 3-bedroom apartment in Uttara, offering modern amenities, beautiful interiors, and a peaceful environment for family living.",
+    "status": "Available",
+    "keywords": ["luxurious", "apartment", "Uttara"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "bungalow",
+      "name": "Bungalow"
+    },
+    "address": {
+      "id": 67,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793993,90.408491"
+    },
+    "images": [
+      {
+        "id": 17,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      }
+    ]
+  },
+
+  {
+    "id": "69",
+    "referenceNo": "PROP90139",
+    "title": "Spacious Penthouse in Gulshan-1",
+    "size": 3500,
+    "price": 60000000,
+    "video": "https://example.com/video69.mp4",
+    "bed": 5,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans69.pdf",
+    "description": "A spacious 5-bedroom penthouse in Gulshan-1, offering panoramic city views, luxurious interiors, and top-notch amenities for modern living.",
+    "status": "Available",
+    "keywords": ["spacious", "penthouse", "Gulshan-1"],
+    "user": {
+      "id": "user456",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "penthouse",
+      "name": "Penthouse"
+    },
+    "address": {
+      "id": 69,
+      "city": "Dhaka",
+      "location": "Gulshan-1",
+      "coordinates": "23.792638,90.415627"
+    },
+    "images": [
+      {
+        "id": 13,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "referenceNo": "PROP90140",
+    "title": "Modern Villa in Uttara",
+    "size": 4000,
+    "price": 45000000,
+    "video": "https://example.com/video70.mp4",
+    "bed": 6,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans70.pdf",
+    "description": "A modern 6-bedroom villa in Uttara, featuring contemporary architecture, spacious interiors, and a landscaped garden, ideal for family living.",
+    "status": "Available",
+    "keywords": ["modern", "villa", "Uttara"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 70,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.874203,90.396651"
+    },
+    "images": [
+      {
+        "id": 5,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1416331108676-a22ccb276e35"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1570129477492-45c003edd2be"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "referenceNo": "PROP90141",
+    "title": "Commercial Office Building in Motijheel",
+    "size": 6000,
+    "price": 85000000,
+    "video": "https://example.com/video71.mp4",
+    "bed": 0,
+    "bath": 8,
+    "floorPlans": "https://example.com/floorplans71.pdf",
+    "description": "A commercial office building in Motijheel, offering extensive office space, modern facilities, and a prime location in the financial district of Dhaka.",
+    "status": "Available",
+    "keywords": ["commercial", "office building", "Motijheel"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 71,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.732469,90.417922"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 2,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "referenceNo": "PROP90142",
+    "title": "Lake View Apartment in Dhanmondi",
+    "size": 1800,
+    "price": 500000,
+    "video": "https://example.com/video72.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans72.pdf",
+    "description": "A 3-bedroom apartment in Dhanmondi with stunning lake views, modern amenities, and a vibrant neighborhood, perfect for urban living.",
+    "status": "Available",
+    "keywords": ["lake view", "apartment", "Dhanmondi"],
+    "user": {
+      "id": "user456",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 72,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746194,90.375011"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 22,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "referenceNo": "PROP90143",
+    "title": "Family House in Mirpur",
+    "size": 2500,
+    "price": 30000000,
+    "video": "https://example.com/video73.mp4",
+    "bed": 4,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans73.pdf",
+    "description": "A spacious 4-bedroom family house in Mirpur, offering comfortable living spaces, a private garden, and proximity to schools and shopping centers.",
+    "status": "Available",
+    "keywords": ["family house", "Mirpur"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 73,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.811699,90.362893"
+    },
+    "images": [
+      {
+        "id": 4,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 23,
+        "image": "/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "referenceNo": "PROP90144",
+    "title": "Commercial Space in Mohakhali",
+    "size": 8000,
+    "price": 100000,
+    "video": "https://example.com/video74.mp4",
+    "bed": 0,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans74.pdf",
+    "description": "A large commercial space in Mohakhali, ideal for offices, retail outlets, or educational institutions, with ample parking and easy access to transportation.",
+    "status": "Available",
+    "keywords": ["commercial", "space", "Mohakhali"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 74,
+      "city": "Dhaka",
+      "location": "Mohakhali",
+      "coordinates": "23.792439,90.407620"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "referenceNo": "PROP90145",
+    "title": "Riverfront Condo in Banani",
+    "size": 2000,
+    "price": 35000000,
+    "video": "https://example.com/video75.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans75.pdf",
+    "description": "A 3-bedroom riverfront condo in Banani, offering breathtaking river views, modern interiors, and exclusive amenities, perfect for luxurious living.",
+    "status": "Available",
+    "keywords": ["riverfront", "condo", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "condo",
+      "name": "Condo"
+    },
+    "address": {
+      "id": 75,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793496,90.406361"
+    },
+    "images": [
+      {
+        "id": 8,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1480074568708-e7b720bb3f09"
+      },
+      {
+        "id": 25,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "referenceNo": "PROP90146",
+    "title": "Duplex Apartment in Bashundhara",
+    "size": 2400,
+    "price": 32000000,
+    "video": "https://example.com/video76.mp4",
+    "bed": 4,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans76.pdf",
+    "description": "A spacious 4-bedroom duplex apartment in Bashundhara, offering two levels of living space, modern amenities, and a family-friendly environment.",
+    "status": "Available",
+    "keywords": ["duplex", "apartment", "Bashundhara"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 76,
+      "city": "Dhaka",
+      "location": "Bashundhara",
+      "coordinates": "23.813872,90.411276"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "referenceNo": "PROP90147",
+    "title": "Luxury Bungalow in Gulshan-2",
+    "size": 5000,
+    "price": 75000000,
+    "video": "https://example.com/video77.mp4",
+    "bed": 5,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans77.pdf",
+    "description": "A luxurious 5-bedroom bungalow in Gulshan-2, featuring expansive living spaces, landscaped gardens, and premium finishes, perfect for a lavish lifestyle.",
+    "status": "Available",
+    "keywords": ["luxury", "bungalow", "Gulshan-2"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "bungalow",
+      "name": "Bungalow"
+    },
+    "address": {
+      "id": 77,
+      "city": "Dhaka",
+      "location": "Gulshan-2",
+      "coordinates": "23.790485,90.413092"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1570129477492-45c003edd2be"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "referenceNo": "PROP90148",
+    "title": "Office Space in Banani",
+    "size": 3000,
+    "price": 200000,
+    "video": "https://example.com/video78.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans78.pdf",
+    "description": "An office space in Banani, offering a large open floor plan, modern amenities, and a strategic location for business operations.",
+    "status": "Available",
+    "keywords": ["office space", "Banani"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 78,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793496,90.406361"
+    },
+    "images": [
+      {
+        "id": 14,
+        "image": "/photo-1570129477492-45c003edd2be"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 22,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 25,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "referenceNo": "PROP90149",
+    "title": "Lakefront Villa in Baridhara",
+    "size": 6000,
+    "price": 95000000,
+    "video": "https://example.com/video79.mp4",
+    "bed": 6,
+    "bath": 7,
+    "floorPlans": "https://example.com/floorplans79.pdf",
+    "description": "A luxurious 6-bedroom lakefront villa in Baridhara, featuring expansive living spaces, private pool, and scenic views, perfect for serene living.",
+    "status": "Available",
+    "keywords": ["lakefront", "villa", "Baridhara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 79,
+      "city": "Dhaka",
+      "location": "Baridhara",
+      "coordinates": "23.815237,90.429550"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 9,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 23,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "referenceNo": "PROP90150",
+    "title": "Retail Shop in Gulshan-1",
+    "size": 1000,
+    "price": 30000,
+    "video": "https://example.com/video80.mp4",
+    "bed": 0,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans80.pdf",
+    "description": "A retail shop in Gulshan-1, suitable for boutiques or small businesses, with high visibility and foot traffic, ideal for retail success.",
+    "status": "Available",
+    "keywords": ["retail shop", "Gulshan-1"],
+    "user": {
+      "id": "user567",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com"
+    },
+    "features": [
+      { "id": 6, "name": "Floor Level" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "retail",
+      "name": "Retail"
+    },
+    "address": {
+      "id": 80,
+      "city": "Dhaka",
+
+      "location": "Gulshan-1",
+      "coordinates": "23.780573,90.416974"
+    },
+    "images": [
+      {
+        "id": 11,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1449844908441-8829872d2607"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+
+  {
+    "id": "81",
+    "referenceNo": "PROP90151",
+    "title": "Modern Loft in Uttara",
+    "size": 1800,
+    "price": 22000000,
+    "video": "https://example.com/video81.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans81.pdf",
+    "description": "A contemporary 3-bedroom loft in Uttara, featuring an open floor plan, high ceilings, and stylish finishes, perfect for modern living.",
+    "status": "Available",
+    "keywords": ["modern", "loft", "Uttara"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "loft",
+      "name": "Loft"
+    },
+    "address": {
+      "id": 81,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.874065,90.396303"
+    },
+    "images": [
+      {
+        "id": 14,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 22,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 25,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "referenceNo": "PROP90152",
+    "title": "Penthouse in Banani",
+    "size": 3500,
+    "price": 50000000,
+    "video": "https://example.com/video82.mp4",
+    "bed": 4,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans82.pdf",
+    "description": "A luxurious 4-bedroom penthouse in Banani, offering panoramic city views, top-notch amenities, and a prime location, perfect for upscale living.",
+    "status": "Available",
+    "keywords": ["penthouse", "Banani"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "penthouse",
+      "name": "Penthouse"
+    },
+    "address": {
+      "id": 82,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793496,90.406361"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "referenceNo": "PROP90153",
+    "title": "Cozy Apartment in Dhanmondi",
+    "size": 1200,
+    "price": 18000000,
+    "video": "https://example.com/video83.mp4",
+    "bed": 3,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans83.pdf",
+    "description": "A cozy 3-bedroom apartment in Dhanmondi, featuring modern interiors, a spacious balcony, and convenient access to schools and shopping centers.",
+    "status": "Available",
+    "keywords": ["cozy", "apartment", "Dhanmondi"],
+    "user": {
+      "id": "user789",
+      "name": "Emma Watson",
+      "email": "emma.watson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 83,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.746466,90.376015"
+    },
+    "images": [
+      {
+        "id": 1,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 5,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 8,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "referenceNo": "PROP90154",
+    "title": "Spacious Duplex in Baridhara",
+    "size": 3500,
+    "price": 65000000,
+    "video": "https://example.com/video84.mp4",
+    "bed": 4,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans84.pdf",
+    "description": "A spacious 4-bedroom duplex in Baridhara, offering luxury living with modern amenities, private garden, and top-notch security.",
+    "status": "Available",
+    "keywords": ["spacious", "duplex", "Baridhara"],
+    "user": {
+      "id": "user890",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "duplex",
+      "name": "Duplex"
+    },
+    "address": {
+      "id": 84,
+      "city": "Dhaka",
+      "location": "Baridhara",
+      "coordinates": "23.815237,90.429550"
+    },
+    "images": [
+      {
+        "id": 3,
+        "image": "/photo-1484154218962-a197022b5858"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 14,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "referenceNo": "PROP90155",
+    "title": "Studio Apartment in Banani",
+    "size": 800,
+    "price": 22000,
+    "video": "https://example.com/video85.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans85.pdf",
+    "description": "A modern studio apartment in Banani, perfect for singles or couples, featuring contemporary design, high-quality finishes, and a great location.",
+    "status": "Available",
+    "keywords": ["studio", "apartment", "Banani"],
+    "user": {
+      "id": "user123",
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "studio",
+      "name": "Studio"
+    },
+    "address": {
+      "id": 85,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793496,90.406361"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "referenceNo": "PROP90156",
+    "title": "Commercial Space in Motijheel",
+    "size": 2500,
+    "price": 100000,
+    "video": "https://example.com/video86.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans86.pdf",
+    "description": "A spacious commercial space in Motijheel, ideal for offices or retail stores, with modern facilities and high foot traffic.",
+    "status": "Available",
+    "keywords": ["commercial", "Motijheel"],
+    "user": {
+      "id": "user456",
+      "name": "Robert Brown",
+      "email": "robert.brown@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 86,
+      "city": "Dhaka",
+      "location": "Motijheel",
+      "coordinates": "23.736123,90.419600"
+    },
+    "images": [
+      {
+        "id": 4,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 13,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 18,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "referenceNo": "PROP90157",
+    "title": "Luxury Villa in Gulshan",
+    "size": 5000,
+    "price": 120000000,
+    "video": "https://example.com/video87.mp4",
+    "bed": 5,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans87.pdf",
+    "description": "A luxury 5-bedroom villa in Gulshan, offering an opulent lifestyle with private pool, large garden, and state-of-the-art facilities.",
+    "status": "Available",
+    "keywords": ["luxury", "villa", "Gulshan"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Private Pool" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 87,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.780573,90.416974"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "referenceNo": "PROP90158",
+    "title": "Compact Studio in Bashundhara",
+    "size": 600,
+    "price": 17000,
+    "video": "https://example.com/video88.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans88.pdf",
+    "description": "A compact and affordable studio apartment in Bashundhara, ideal for students or young professionals, with modern facilities.",
+    "status": "Available",
+    "keywords": ["compact", "studio", "Bashundhara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "studio",
+      "name": "Studio"
+    },
+    "address": {
+      "id": 88,
+      "city": "Dhaka",
+      "location": "Bashundhara",
+      "coordinates": "23.815652,90.428065"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "referenceNo": "PROP90158",
+    "title": "Compact Studio in Bashundhara",
+    "size": 600,
+    "price": 80000,
+    "video": "https://example.com/video88.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans88.pdf",
+    "description": "A compact and affordable studio apartment in Bashundhara, ideal for students or young professionals, with modern facilities.",
+    "status": "Available",
+    "keywords": ["compact", "studio", "Bashundhara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "studio",
+      "name": "Studio"
+    },
+    "address": {
+      "id": 88,
+      "city": "Dhaka",
+      "location": "Bashundhara",
+      "coordinates": "23.815652,90.428065"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "referenceNo": "PROP90160",
+    "title": "Luxury Penthouse in Gulshan",
+    "size": 4000,
+    "price": 90000000,
+    "video": "https://example.com/video90.mp4",
+    "bed": 4,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans90.pdf",
+    "description": "A luxury penthouse in Gulshan, offering stunning city views, modern amenities, and a spacious rooftop terrace for entertainment.",
+    "status": "Available",
+    "keywords": ["luxury", "penthouse", "Gulshan"],
+    "user": {
+      "id": "user789",
+      "name": "Emma Watson",
+      "email": "emma.watson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Private Pool" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "penthouse",
+      "name": "Penthouse"
+    },
+    "address": {
+      "id": 90,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.780573,90.416974"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "referenceNo": "PROP90161",
+    "title": "Modern Office in Banani",
+    "size": 3000,
+    "price": 150000,
+    "video": "https://example.com/video91.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans91.pdf",
+    "description": "A modern office space in Banani, ideal for corporate headquarters, featuring open-plan design, high-speed internet, and conference rooms.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Banani"],
+    "user": {
+      "id": "user123",
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 91,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793496,90.406361"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "referenceNo": "PROP90162",
+    "title": "Elegant Villa in Uttara",
+    "size": 4000,
+    "price": 85000000,
+    "video": "https://example.com/video92.mp4",
+    "bed": 5,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans92.pdf",
+    "description": "An elegant 5-bedroom villa in Uttara, offering a luxurious lifestyle with a large garden, private pool, and modern facilities.",
+    "status": "Available",
+    "keywords": ["elegant", "villa", "Uttara"],
+    "user": {
+      "id": "user890",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Private Pool" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 92,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.867187,90.400148"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "referenceNo": "PROP90163",
+    "title": "Compact Apartment in Malibagh",
+    "size": 900,
+    "price": 9000000,
+    "video": "https://example.com/video93.mp4",
+    "bed": 2,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans93.pdf",
+    "description": "A compact 2-bedroom apartment in Malibagh, ideal for small families or couples, featuring modern interiors and convenient location.",
+    "status": "Available",
+    "keywords": ["compact", "apartment", "Malibagh"],
+    "user": {
+      "id": "user234",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 93,
+      "city": "Dhaka",
+      "location": "Malibagh",
+      "coordinates": "23.748666,90.416600"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "referenceNo": "PROP90164",
+    "title": "Spacious Bungalow in Bashundhara",
+    "size": 4500,
+    "price": 95000000,
+    "video": "https://example.com/video94.mp4",
+    "bed": 6,
+    "bath": 7,
+    "floorPlans": "https://example.com/floorplans94.pdf",
+    "description": "A spacious 6-bedroom bungalow in Bashundhara, perfect for large families, featuring a large garden, modern amenities, and secure environment.",
+    "status": "Available",
+    "keywords": ["spacious", "bungalow", "Bashundhara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Clark",
+      "email": "michael.clark@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Private Pool" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "bungalow",
+      "name": "Bungalow"
+    },
+    "address": {
+      "id": 94,
+      "city": "Dhaka",
+      "location": "Bashundhara",
+      "coordinates": "23.815652,90.428065"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "referenceNo": "PROP90165",
+    "title": "Cozy Studio in Dhanmondi",
+    "size": 700,
+    "price": 19000,
+    "video": "https://example.com/video95.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans95.pdf",
+    "description": "A cozy studio apartment in Dhanmondi, perfect for singles or students, with a compact design and convenient location.",
+    "status": "Available",
+    "keywords": ["cozy", "studio", "Dhanmondi"],
+    "user": {
+      "id": "user567",
+      "name": "David Green",
+      "email": "david.green@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "studio",
+      "name": "Studio"
+    },
+    "address": {
+      "id": 95,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.745395,90.376068"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "referenceNo": "PROP90166",
+    "title": "Modern Office in Mohakhali",
+    "size": 3200,
+    "price": 80000,
+    "video": "https://example.com/video96.mp4",
+    "bed": 0,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans96.pdf",
+    "description": "A modern office space in Mohakhali, perfect for corporate setups, featuring state-of-the-art facilities, high-speed internet, and ample parking.",
+    "status": "Available",
+    "keywords": ["modern", "office", "Mohakhali"],
+    "user": {
+      "id": "user234",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 96,
+      "city": "Dhaka",
+      "location": "Mohakhali",
+      "coordinates": "23.780062,90.422272"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "referenceNo": "PROP90167",
+    "title": "Luxury Office in Baridhara",
+    "size": 3500,
+    "price": 50000,
+    "video": "https://example.com/video97.mp4",
+    "bed": 0,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans97.pdf",
+    "description": "A luxury office space in Baridhara, ideal for high-end businesses, featuring a grand entrance, conference rooms, and advanced security systems.",
+    "status": "Available",
+    "keywords": ["luxury", "office", "Baridhara"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    "subType": {
+      "id": "office",
+      "name": "Office"
+    },
+    "address": {
+      "id": 97,
+      "city": "Dhaka",
+      "location": "Baridhara",
+      "coordinates": "23.798984,90.421060"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "referenceNo": "PROP90168",
+    "title": "Luxury Apartment in Banani",
+    "size": 2500,
+    "price": 30000000,
+    "video": "https://example.com/video98.mp4",
+    "bed": 4,
+    "bath": 4,
+    "floorPlans": "https://example.com/floorplans98.pdf",
+    "description": "A luxury 4-bedroom apartment in Banani, featuring spacious interiors, modern amenities, and a prime location near shopping and dining.",
+    "status": "Available",
+    "keywords": ["luxury", "apartment", "Banani"],
+    "user": {
+      "id": "user789",
+      "name": "Emma Watson",
+      "email": "emma.watson@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 98,
+      "city": "Dhaka",
+      "location": "Banani",
+      "coordinates": "23.793496,90.406361"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "referenceNo": "PROP90169",
+    "title": "Modern Apartment in Gulshan",
+    "size": 2000,
+    "price": 27000000,
+    "video": "https://example.com/video99.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans99.pdf",
+    "description": "A modern 3-bedroom apartment in Gulshan, offering a comfortable living space with contemporary design, close to amenities.",
+    "status": "Available",
+    "keywords": ["modern", "apartment", "Gulshan"],
+    "user": {
+      "id": "user890",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 99,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.792857,90.407107"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "referenceNo": "PROP90170",
+    "title": "Charming House in Lalmatia",
+    "size": 3000,
+    "price": 60000000,
+    "video": "https://example.com/video100.mp4",
+    "bed": 4,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans100.pdf",
+    "description": "A charming 4-bedroom house in Lalmatia, featuring a traditional design with modern comforts, spacious garden, and quiet surroundings.",
+    "status": "Available",
+    "keywords": ["charming", "house", "Lalmatia"],
+    "user": {
+      "id": "user123",
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 100,
+      "city": "Dhaka",
+      "location": "Lalmatia",
+      "coordinates": "23.750984,90.368708"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "referenceNo": "PROP90171",
+    "title": "Elegant Apartment in Niketan",
+    "size": 1800,
+    "price": 24000000,
+    "video": "https://example.com/video101.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans101.pdf",
+    "description": "An elegant 3-bedroom apartment in Niketan, featuring stylish interiors, modern facilities, and a prime location near parks and cafes.",
+    "status": "Available",
+    "keywords": ["elegant", "apartment", "Niketan"],
+    "user": {
+      "id": "user456",
+      "name": "Samantha Brown",
+      "email": "samantha.brown@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 101,
+      "city": "Dhaka",
+      "location": "Niketan",
+      "coordinates": "23.780062,90.422272"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "referenceNo": "PROP90172",
+    "title": "Stylish Studio in Tejgaon",
+    "size": 800,
+    "price": 80000,
+    "video": "https://example.com/video102.mp4",
+    "bed": 1,
+    "bath": 1,
+    "floorPlans": "https://example.com/floorplans102.pdf",
+    "description": "A stylish studio apartment in Tejgaon, ideal for professionals or students, featuring modern amenities and a convenient location.",
+    "status": "Available",
+    "keywords": ["stylish", "studio", "Tejgaon"],
+    "user": {
+      "id": "user678",
+      "name": "Sophie Johnson",
+      "email": "sophie.johnson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "rent",
+        "name": "Rent"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "studio",
+      "name": "Studio"
+    },
+    "address": {
+      "id": 102,
+      "city": "Dhaka",
+      "location": "Tejgaon",
+      "coordinates": "23.757082,90.392891"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "referenceNo": "PROP90173",
+    "title": "Spacious Duplex in Bashundhara",
+    "size": 4000,
+    "price": 45000000,
+    "video": "https://example.com/video103.mp4",
+    "bed": 5,
+    "bath": 6,
+    "floorPlans": "https://example.com/floorplans103.pdf",
+    "description": "A spacious 5-bedroom duplex in Bashundhara, offering luxurious living with modern amenities, large garden, and a peaceful neighborhood.",
+    "status": "Available",
+    "keywords": ["spacious", "duplex", "Bashundhara"],
+    "user": {
+      "id": "user345",
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "duplex",
+      "name": "Duplex"
+    },
+    "address": {
+      "id": 103,
+      "city": "Dhaka",
+      "location": "Bashundhara",
+      "coordinates": "23.817566,90.431071"
+    },
+    "images": [
+      {
+        "id": 6,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 11,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 15,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 20,
+        "image": "/photo-1484154218962-a197022b5858"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "referenceNo": "PROP90174",
+    "title": "Charming House in Uttara",
+    "size": 3500,
+    "price": 50000000,
+    "video": "https://example.com/video104.mp4",
+    "bed": 4,
+    "bath": 5,
+    "floorPlans": "https://example.com/floorplans104.pdf",
+    "description": "A charming 4-bedroom house in Uttara, featuring a traditional design with modern comforts, spacious garden, and quiet surroundings.",
+    "status": "Available",
+    "keywords": ["charming", "house", "Uttara"],
+    "user": {
+      "id": "user456",
+      "name": "Sarah Lee",
+      "email": "sarah.lee@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "house",
+      "name": "House"
+    },
+    "address": {
+      "id": 104,
+      "city": "Dhaka",
+      "location": "Uttara",
+      "coordinates": "23.873751,90.400741"
+    },
+    "images": [
+      {
+        "id": 9,
+        "image": "/photo-1580587771525-78b9dba3b914"
+      },
+      {
+        "id": 12,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 16,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 24,
+        "image": "/photo-1592595896551-12b371d546d5"
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "referenceNo": "PROP90175",
+    "title": "Luxury Villa in Gulshan",
+    "size": 5000,
+    "price": 100000000,
+    "video": "https://example.com/video105.mp4",
+    "bed": 6,
+    "bath": 7,
+    "floorPlans": "https://example.com/floorplans105.pdf",
+    "description": "A luxury 6-bedroom villa in Gulshan, offering grand living spaces, a large garden, swimming pool, and top-of-the-line amenities.",
+    "status": "Available",
+    "keywords": ["luxury", "villa", "Gulshan"],
+    "user": {
+      "id": "user567",
+      "name": "David Green",
+      "email": "david.green@example.com"
+    },
+    "features": [
+      { "id": 1, "name": "View" },
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 3, "name": "Swimming Pool" },
+      { "id": 5, "name": "Parking Spaces" },
+      { "id": 7, "name": "CCTV Security" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "villa",
+      "name": "Villa"
+    },
+    "address": {
+      "id": 105,
+      "city": "Dhaka",
+      "location": "Gulshan",
+      "coordinates": "23.789489,90.400287"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "referenceNo": "PROP90176",
+    "title": "Contemporary Apartment in Mirpur",
+    "size": 1500,
+    "price": 15000000,
+    "video": "https://example.com/video106.mp4",
+    "bed": 3,
+    "bath": 3,
+    "floorPlans": "https://example.com/floorplans106.pdf",
+    "description": "A contemporary 3-bedroom apartment in Mirpur, featuring modern design, efficient layout, and proximity to local amenities.",
+    "status": "Available",
+    "keywords": ["contemporary", "apartment", "Mirpur"],
+    "user": {
+      "id": "user789",
+      "name": "Emma Watson",
+      "email": "emma.watson@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 106,
+      "city": "Dhaka",
+      "location": "Mirpur",
+      "coordinates": "23.811500,90.368563"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "referenceNo": "PROP90177",
+    "title": "Cozy Apartment in Dhanmondi",
+    "size": 1200,
+    "price": 18000000,
+    "video": "https://example.com/video107.mp4",
+    "bed": 2,
+    "bath": 2,
+    "floorPlans": "https://example.com/floorplans107.pdf",
+    "description": "A cozy 2-bedroom apartment in Dhanmondi, perfect for small families or couples, featuring modern amenities and close to schools and parks.",
+    "status": "Available",
+    "keywords": ["cozy", "apartment", "Dhanmondi"],
+    "user": {
+      "id": "user234",
+      "name": "John Smith",
+      "email": "john.smith@example.com"
+    },
+    "features": [
+      { "id": 2, "name": "Balcony or Terrace" },
+      { "id": 8, "name": "Double Glazed Windows" },
+      { "id": 10, "name": "Electricity Backup" }
+    ],
+    "purpose": {
+      "purpose": {
+        "id": "buy",
+        "name": "Buy"
+      },
+      "subPurpose": null
+    },
+    "type": {
+      "id": "residential",
+      "name": "Residential"
+    },
+    "subType": {
+      "id": "apartment",
+      "name": "Apartment"
+    },
+    "address": {
+      "id": 107,
+      "city": "Dhaka",
+      "location": "Dhanmondi",
+      "coordinates": "23.747926,90.376009"
+    },
+    "images": [
+      {
+        "id": 2,
+        "image": "/photo-1501183638710-841dd1904471"
+      },
+      {
+        "id": 10,
+        "image": "/photo-1592595896551-12b371d546d5"
+      },
+      {
+        "id": 19,
+        "image": "/photo-1560185127-6ed189bf02f4"
+      },
+      {
+        "id": 21,
+        "image": "/photo-1449844908441-8829872d2607"
+      }
+    ]
+  }
+]

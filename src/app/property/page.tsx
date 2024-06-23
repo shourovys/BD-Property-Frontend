@@ -55,8 +55,14 @@ const PropertyListPage: NextPage = () => {
     page: propertySearch.page,
     limit: itemPerPage,
     purpose: propertySearch.selectedPurpose.purpose.value,
-    status: propertySearch.selectedPurpose.completion.value,
-    location: propertySearch.selectedPropertyLocation,
+    ...(!['all', 'any'].includes(
+      propertySearch.selectedPurpose.completion.value
+    ) && {
+      status: propertySearch.selectedPurpose.completion.value,
+    }),
+    location: propertySearch.selectedPropertyLocation.map(
+      (location) => location.label
+    ),
     type: propertySearch.selectedPropertyType.type.value,
     subType: propertySearch.selectedPropertyType.subType.value,
     bed: propertySearch.selectedBedsBaths.beds.map((bed) => bed.value),

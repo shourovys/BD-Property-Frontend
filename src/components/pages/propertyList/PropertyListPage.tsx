@@ -35,6 +35,10 @@ const PropertyListPageComponent: React.FC<IProps> = ({
     false
   )
 
+  const handleSetIsCardVertical = (value: boolean) => {
+    typeof setIsCardVertical === 'function' && setIsCardVertical(value)
+  }
+
   const handleSetPage = (page: number) => {
     dispatch(setPage(page))
   }
@@ -44,7 +48,7 @@ const PropertyListPageComponent: React.FC<IProps> = ({
       <PropertyListFilters />
       {/* <Breadcrumbs /> */}
 
-      <div className='custom_screen_width col-span-1 w-full gap-6 md:grid-cols-7 lg:grid'>
+      <div className='custom_screen_width col-span-1 w-full gap-6 pb-4 md:grid-cols-7 md:pb-6 lg:grid'>
         <div className='col-span-5 '>
           <div className='my-4 space-y-4 sm:mb-5 sm:mt-0 md:space-y-5'>
             <div className='md:pb-1'>
@@ -56,13 +60,13 @@ const PropertyListPageComponent: React.FC<IProps> = ({
 
           {/* list filters  */}
           <PropertyListFilter
-            isCardVertical={isCardVertical}
-            setIsCardVertical={setIsCardVertical}
+            isCardVertical={!!isCardVertical}
+            handleSetIsCardVertical={handleSetIsCardVertical}
           />
           <PropertyList
             isLoading={isLoading}
             propertyList={data?.results}
-            isCardVertical={isCardVertical}
+            isCardVertical={!!isCardVertical}
           />
           {!isLoading && (
             <Pagination

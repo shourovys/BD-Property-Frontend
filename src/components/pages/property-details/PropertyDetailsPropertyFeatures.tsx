@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const PropertyDetailsPropertyFeatures: React.FC<IProps> = ({ data }) => {
-  const propertyFeatures: Feature[] = data.property_features.map((feature) => ({
+  const propertyFeatures: Feature[] = data.features.map((feature) => ({
     icon: feature.features_logo,
     label: feature.features_type,
   }))

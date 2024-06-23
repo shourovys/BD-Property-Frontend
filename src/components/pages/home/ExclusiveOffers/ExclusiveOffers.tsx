@@ -61,7 +61,7 @@ const ExclusiveOffers: NextPage = () => {
                 Special Offer
               </div>
               <Image
-                // src={IMAGE_URL + property?.property_images[0]?.image}
+                // src={IMAGE_URL + property?.images[0]?.image}
                 src={property?.imageSrc}
                 alt=''
                 className='h-full w-full object-cover'

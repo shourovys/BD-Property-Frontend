@@ -34,4 +34,4 @@ export const mainCities = [
   { label: 'Dakshinkhan', value: 'dakshinkhan' },
   { label: 'Uttar Khan', value: 'uttarkhan' },
   { label: 'Hazaribagh', value: 'hazaribagh' },
-] as const
+]

@@ -29,12 +29,10 @@ const PropertyGuidelineHero = ({
           Search properties for sale and for rent in Bangladesh
         </h1>
         <HomeHeroTabButtons
-          openSlideOver={openSlideOver}
+          // openSlideOver={openSlideOver}
           handleSlideOverOpen={handleSlideOverOpen}
         />
         <HomeHeroSearch
-          propertyPurposeData={propertyPurposeData}
-          propertyTypeData={propertyTypeData}
           openSlideOver={openSlideOver}
           handleSlideOverClose={handleSlideOverClose}
         />

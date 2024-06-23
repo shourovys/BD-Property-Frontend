@@ -30,5 +30,6 @@ export const LOCAL_STORAGE_KEY = {
 // server urls
 const API_URL = process.env.NEXT_PUBLIC_API_URL || ''
 const IMAGE_URL = process.env.NEXT_PUBLIC_IMAGE_URL || ''
+const MONGODB_URI = process.env.MONGODB_URI || ''
 
-export { API_URL, IMAGE_URL }
+export { API_URL, IMAGE_URL, MONGODB_URI }

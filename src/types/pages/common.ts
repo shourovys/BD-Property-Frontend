@@ -2,10 +2,10 @@
 export interface IListServerResponse<T> {
   success: boolean
   message: string
-  count: number
-  next: string | null
-  previous: string | null
-  results: T
+  page?: number
+  limit?: number
+  count?: number
+  results?: T
 }
 
 export interface ISingleServerResponse<T> {

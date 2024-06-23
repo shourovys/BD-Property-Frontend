@@ -2,7 +2,7 @@ const propertyType = [
   {
     id: 2,
     type: 'Commercial',
-    property_sub_type: [
+    subType: [
       {
         id: 5,
         sub_type: 'Warehouse',
@@ -33,7 +33,7 @@ const propertyType = [
   {
     id: 1,
     type: 'Residential',
-    property_sub_type: [
+    subType: [
       {
         id: 12,
         sub_type: 'Building',
@@ -105,7 +105,7 @@ export function decodePropertyQuery(query: string): string {
   const bedLimit = queryParams.get('bed__lte') || ''
   const purposeId = queryParams.get('property_purpose__id') || ''
   const typeId = queryParams.get('property_type__id') || ''
-  const subTypeId = queryParams.get('property_sub_type__id') || ''
+  const subTypeId = queryParams.get('subType__id') || ''
   const city = queryParams.get('propertyaddress__city') || ''
 
   // Lookup type label
@@ -143,9 +143,7 @@ function getTypeLabel(typeId: string): string {
 function getSubTypeLabel(typeId: string, subTypeId: string): string {
   const type = propertyType.find((t) => t.id.toString() === typeId)
   if (type) {
-    const subType = type.property_sub_type.find(
-      (st) => st.id.toString() === subTypeId
-    )
+    const subType = type.subType.find((st) => st.id.toString() === subTypeId)
     return subType ? subType.sub_type : subTypeId
   }
   return subTypeId

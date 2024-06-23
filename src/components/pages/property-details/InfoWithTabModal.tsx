@@ -10,7 +10,7 @@ import PropertyEmailCard from '../propertyList/PropertyEmailCard'
 
 interface IInfoWithTabModalModalProps {
   reference: string
-  images?: IPropertyDetails['property_images']
+  images?: IPropertyDetails['images']
   videoUrl?: string
   floorPlan?: string
   selectedTab: string

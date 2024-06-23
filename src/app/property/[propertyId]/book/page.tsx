@@ -30,8 +30,8 @@ const BookingPage: React.FC<IProps> = async ({ params }) => {
             className='w-full rounded object-fill'
             alt=''
             src={
-              propertyDetails.property_images?.length
-                ? propertyDetails.property_images[0]?.image
+              propertyDetails.images?.length
+                ? propertyDetails.images[0]?.image
                 : ''
             } // Use the first image from the array
             fill
@@ -45,7 +45,7 @@ const BookingPage: React.FC<IProps> = async ({ params }) => {
             </span>
           </h1>
           <h2 className='font-lato text-base font-semibold md:text-lg'>
-            {`${propertyDetails.property_address.city}, ${propertyDetails.property_address.location}`}
+            {`${propertyDetails.address.city}, ${propertyDetails.address.location}`}
           </h2>
           <div className='flex items-center gap-8 text-gray-800'>
             <div className='flex items-center gap-2 md:gap-3'>

@@ -15,19 +15,19 @@ const PropertyDetailsPropertyInfo: React.FC<IProps> = ({ data }) => {
         <li className='grid grid-cols-2 border-b border-dimgray pb-2'>
           <span>Type:</span>
           <span className='text-base font-medium md:text-lg'>
-            {data.property_type.type}
+            {data.type.type}
           </span>
         </li>
         <li className='grid grid-cols-2 border-b border-dimgray pb-2'>
           <span>Completion:</span>
           <span className='text-base font-medium md:text-lg'>
-            {data.property_purpose.property_purpose.purpose_title}
+            {data.purpose.property_purpose.name}
           </span>
         </li>
         <li className='grid grid-cols-2 border-b border-dimgray pb-2'>
           <span>Purpose:</span>
           <span className='text-base font-medium md:text-lg'>
-            {data.property_purpose.property_purpose.purpose_title}
+            {data.purpose.property_purpose.name}
           </span>
         </li>
         {/* <li className='grid grid-cols-2 pb-2 border-b border-dimgray'>
@@ -39,7 +39,7 @@ const PropertyDetailsPropertyInfo: React.FC<IProps> = ({ data }) => {
         <li className='grid grid-cols-2 border-b border-dimgray pb-2'>
           <span>Reference no.:</span>
           <span className='text-base font-medium md:text-lg'>
-            {data.reference_no}
+            {data.referenceNo}
           </span>
         </li>
       </ul>

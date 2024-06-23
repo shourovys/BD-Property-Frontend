@@ -29,15 +29,11 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
           <Image
             className='overflow-hidden object-fill'
             alt=''
-            src={
-              data?.property_images?.length
-                ? data?.property_images[0]?.image
-                : ''
-            }
+            src={data?.images?.length ? data?.images[0]?.image : ''}
             fill
           />
           <div className='absolute -bottom-1.5 -left-1.5 flex items-end gap-x-4 p-4 md:bottom-1.5 md:left-1.5'>
-            {data?.floor_plans && (
+            {data?.floorPlans && (
               <Link
                 to='floorPlan'
                 smooth={true}
@@ -67,44 +63,32 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
           </div>
         </div>
         <div className='relative flex h-full flex-col gap-4'>
-          {data?.property_images?.length && data?.property_images[1]?.image && (
+          {data?.images?.length && data?.images[1]?.image && (
             <div className='relative col-span-1 h-full max-h-44 w-full  '>
               <Image
                 className='rounded-6xs object-cover'
                 alt=''
-                src={
-                  (data?.property_images?.length &&
-                    data?.property_images[1]?.image) ||
-                  ''
-                }
+                src={(data?.images?.length && data?.images[1]?.image) || ''}
                 fill
               />
             </div>
           )}
-          {data?.property_images?.length && data?.property_images[2]?.image && (
+          {data?.images?.length && data?.images[2]?.image && (
             <div className='relative col-span-1 h-full max-h-44 w-full '>
               <Image
                 className='rounded-6xs object-cover '
                 alt=''
-                src={
-                  (data?.property_images?.length &&
-                    data?.property_images[2]?.image) ||
-                  ''
-                }
+                src={(data?.images?.length && data?.images[2]?.image) || ''}
                 fill
               />
             </div>
           )}
-          {data?.property_images?.length && data?.property_images[3]?.image && (
+          {data?.images?.length && data?.images[3]?.image && (
             <div className='relative col-span-1 h-full max-h-44 w-full'>
               <Image
                 className='rounded-6xs object-cover '
                 alt=''
-                src={
-                  (data?.property_images?.length &&
-                    data?.property_images[3]?.image) ||
-                  ''
-                }
+                src={(data?.images?.length && data?.images[3]?.image) || ''}
                 fill
               />
             </div>
@@ -115,7 +99,7 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
               onClick={() => handleModalOpen('photos')}
             >
               <CameraIcon className='text-sm md:text-base' />
-              {data?.property_images?.length}
+              {data?.images?.length}
             </div>
           </div>
         </div>
@@ -124,10 +108,10 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
       <div className='space-y-4 sm:hidden'>
         <ImageSlicer
           height={250}
-          images={data?.property_images?.map((image) => image.image) || []}
+          images={data?.images?.map((image) => image.image) || []}
         />
         <div className='custom_screen_width flex items-center gap-3 text-sm font-bold text-darkslateblue-100'>
-          {data?.floor_plans && (
+          {data?.floorPlans && (
             <Link
               to='floorPlan'
               smooth={true}
@@ -154,10 +138,10 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
       </div>
       <Modal openModal={openInfoModal} setOpenModal={setOpenInfoModal}>
         <InfoWithTabModalModal
-          reference={data?.reference_no || ''}
-          images={data?.property_images}
+          reference={data?.referenceNo || ''}
+          images={data?.images}
           videoUrl={data?.video}
-          floorPlan={data?.floor_plans}
+          floorPlan={data?.floorPlans}
           selectedTab={selectedTab}
           setSelectedTab={setSelectedTab}
           setOpenModal={setOpenInfoModal}

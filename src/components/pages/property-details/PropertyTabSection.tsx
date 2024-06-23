@@ -54,7 +54,7 @@ const PropertyTabSection: React.FC<IProps> = ({
             {/* <PropertyDetailsPropertyInfo data={data} /> */}
             <PropertyDetailsPropertyFeatures data={data} />
             {/* <PropertyDetailsTrends /> */}
-            <PropertyDetailsFloorPlan floorPlans={data.floor_plans} />
+            <PropertyDetailsFloorPlan floorPlans={data.floorPlans} />
             <PropertyDetailsMortgage propertyPrice={Number(data.price)} />
           </div>
         </div>
@@ -72,13 +72,13 @@ const PropertyTabSection: React.FC<IProps> = ({
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
         <PropertyCallCard
           setOpenModal={setOpenCallModal}
-          reference={data.reference_no}
+          reference={data.referenceNo}
         />
       </Modal>
       <Modal openModal={openEmailModal} setOpenModal={setOpenEmailModal}>
         <PropertyEmailCard
           setOpenModal={setOpenEmailModal}
-          reference={data.reference_no}
+          reference={data.referenceNo}
         />
       </Modal>
     </>

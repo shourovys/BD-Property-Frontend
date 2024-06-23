@@ -21,9 +21,9 @@ export const propertyPurposeData: IPropertyPurpose[] = [
     id: 'rent',
     title: 'Rent',
     subPurpose: [
-      // { id: 'any', title: 'Any' },
-      // { id: 'vacant', title: 'Vacant' },
-      // { id: 'occupied', title: 'Occupied' },
+      { id: 'any', title: 'Any' },
+      { id: 'vacant', title: 'Vacant' },
+      { id: 'occupied', title: 'Occupied' },
     ],
   },
   {
@@ -35,7 +35,7 @@ export const propertyPurposeData: IPropertyPurpose[] = [
       { id: 'under-construction', title: 'Under Construction' },
     ],
   },
-] as const
+]
 
 export const propertyTypeData: IPropertyType[] = [
   {
@@ -67,7 +67,7 @@ export const propertyTypeData: IPropertyType[] = [
       { id: 'factory', sub_type: 'Factory', icon: FactoryIcon },
     ],
   },
-] as const
+]
 
 export const badsAndBathsFilterOptions = {
   beds: [
@@ -89,11 +89,25 @@ export const badsAndBathsFilterOptions = {
     { label: '5', value: '5' },
     { label: '6+', value: '6plus' },
   ],
-} as const
+}
+
+export const features = [
+  { id: 1, name: 'View' },
+  { id: 2, name: 'Balcony or Terrace' },
+  { id: 3, name: 'Lobby in Building' },
+  { id: 4, name: 'Elevators in Building' },
+  { id: 5, name: 'Parking Spaces' },
+  { id: 6, name: 'Floor Level' },
+  { id: 7, name: 'CCTV Security' },
+  { id: 8, name: 'Double Glazed Windows' },
+  { id: 9, name: 'Central Heating' },
+  { id: 10, name: 'Electricity Backup' },
+  { id: 11, name: '24 Hours Concierge' },
+]
 
 export const propertySortOptions: ISelectOption[] = [
   { label: 'Popular', value: 'popular' },
   { label: 'Newest', value: 'newest' },
   { label: 'Lowest Price', value: 'lowestPrice' },
   { label: 'Highest Price', value: 'highestPrice' },
-] as const
+]

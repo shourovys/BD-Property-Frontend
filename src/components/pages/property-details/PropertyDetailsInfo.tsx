@@ -69,7 +69,7 @@ const PropertyDetailsInfo: React.FC<IProps> = ({
 
   const handleSmsButtonClick = () => {
     const phoneNumber = ''
-    const message = `I would like to inquire about the listing ${data.reference_no}. The listing can be found here ${window.location}`
+    const message = `I would like to inquire about the listing ${data.referenceNo}. The listing can be found here ${window.location}`
     const smsUri = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`
     window.location.href = smsUri
   }
@@ -89,7 +89,7 @@ const PropertyDetailsInfo: React.FC<IProps> = ({
             </span>
           </h1>
           <h2 className='font-lato text-base font-semibold sm:text-lg md:text-xl'>
-            {data.property_address.location}, {data.property_address.city}
+            {data.address.location}, {data.address.city}
           </h2>
           <div className='flex items-center gap-8 text-gray-800'>
             <div className='flex items-center gap-2 md:gap-3'>

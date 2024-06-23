@@ -4,7 +4,7 @@ import Modal from '@/components/HOC/Modal'
 import Button from '@/components/atomic/Button'
 import useAuth from '@/hooks/useAuth'
 import { IListPropertyResponse } from '@/types/pages/property'
-import { SITE_PAGES } from '@/utils/config'
+import { IMAGE_URL, SITE_PAGES } from '@/utils/config'
 import formatPrice from '@/utils/formatPrice'
 import {
   AreaIcon,
@@ -80,8 +80,8 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
           <Image
             className='rounded-md'
             src={
-              property.property_images?.length
-                ? property.property_images[0]?.image
+              property.images?.length
+                ? IMAGE_URL + property.images[0]?.image
                 : ''
             }
             alt={property.title}
@@ -105,9 +105,7 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
               {formatPrice(property.price)}
             </span>
           </h1>
-          <h1 className='text-base md:text-lg'>
-            {property.property_address.city}
-          </h1>
+          <h1 className='text-base md:text-lg'>{property.address.city}</h1>
           <p className='font-light text-salmon'>{property.title}</p>
           <div className='flex items-center gap-6'>
             <div className='flex items-center gap-2'>
@@ -179,13 +177,13 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
         <PropertyCallCard
           setOpenModal={setOpenCallModal}
-          reference={property.reference_no}
+          reference={property.referenceNo}
         />
       </Modal>
       <Modal openModal={openEmailModal} setOpenModal={setOpenEmailModal}>
         <PropertyEmailCard
           setOpenModal={setOpenEmailModal}
-          reference={property.reference_no}
+          reference={property.referenceNo}
         />
       </Modal>
     </Link>

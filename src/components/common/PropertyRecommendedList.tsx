@@ -54,9 +54,7 @@ const PropertyRecommendedList: React.FC<IProps> = ({ recommendedProperty }) => {
           <RecommendedCard
             key={data.id}
             id={data.id}
-            imageSrc={
-              data.property_images?.length ? data.property_images[0]?.image : ''
-            }
+            imageSrc={data.images?.length ? data.images[0]?.image : ''}
             price={data.price}
             location={data.title}
             bedCount={data.bed}

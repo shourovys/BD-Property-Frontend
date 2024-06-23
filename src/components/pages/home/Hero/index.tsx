@@ -21,8 +21,8 @@ const HomeHeroSection = () => {
   //     typeValue: propertyTypeData[0].id,
   //     typeLabel: propertyTypeData[0].type,
 
-  //     subTypeValue: propertyTypeData[0].property_sub_type[0]?.id,
-  //     subTypeLabel: propertyTypeData[0].property_sub_type[0]?.sub_type,
+  //     subTypeValue: propertyTypeData[0].subType[0]?.id,
+  //     subTypeLabel: propertyTypeData[0].subType[0]?.sub_type,
   //   }
 
   //   updateRouteQueryWithReplace({

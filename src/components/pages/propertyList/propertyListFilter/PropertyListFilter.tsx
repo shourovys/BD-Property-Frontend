@@ -6,16 +6,16 @@ import { propertySortOptions } from '@/utils/data/property'
 import { findNameOption } from '@/utils/findOption'
 import { DownArrowIcon, FilterListIcon, GridIcon, ListIcon } from '@/utils/icon'
 import classNames from 'classnames'
-import React, { Dispatch, SetStateAction } from 'react'
+import React from 'react'
 
 interface IProps {
   isCardVertical: boolean
-  setIsCardVertical: Dispatch<SetStateAction<boolean>>
+  handleSetIsCardVertical: (value: boolean) => void
 }
 
 const PropertyListFilter: React.FC<IProps> = ({
   isCardVertical,
-  setIsCardVertical,
+  handleSetIsCardVertical,
 }) => {
   const { sortBy } = useAppSelector((state) => state.propertySearch)
 
@@ -46,7 +46,7 @@ const PropertyListFilter: React.FC<IProps> = ({
               'cursor-pointer rounded-6xs px-3.5 py-1',
               !isCardVertical && 'bg-cornflowerblue'
             )}
-            onClick={() => setIsCardVertical(false)}
+            onClick={() => handleSetIsCardVertical(false)}
             aria-label='List View'
           >
             <ListIcon className='text-xl' />
@@ -57,7 +57,7 @@ const PropertyListFilter: React.FC<IProps> = ({
               'cursor-pointer rounded-6xs px-3.5 py-1',
               isCardVertical && 'bg-cornflowerblue'
             )}
-            onClick={() => setIsCardVertical(true)}
+            onClick={() => handleSetIsCardVertical(true)}
             aria-label='Grid View'
           >
             <GridIcon className='text-xl' />
