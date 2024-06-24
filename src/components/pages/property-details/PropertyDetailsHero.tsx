@@ -2,6 +2,7 @@
 import Modal from '@/components/HOC/Modal'
 import ImageSlicer from '@/components/common/ImageSlicer'
 import { IPropertyDetails } from '@/types/pages/property'
+import { IMAGE_URL } from '@/utils/config'
 import { CameraIcon, FloorIcon, PlayIcon } from '@/utils/icon'
 import Image from 'next/image'
 import React, { useState } from 'react'
@@ -29,7 +30,7 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
           <Image
             className='overflow-hidden object-fill'
             alt=''
-            src={data?.images?.length ? data?.images[0]?.image : ''}
+            src={data?.images?.length ? IMAGE_URL + data?.images[0]?.image : ''}
             fill
           />
           <div className='absolute -bottom-1.5 -left-1.5 flex items-end gap-x-4 p-4 md:bottom-1.5 md:left-1.5'>
@@ -68,7 +69,11 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
               <Image
                 className='rounded-6xs object-cover'
                 alt=''
-                src={(data?.images?.length && data?.images[1]?.image) || ''}
+                src={
+                  (data?.images?.length &&
+                    IMAGE_URL + data?.images[1]?.image) ||
+                  ''
+                }
                 fill
               />
             </div>
@@ -78,7 +83,11 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
               <Image
                 className='rounded-6xs object-cover '
                 alt=''
-                src={(data?.images?.length && data?.images[2]?.image) || ''}
+                src={
+                  (data?.images?.length &&
+                    IMAGE_URL + data?.images[2]?.image) ||
+                  ''
+                }
                 fill
               />
             </div>
@@ -88,7 +97,11 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
               <Image
                 className='rounded-6xs object-cover '
                 alt=''
-                src={(data?.images?.length && data?.images[3]?.image) || ''}
+                src={
+                  (data?.images?.length &&
+                    IMAGE_URL + data?.images[3]?.image) ||
+                  ''
+                }
                 fill
               />
             </div>

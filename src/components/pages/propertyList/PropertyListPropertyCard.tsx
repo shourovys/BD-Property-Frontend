@@ -64,10 +64,10 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
     if (!isAuthenticated) {
       router.push(`/login?previousRoute=${pathName}?${searchParams.toString()}`)
     }
-    saveTrigger({ property_id: property.id })
+    saveTrigger({ property_id: property._id })
   }
   return (
-    <Link href={`/property/${property.id}`}>
+    <Link href={`/property/${property._id}`}>
       <div
         className={classNames(
           isCardVertical

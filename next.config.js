@@ -9,6 +9,10 @@ module.exports = {
         protocol: 'https',
         hostname: 'images.unsplash.comhttps',
       },
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+      },
     ],
   },
 }

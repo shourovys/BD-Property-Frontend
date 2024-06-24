@@ -2,6 +2,7 @@ import Modal from '@/components/HOC/Modal'
 import Tabs from '@/components/common/Tabs'
 import YtVideoPlayer from '@/components/common/YtVideoPlayer'
 import { IPropertyDetails } from '@/types/pages/property'
+import { IMAGE_URL } from '@/utils/config'
 import { CameraIcon, CloseIcon, PlayIcon } from '@/utils/icon'
 import Image from 'next/image'
 import React, { useState } from 'react'
@@ -130,7 +131,7 @@ const ImageGallery: React.FC<Pick<IInfoWithTabModalModalProps, 'images'>> = ({
       {images?.map((image) => (
         <div className='relative aspect-square h-full w-full ' key={image.id}>
           <Image
-            src={image.image}
+            src={IMAGE_URL + image.image}
             alt={image.id.toString()}
             className='rounded-md object-cover'
             fill

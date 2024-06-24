@@ -16,7 +16,7 @@ const BookingPage: React.FC<IProps> = async ({ params }) => {
   const { propertyId } = params
 
   const {
-    results: { property_details: propertyDetails },
+    results: { details: propertyDetails },
   } = await fetchData<ISingleServerResponse<IPropertyDetailsResponse>>(
     propertyUrls.propertyDetails(propertyId as string)
   )

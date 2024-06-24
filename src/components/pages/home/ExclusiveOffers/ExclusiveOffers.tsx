@@ -53,8 +53,8 @@ const ExclusiveOffers: NextPage = () => {
         <div className='relative grid w-full grid-cols-1 justify-items-center gap-4 sm:grid-cols-3 md:gap-6 lg:grid-cols-5'>
           {offerData.map((property) => (
             <Link
-              href={SITE_PAGES.propertyPage(property.id)}
-              key={property.id}
+              href={SITE_PAGES.propertyPage(property._id)}
+              key={property._id}
               className='relative flex h-[255px] w-full min-w-max '
             >
               <div className='rounded-bl-m absolute left-2 top-2 z-10 rounded-bl-md rounded-tr-md bg-gradient-to-r from-red-700 to-red-600 px-3 py-1 text-xs font-medium text-white shadow-md'>

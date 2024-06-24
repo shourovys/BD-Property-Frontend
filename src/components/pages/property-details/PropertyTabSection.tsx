@@ -14,6 +14,7 @@ import { useRef, useState } from 'react'
 import PropertyCallCard from '../propertyList/PropertyCallCard'
 import PropertyEmailCard from '../propertyList/PropertyEmailCard'
 import PropertyDetailsFloorPlan from './PropertyDetailsFloorPlan'
+import PropertyDetailsTrends from './PropertyDetailsTrends'
 
 interface IProps {
   data: IPropertyDetails
@@ -53,9 +54,11 @@ const PropertyTabSection: React.FC<IProps> = ({
             <PropertyDetailsBlog data={data} />
             {/* <PropertyDetailsPropertyInfo data={data} /> */}
             <PropertyDetailsPropertyFeatures data={data} />
-            {/* <PropertyDetailsTrends /> */}
-            <PropertyDetailsFloorPlan floorPlans={data.floorPlans} />
-            <PropertyDetailsMortgage propertyPrice={Number(data.price)} />
+            <PropertyDetailsTrends />
+            {data?.floorPlans && (
+              <PropertyDetailsFloorPlan floorPlans={data?.floorPlans} />
+            )}
+            <PropertyDetailsMortgage propertyPrice={data.price} />
           </div>
         </div>
 
@@ -67,7 +70,9 @@ const PropertyTabSection: React.FC<IProps> = ({
           <PopularSearches />
         </div>
       </div>
-      <PropertyRecommendedList recommendedProperty={recommendedProperty} />
+      {!!recommendedProperty.length && (
+        <PropertyRecommendedList recommendedProperty={recommendedProperty} />
+      )}
 
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
         <PropertyCallCard

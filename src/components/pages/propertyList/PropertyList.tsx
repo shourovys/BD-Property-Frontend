@@ -33,7 +33,7 @@ const PropertyList: React.FC<IProps> = ({
     >
       {propertyList?.map((property) => (
         <PropertyListPropertyCard
-          key={property.id}
+          key={property._id}
           property={property}
           isCardVertical={isCardVertical}
         />

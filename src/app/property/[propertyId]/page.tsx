@@ -24,11 +24,11 @@ const PropertyDetailsForSaleAnd: React.FC<IProps> = async ({ params }) => {
     <div className='bg-gray-100 font-ubuntu text-sm text-black lg:text-base'>
       {/* <Breadcrumbs /> */}
       <div className='pt-4 md:pt-6'>
-        <PropertyDetailsHero data={data.results.property_details} />
+        <PropertyDetailsHero data={data.results.details} />
       </div>
       <PropertyTabSection
-        data={data.results.property_details}
-        recommendedProperty={data.results.related_property}
+        data={data.results.details}
+        recommendedProperty={data.results.related}
       />
     </div>
   )

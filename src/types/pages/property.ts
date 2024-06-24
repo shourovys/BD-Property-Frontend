@@ -24,15 +24,16 @@ export interface IPropertyType {
 }
 
 export interface IPropertyDetails {
+  _id: string
   id: string
   referenceNo: string
   title: string
-  size: string
-  price: string
+  size: number
+  price: number
   video: string
   bed: number
   bath: number
-  floorPlans: string
+  floorPlans?: string
   description: string
   status: string
   keywords: string[]
@@ -41,29 +42,27 @@ export interface IPropertyDetails {
     name: string
     email: string
   }
-  features: {
+  features?: {
     id: number
-    features_type: string
-    features_logo: string
+    name: string
   }[]
   purpose: {
-    property_purpose: {
-      id: number
+    purpose: {
+      id: string
       name: string
     }
-    property_sub_purpose: {
-      id: number
+    subPurpose: {
+      id: string
       name: string
     } | null
   }
   type: {
-    id: number
-    type: string
+    id: string
+    name: string
   }
   subType: {
-    id: number
-    sub_type: string
-    property_type: number
+    id: string
+    name: string
   }
   address: {
     id: number
@@ -75,13 +74,14 @@ export interface IPropertyDetails {
 }
 
 export interface IPropertyDetailsResponse {
-  property_details: IPropertyDetails
-  related_property: IListPropertyResponse[]
+  details: IPropertyDetails
+  related: IListPropertyResponse[]
 }
 
 export interface IListPropertyResponse
   extends Pick<
     IPropertyDetails,
+    | '_id'
     | 'id'
     | 'referenceNo'
     | 'title'
