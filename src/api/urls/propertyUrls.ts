@@ -4,6 +4,6 @@ export const propertyUrls = {
   address: '/property/property-address/',
   property: '/properties',
   propertySave: '/property/property-save/',
-  propertyDetails: (id: string) => `/property/${id}/`,
+  propertyDetails: (id: string) => `/properties/${id}/`,
   propertyBook: '/property/bookings/',
 }
