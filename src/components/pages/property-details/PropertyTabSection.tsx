@@ -53,7 +53,9 @@ const PropertyTabSection: React.FC<IProps> = ({
           <div className=''>
             <PropertyDetailsBlog data={data} />
             {/* <PropertyDetailsPropertyInfo data={data} /> */}
-            <PropertyDetailsPropertyFeatures data={data} />
+            {data.features && (
+              <PropertyDetailsPropertyFeatures features={data.features} />
+            )}
             <PropertyDetailsTrends />
             {data?.floorPlans && (
               <PropertyDetailsFloorPlan floorPlans={data?.floorPlans} />

@@ -11,11 +11,11 @@ import useSWRMutation from 'swr/mutation'
 interface RecommendedCardProps {
   id: string
   imageSrc: string
-  price: string
+  price: number
   location: string
   bedCount: number
   bathCount: number
-  area: string
+  area: number
 }
 
 const RecommendedCard: React.FC<RecommendedCardProps> = ({
