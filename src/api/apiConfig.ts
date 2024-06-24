@@ -1,5 +1,5 @@
-import axios from 'axios'
 import { API_URL, LOCAL_STORAGE_KEY } from '@/utils/config'
+import axios from 'axios'
 
 const Axios = axios.create({
   baseURL: API_URL,
@@ -7,7 +7,6 @@ const Axios = axios.create({
     Accept: 'application/json',
     'Content-Type': 'application/json',
   },
-  withCredentials: true,
 })
 
 Axios.interceptors.request.use((config) => {
