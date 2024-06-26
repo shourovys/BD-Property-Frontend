@@ -4,7 +4,7 @@
     "referenceNo": "PROP12345",
     "title": "Luxurious Apartment in Gulshan",
     "size": 1500,
-    "price": 1500000,
+    "price": 8750000,
     "video": "https://example.com/video.mp4",
     "bed": 3,
     "bath": 2,
@@ -18,11 +18,26 @@
       "email": "john.doe@example.com"
     },
     "features": [
-      { "id": "1", "name": "View" },
-      { "id": "2", "name": "Balcony or Terrace" },
-      { "id": "5", "name": "Parking Spaces" },
-      { "id": "6", "name": "Floor Level" },
-      { "id": "7", "name": "CCTV Security" }
+      {
+        "id": "1",
+        "name": "View"
+      },
+      {
+        "id": "2",
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": "5",
+        "name": "Parking Spaces"
+      },
+      {
+        "id": "6",
+        "name": "Floor Level"
+      },
+      {
+        "id": "7",
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -50,12 +65,20 @@
     },
     "images": [
       {
-        "id": 1,
-        "image": "https://example.com/images/property1.jpg"
+        "id": 14,
+        "image": "/photo-1501183638710-841dd1904471"
       },
       {
-        "id": 2,
-        "image": "https://example.com/images/property2.jpg"
+        "id": 3,
+        "image": "/photo-1472224371017-08207f84aaae"
+      },
+      {
+        "id": 7,
+        "image": "/photo-1493663284031-b7e3aefcae8e"
+      },
+      {
+        "id": 17,
+        "image": "/photo-1449844908441-8829872d2607"
       }
     ]
   },
@@ -78,11 +101,26 @@
       "email": "jane.smith@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Lobby in Building" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 9, "name": "Central Heating" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Lobby in Building"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 9,
+        "name": "Central Heating"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -132,7 +170,7 @@
     "referenceNo": "PROP78901",
     "title": "Spacious Villa in Dhanmondi",
     "size": 3500,
-    "price": 35000000,
+    "price": 6310000,
     "video": "https://example.com/video3.mp4",
     "bed": 5,
     "bath": 4,
@@ -146,11 +184,26 @@
       "email": "alice.johnson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 4, "name": "Elevators in Building" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 4,
+        "name": "Elevators in Building"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -200,7 +253,7 @@
     "referenceNo": "PROP89012",
     "title": "Cozy Studio in Mirpur",
     "size": 600,
-    "price": 6000,
+    "price": 45000,
     "video": "https://example.com/video4.mp4",
     "bed": 1,
     "bath": 1,
@@ -214,10 +267,22 @@
       "email": "bob.brown@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Lobby in Building" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 11, "name": "24 Hours Concierge" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Lobby in Building"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 11,
+        "name": "24 Hours Concierge"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -267,7 +332,7 @@
     "referenceNo": "PROP90123",
     "title": "Elegant Penthouse in Uttara",
     "size": 2000,
-    "price": 20000000,
+    "price": 6220000,
     "video": "https://example.com/video5.mp4",
     "bed": 4,
     "bath": 3,
@@ -281,11 +346,26 @@
       "email": "charlie.davis@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -349,11 +429,26 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 3, "name": "Lobby in Building" },
-      { "id": 4, "name": "Elevators in Building" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 3,
+        "name": "Lobby in Building"
+      },
+      {
+        "id": 4,
+        "name": "Elevators in Building"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -403,7 +498,7 @@
     "referenceNo": "PROP12345",
     "title": "Modern Apartment in Banani",
     "size": 1800,
-    "price": 18000000,
+    "price": 7870000,
     "video": "https://example.com/video7.mp4",
     "bed": 3,
     "bath": 2,
@@ -417,11 +512,26 @@
       "email": "emily.smith@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 9, "name": "Central Heating" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 9,
+        "name": "Central Heating"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -471,7 +581,7 @@
     "referenceNo": "PROP23456",
     "title": "Luxury Duplex in Gulshan",
     "size": 3900,
-    "price": 40000000,
+    "price": 4770000,
     "video": "https://example.com/video8.mp4",
     "bed": 5,
     "bath": 4,
@@ -485,11 +595,26 @@
       "email": "sophia.brown@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -539,7 +664,7 @@
     "referenceNo": "PROP34567",
     "title": "Commercial Floor in Motijheel",
     "size": 8000,
-    "price": 8000000,
+    "price": 299000,
     "video": "https://example.com/video9.mp4",
     "bed": 0,
     "bath": 4,
@@ -553,11 +678,26 @@
       "email": "oliver.taylor@example.com"
     },
     "features": [
-      { "id": 3, "name": "Lobby in Building" },
-      { "id": 4, "name": "Elevators in Building" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 3,
+        "name": "Lobby in Building"
+      },
+      {
+        "id": 4,
+        "name": "Elevators in Building"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -621,11 +761,26 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 3, "name": "Lobby in Building" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" },
-      { "id": 11, "name": "24 Hours Concierge" }
+      {
+        "id": 3,
+        "name": "Lobby in Building"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      },
+      {
+        "id": 11,
+        "name": "24 Hours Concierge"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -672,7 +827,7 @@
     "referenceNo": "PROP56789",
     "title": "Luxurious Apartment in Dhanmondi",
     "size": 2100,
-    "price": 22000000,
+    "price": 6810000,
     "video": "https://example.com/video11.mp4",
     "bed": 4,
     "bath": 3,
@@ -686,11 +841,26 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 9, "name": "Central Heating" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 9,
+        "name": "Central Heating"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -740,7 +910,7 @@
     "referenceNo": "PROP67890",
     "title": "Office Space in Uttara",
     "size": 3000,
-    "price": 3000000,
+    "price": 351000,
     "video": "https://example.com/video12.mp4",
     "bed": 0,
     "bath": 2,
@@ -754,11 +924,26 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 3, "name": "Lobby in Building" },
-      { "id": 4, "name": "Elevators in Building" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 3,
+        "name": "Lobby in Building"
+      },
+      {
+        "id": 4,
+        "name": "Elevators in Building"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -808,7 +993,7 @@
     "referenceNo": "PROP78901",
     "title": "Warehouse in Tejgaon",
     "size": 13000,
-    "price": 120000000,
+    "price": 9490000,
     "video": "https://example.com/video13.mp4",
     "bed": 0,
     "bath": 0,
@@ -822,11 +1007,26 @@
       "email": "sophia.brown@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 9, "name": "Central Heating" },
-      { "id": 10, "name": "Electricity Backup" },
-      { "id": 11, "name": "24 Hours Concierge" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 9,
+        "name": "Central Heating"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      },
+      {
+        "id": 11,
+        "name": "24 Hours Concierge"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -873,7 +1073,7 @@
     "referenceNo": "PROP89012",
     "title": "Spacious Plot in Uttara",
     "size": 15000,
-    "price": 15000000,
+    "price": 6830000,
     "video": "https://example.com/video14.mp4",
     "bed": 0,
     "bath": 0,
@@ -887,8 +1087,14 @@
       "email": "john.doe@example.com"
     },
     "features": [
-      { "id": 10, "name": "Electricity Backup" },
-      { "id": 11, "name": "24 Hours Concierge" }
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      },
+      {
+        "id": 11,
+        "name": "24 Hours Concierge"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -949,9 +1155,18 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1001,7 +1216,7 @@
     "referenceNo": "PROP01234",
     "title": "Lake View Villa in Gulshan",
     "size": 5000,
-    "price": 56000000,
+    "price": 7710000,
     "video": "https://example.com/video16.mp4",
     "bed": 6,
     "bath": 5,
@@ -1015,10 +1230,22 @@
       "email": "james.anderson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1065,7 +1292,7 @@
     "referenceNo": "PROP12345",
     "title": "Exclusive Penthouse in Banani",
     "size": 2800,
-    "price": 20800000,
+    "price": 7760000,
     "video": "https://example.com/video17.mp4",
     "bed": 3,
     "bath": 3,
@@ -1079,11 +1306,26 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1147,9 +1389,18 @@
       "email": "emily.smith@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1187,7 +1438,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       }
     ]
   },
@@ -1196,7 +1447,7 @@
     "referenceNo": "PROP34567",
     "title": "Modern Residential Plot in Mirpur",
     "size": 12000,
-    "price": 102000000,
+    "price": 5120000,
     "video": "https://example.com/video19.mp4",
     "bed": 0,
     "bath": 0,
@@ -1210,8 +1461,14 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 10, "name": "Electricity Backup" },
-      { "id": 11, "name": "24 Hours Concierge" }
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      },
+      {
+        "id": 11,
+        "name": "24 Hours Concierge"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1272,9 +1529,18 @@
       "email": "sophia.brown@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1311,7 +1577,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 14,
@@ -1324,7 +1590,7 @@
     "referenceNo": "PROP56789",
     "title": "Spacious Family Home in Mirpur",
     "size": 2500,
-    "price": 2500000,
+    "price": 7580000,
     "video": "https://example.com/video21.mp4",
     "bed": 4,
     "bath": 3,
@@ -1338,10 +1604,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 9, "name": "Central Heating" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 9,
+        "name": "Central Heating"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1388,7 +1666,7 @@
     "referenceNo": "PROP67890",
     "title": "Luxurious Office Space in Gulshan",
     "size": 4000,
-    "price": 4000000,
+    "price": 25000,
     "video": "https://example.com/video22.mp4",
     "bed": 0,
     "bath": 2,
@@ -1402,10 +1680,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1431,7 +1721,7 @@
     "images": [
       {
         "id": 2,
-        "image": "/photo-1497366754035-f2001e6b520d"
+        "image": "/photo-1600607688960-e095ff83135c"
       },
       {
         "id": 11,
@@ -1439,7 +1729,7 @@
       },
       {
         "id": 19,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 6,
@@ -1452,7 +1742,7 @@
     "referenceNo": "PROP78901",
     "title": "Lakefront House in Gulshan",
     "size": 3200,
-    "price": 3200000,
+    "price": 4860000,
     "video": "https://example.com/video23.mp4",
     "bed": 5,
     "bath": 4,
@@ -1466,11 +1756,26 @@
       "email": "olivia.taylor@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1496,7 +1801,7 @@
     "images": [
       {
         "id": 3,
-        "image": "/photo-1497366754035-f2001e6b520d"
+        "image": "/photo-1600607688960-e095ff83135c"
       },
       {
         "id": 13,
@@ -1517,7 +1822,7 @@
     "referenceNo": "PROP89012",
     "title": "Waterfront House in Dhanmondi",
     "size": 4000,
-    "price": 38000000,
+    "price": 4300000,
     "video": "https://example.com/video24.mp4",
     "bed": 4,
     "bath": 3,
@@ -1531,11 +1836,26 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1582,7 +1902,7 @@
     "referenceNo": "PROP90123",
     "title": "Family Home in Dhanmondi",
     "size": 3200,
-    "price": 30200000,
+    "price": 6850000,
     "video": "https://example.com/video25.mp4",
     "bed": 5,
     "bath": 3,
@@ -1596,9 +1916,18 @@
       "email": "sophia.brown@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 9, "name": "Central Heating" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 9,
+        "name": "Central Heating"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1659,8 +1988,14 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1698,7 +2033,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       }
     ]
   },
@@ -1707,7 +2042,7 @@
     "referenceNo": "PROP12345",
     "title": "Modern Residential Plot in Dhanmondi",
     "size": 1500,
-    "price": 1500000,
+    "price": 7650000,
     "video": "https://example.com/video27.mp4",
     "bed": 0,
     "bath": 0,
@@ -1721,8 +2056,14 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 10, "name": "Electricity Backup" },
-      { "id": 11, "name": "24 Hours Concierge" }
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      },
+      {
+        "id": 11,
+        "name": "24 Hours Concierge"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1769,7 +2110,7 @@
     "referenceNo": "PROP23456",
     "title": "Elegant Condo in Gulshan",
     "size": 1800,
-    "price": 1800000,
+    "price": 296000,
     "video": "https://example.com/video28.mp4",
     "bed": 3,
     "bath": 2,
@@ -1783,9 +2124,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1822,7 +2172,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 14,
@@ -1849,10 +2199,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1886,7 +2248,7 @@
       },
       {
         "id": 19,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 6,
@@ -1899,7 +2261,7 @@
     "referenceNo": "PROP45678",
     "title": "Lakefront House in Mirpur",
     "size": 2800,
-    "price": 20800000,
+    "price": 4700000,
     "video": "https://example.com/video30.mp4",
     "bed": 4,
     "bath": 3,
@@ -1913,10 +2275,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -1942,7 +2316,7 @@
     "images": [
       {
         "id": 5,
-        "image": "/photo-1497366754035-f2001e6b520d"
+        "image": "/photo-1600607688960-e095ff83135c"
       },
       {
         "id": 10,
@@ -1963,7 +2337,7 @@
     "referenceNo": "PROP56789",
     "title": "Waterfront House in Banani",
     "size": 3600,
-    "price": 30600000,
+    "price": 8420000,
     "video": "https://example.com/video31.mp4",
     "bed": 4,
     "bath": 4,
@@ -1977,10 +2351,22 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2010,7 +2396,7 @@
       },
       {
         "id": 14,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 20,
@@ -2022,7 +2408,6 @@
       }
     ]
   },
-
   {
     "id": "32",
     "referenceNo": "PROP67890",
@@ -2042,10 +2427,22 @@
       "email": "olivia.taylor@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2075,7 +2472,7 @@
       },
       {
         "id": 16,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 8,
@@ -2083,7 +2480,7 @@
       },
       {
         "id": 12,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       }
     ]
   },
@@ -2106,9 +2503,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2137,7 +2543,7 @@
     "images": [
       {
         "id": 17,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 9,
@@ -2158,7 +2564,7 @@
     "referenceNo": "PROP89012",
     "title": "Prime Commercial Office in Uttara",
     "size": 4800,
-    "price": 2800000,
+    "price": 35000,
     "video": "https://example.com/video34.mp4",
     "bed": 0,
     "bath": 4,
@@ -2172,10 +2578,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2213,7 +2631,7 @@
       },
       {
         "id": 9,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       }
     ]
   },
@@ -2222,7 +2640,7 @@
     "referenceNo": "PROP90123",
     "title": "Spacious Warehouse in Tejgaon",
     "size": 7200,
-    "price": 500000,
+    "price": 241000,
     "video": "https://example.com/video35.mp4",
     "bed": 0,
     "bath": 0,
@@ -2236,8 +2654,14 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2275,7 +2699,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       }
     ]
   },
@@ -2298,9 +2722,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2334,7 +2767,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 14,
@@ -2342,7 +2775,6 @@
       }
     ]
   },
-
   {
     "id": "37",
     "referenceNo": "PROP23457",
@@ -2362,10 +2794,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2399,7 +2843,7 @@
       },
       {
         "id": 19,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 6,
@@ -2412,7 +2856,7 @@
     "referenceNo": "PROP34568",
     "title": "Lakefront House in Mirpur",
     "size": 3000,
-    "price": 38000000,
+    "price": 8250000,
     "video": "https://example.com/video38.mp4",
     "bed": 3,
     "bath": 3,
@@ -2426,10 +2870,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2455,7 +2911,7 @@
     "images": [
       {
         "id": 5,
-        "image": "/photo-1497366754035-f2001e6b520d"
+        "image": "/photo-1600607688960-e095ff83135c"
       },
       {
         "id": 10,
@@ -2471,13 +2927,12 @@
       }
     ]
   },
-
   {
     "id": "39",
     "referenceNo": "PROP45679",
     "title": "Lakeside Apartment in Banani",
     "size": 2700,
-    "price": 20700000,
+    "price": 6740000,
     "video": "https://example.com/video39.mp4",
     "bed": 3,
     "bath": 2,
@@ -2491,9 +2946,18 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2540,7 +3004,7 @@
     "referenceNo": "PROP56780",
     "title": "Newly Built Apartment in Dhanmondi",
     "size": 2400,
-    "price": 20400000,
+    "price": 5080000,
     "video": "https://example.com/video40.mp4",
     "bed": 3,
     "bath": 2,
@@ -2554,9 +3018,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2590,7 +3063,7 @@
       },
       {
         "id": 21,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 3,
@@ -2603,7 +3076,7 @@
     "referenceNo": "PROP67891",
     "title": "Modern Condo in Gulshan",
     "size": 2100,
-    "price": 20100000,
+    "price": 6360000,
     "video": "https://example.com/video41.mp4",
     "bed": 2,
     "bath": 2,
@@ -2617,9 +3090,18 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2649,7 +3131,7 @@
       },
       {
         "id": 14,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 19,
@@ -2666,7 +3148,7 @@
     "referenceNo": "PROP78902",
     "title": "Modern Office Space in Motijheel",
     "size": 3300,
-    "price": 34300000,
+    "price": 5850000,
     "video": "https://example.com/video42.mp4",
     "bed": 0,
     "bath": 3,
@@ -2680,10 +3162,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2721,7 +3215,7 @@
       },
       {
         "id": 3,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       }
     ]
   },
@@ -2730,7 +3224,7 @@
     "referenceNo": "PROP89012",
     "title": "Stylish Office Space in Uttara",
     "size": 4600,
-    "price": 40600000,
+    "price": 9030000,
     "video": "https://example.com/video43.mp4",
     "bed": 0,
     "bath": 4,
@@ -2744,10 +3238,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2785,7 +3291,7 @@
       },
       {
         "id": 9,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       }
     ]
   },
@@ -2794,7 +3300,7 @@
     "referenceNo": "PROP90123",
     "title": "Spacious Warehouse in Tejgaon",
     "size": 7200,
-    "price": 70200000,
+    "price": 6390000,
     "video": "https://example.com/video44.mp4",
     "bed": 0,
     "bath": 0,
@@ -2808,8 +3314,14 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2847,7 +3359,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       }
     ]
   },
@@ -2856,7 +3368,7 @@
     "referenceNo": "PROP12347",
     "title": "Elegant Condo in Gulshan",
     "size": 1900,
-    "price": 10900000,
+    "price": 9400000,
     "video": "https://example.com/video45.mp4",
     "bed": 3,
     "bath": 2,
@@ -2870,9 +3382,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2906,7 +3427,7 @@
       },
       {
         "id": 4,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 14,
@@ -2919,7 +3440,7 @@
     "referenceNo": "PROP23457",
     "title": "Luxurious Office Space in Mirpur",
     "size": 3500,
-    "price": 32500000,
+    "price": 8550000,
     "video": "https://example.com/video46.mp4",
     "bed": 0,
     "bath": 4,
@@ -2933,10 +3454,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -2974,7 +3507,7 @@
       },
       {
         "id": 17,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       }
     ]
   },
@@ -2983,7 +3516,7 @@
     "referenceNo": "PROP34567",
     "title": "Charming Warehouse in Tejgaon",
     "size": 6200,
-    "price": 60200000,
+    "price": 4720000,
     "video": "https://example.com/video47.mp4",
     "bed": 0,
     "bath": 0,
@@ -2997,8 +3530,14 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3024,7 +3563,7 @@
     "images": [
       {
         "id": 1,
-        "image": "/photo-1500051638674-ffaa6fba1fca"
+        "image": "/photo-1512917774080-9991f1c4c750"
       },
       {
         "id": 14,
@@ -3045,7 +3584,7 @@
     "referenceNo": "PROP45678",
     "title": "Spectacular Lakefront House in Mirpur",
     "size": 2900,
-    "price": 22900000,
+    "price": 8690000,
     "video": "https://example.com/video48.mp4",
     "bed": 3,
     "bath": 3,
@@ -3059,10 +3598,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3109,7 +3660,7 @@
     "referenceNo": "PROP56789",
     "title": "Stylish Lakeview Apartment in Banani",
     "size": 2500,
-    "price": 2500000,
+    "price": 4000000,
     "video": "https://example.com/video49.mp4",
     "bed": 3,
     "bath": 2,
@@ -3123,9 +3674,18 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3172,7 +3732,7 @@
     "referenceNo": "PROP56789",
     "title": "Stylish Lakeview Apartment in Banani",
     "size": 2500,
-    "price": 25500000,
+    "price": 6930000,
     "video": "https://example.com/video49.mp4",
     "bed": 3,
     "bath": 2,
@@ -3186,9 +3746,18 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3235,7 +3804,7 @@
     "referenceNo": "PROP67890",
     "title": "Lakeside Family House in Dhanmondi",
     "size": 3000,
-    "price": 30600000,
+    "price": 9440000,
     "video": "https://example.com/video50.mp4",
     "bed": 4,
     "bath": 3,
@@ -3249,10 +3818,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3299,7 +3880,7 @@
     "referenceNo": "PROP78901",
     "title": "Classic Office Space in Gulshan",
     "size": 4000,
-    "price": 38000000,
+    "price": 6130000,
     "video": "https://example.com/video51.mp4",
     "bed": 0,
     "bath": 3,
@@ -3313,10 +3894,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3346,7 +3939,7 @@
       },
       {
         "id": 6,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 17,
@@ -3363,7 +3956,7 @@
     "referenceNo": "PROP89012",
     "title": "Modern Office Space in Motijheel",
     "size": 3000,
-    "price": 33300000,
+    "price": 4580000,
     "video": "https://example.com/video52.mp4",
     "bed": 0,
     "bath": 3,
@@ -3377,10 +3970,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3410,7 +4015,7 @@
       },
       {
         "id": 6,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 17,
@@ -3441,10 +4046,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3491,7 +4108,7 @@
     "referenceNo": "PROP90124",
     "title": "Modern Office Space in Gulshan-2",
     "size": 2500,
-    "price": 1000000,
+    "price": 58000,
     "video": "https://example.com/video54.mp4",
     "bed": 0,
     "bath": 2,
@@ -3505,10 +4122,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3538,7 +4167,7 @@
       },
       {
         "id": 6,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 17,
@@ -3555,7 +4184,7 @@
     "referenceNo": "PROP90125",
     "title": "Exclusive Villa in Baridhara",
     "size": 6000,
-    "price": 45000000,
+    "price": 6650000,
     "video": "https://example.com/video55.mp4",
     "bed": 5,
     "bath": 5,
@@ -3569,10 +4198,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3619,7 +4260,7 @@
     "referenceNo": "PROP90126",
     "title": "Spacious Warehouse in Tongi",
     "size": 8000,
-    "price": 20000000,
+    "price": 5380000,
     "video": "https://example.com/video56.mp4",
     "bed": 0,
     "bath": 0,
@@ -3633,8 +4274,14 @@
       "email": "jennifer.lee@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3681,7 +4328,7 @@
     "referenceNo": "PROP90127",
     "title": "Luxurious Penthouse in Uttara",
     "size": 3500,
-    "price": 35000000,
+    "price": 5770000,
     "video": "https://example.com/video57.mp4",
     "bed": 5,
     "bath": 4,
@@ -3695,10 +4342,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3759,9 +4418,18 @@
       "email": "emily.brown@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3808,7 +4476,7 @@
     "referenceNo": "PROP90129",
     "title": "Prime Office Space in Motijheel",
     "size": 4000,
-    "price": 40000000,
+    "price": 9060000,
     "video": "https://example.com/video59.mp4",
     "bed": 0,
     "bath": 3,
@@ -3822,10 +4490,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3859,7 +4539,7 @@
       },
       {
         "id": 5,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 12,
@@ -3872,7 +4552,7 @@
     "referenceNo": "PROP90130",
     "title": "Elegant Lakefront House in Uttara",
     "size": 3200,
-    "price": 32000000,
+    "price": 6620000,
     "video": "https://example.com/video60.mp4",
     "bed": 4,
     "bath": 4,
@@ -3886,10 +4566,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -3936,7 +4628,7 @@
     "referenceNo": "PROP90131",
     "title": "Classic Villa in Dhanmondi",
     "size": 5000,
-    "price": 50000000,
+    "price": 4640000,
     "video": "https://example.com/video61.mp4",
     "bed": 6,
     "bath": 5,
@@ -3950,10 +4642,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4014,10 +4718,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4064,7 +4780,7 @@
     "referenceNo": "PROP90133",
     "title": "Scenic Lake House in Mirpur-12",
     "size": 2800,
-    "price": 30000000,
+    "price": 6070000,
     "video": "https://example.com/video63.mp4",
     "bed": 4,
     "bath": 3,
@@ -4078,10 +4794,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4128,7 +4856,7 @@
     "referenceNo": "PROP90134",
     "title": "Charming Duplex in Banani",
     "size": 2400,
-    "price": 24000000,
+    "price": 7940000,
     "video": "https://example.com/video64.mp4",
     "bed": 4,
     "bath": 3,
@@ -4142,10 +4870,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4192,7 +4932,7 @@
     "referenceNo": "PROP90135",
     "title": "Commercial Building in Gulshan-2",
     "size": 5500,
-    "price": 75000000,
+    "price": 5700000,
     "video": "https://example.com/video65.mp4",
     "bed": 0,
     "bath": 6,
@@ -4206,10 +4946,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4256,7 +5008,7 @@
     "referenceNo": "PROP90135",
     "title": "Commercial Building in Gulshan-2",
     "size": 5500,
-    "price": 75000000,
+    "price": 6100000,
     "video": "https://example.com/video65.mp4",
     "bed": 0,
     "bath": 6,
@@ -4270,10 +5022,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4334,9 +5098,18 @@
       "email": "emily.brown@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4374,7 +5147,7 @@
       },
       {
         "id": 6,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       }
     ]
   },
@@ -4383,7 +5156,7 @@
     "referenceNo": "PROP90137",
     "title": "Lakefront Bungalow in Banani",
     "size": 3000,
-    "price": 28000000,
+    "price": 9590000,
     "video": "https://example.com/video67.mp4",
     "bed": 4,
     "bath": 4,
@@ -4397,10 +5170,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4426,7 +5211,7 @@
     "images": [
       {
         "id": 17,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 8,
@@ -4447,7 +5232,7 @@
     "referenceNo": "PROP90137",
     "title": "Lakefront Bungalow in Banani",
     "size": 3000,
-    "price": 28000000,
+    "price": 9840000,
     "video": "https://example.com/video67.mp4",
     "bed": 4,
     "bath": 4,
@@ -4461,10 +5246,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4490,7 +5287,7 @@
     "images": [
       {
         "id": 17,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 8,
@@ -4525,9 +5322,18 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4553,7 +5359,7 @@
     "images": [
       {
         "id": 17,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       },
       {
         "id": 8,
@@ -4569,13 +5375,12 @@
       }
     ]
   },
-
   {
     "id": "69",
     "referenceNo": "PROP90139",
     "title": "Spacious Penthouse in Gulshan-1",
     "size": 3500,
-    "price": 60000000,
+    "price": 4840000,
     "video": "https://example.com/video69.mp4",
     "bed": 5,
     "bath": 5,
@@ -4589,10 +5394,22 @@
       "email": "emily.brown@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4639,7 +5456,7 @@
     "referenceNo": "PROP90140",
     "title": "Modern Villa in Uttara",
     "size": 4000,
-    "price": 45000000,
+    "price": 4100000,
     "video": "https://example.com/video70.mp4",
     "bed": 6,
     "bath": 4,
@@ -4653,9 +5470,18 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4702,7 +5528,7 @@
     "referenceNo": "PROP90141",
     "title": "Commercial Office Building in Motijheel",
     "size": 6000,
-    "price": 85000000,
+    "price": 9570000,
     "video": "https://example.com/video71.mp4",
     "bed": 0,
     "bath": 8,
@@ -4716,10 +5542,22 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4766,7 +5604,7 @@
     "referenceNo": "PROP90142",
     "title": "Lake View Apartment in Dhanmondi",
     "size": 1800,
-    "price": 500000,
+    "price": 217000,
     "video": "https://example.com/video72.mp4",
     "bed": 3,
     "bath": 3,
@@ -4780,10 +5618,22 @@
       "email": "emily.brown@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4830,7 +5680,7 @@
     "referenceNo": "PROP90143",
     "title": "Family House in Mirpur",
     "size": 2500,
-    "price": 30000000,
+    "price": 5080000,
     "video": "https://example.com/video73.mp4",
     "bed": 4,
     "bath": 3,
@@ -4844,9 +5694,18 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4907,9 +5766,18 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -4947,7 +5815,7 @@
       },
       {
         "id": 24,
-        "image": "/photo-1508119002394-0c2b3fb2e1f2"
+        "image": "/photo-1564013799919-ab600027ffc6"
       }
     ]
   },
@@ -4956,7 +5824,7 @@
     "referenceNo": "PROP90145",
     "title": "Riverfront Condo in Banani",
     "size": 2000,
-    "price": 35000000,
+    "price": 9330000,
     "video": "https://example.com/video75.mp4",
     "bed": 3,
     "bath": 3,
@@ -4970,10 +5838,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5020,7 +5900,7 @@
     "referenceNo": "PROP90146",
     "title": "Duplex Apartment in Bashundhara",
     "size": 2400,
-    "price": 32000000,
+    "price": 4010000,
     "video": "https://example.com/video76.mp4",
     "bed": 4,
     "bath": 4,
@@ -5034,9 +5914,18 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5083,7 +5972,7 @@
     "referenceNo": "PROP90147",
     "title": "Luxury Bungalow in Gulshan-2",
     "size": 5000,
-    "price": 75000000,
+    "price": 4270000,
     "video": "https://example.com/video77.mp4",
     "bed": 5,
     "bath": 6,
@@ -5097,9 +5986,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5160,10 +6058,22 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5210,7 +6120,7 @@
     "referenceNo": "PROP90149",
     "title": "Lakefront Villa in Baridhara",
     "size": 6000,
-    "price": 95000000,
+    "price": 7010000,
     "video": "https://example.com/video79.mp4",
     "bed": 6,
     "bath": 7,
@@ -5224,10 +6134,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5288,9 +6210,18 @@
       "email": "david.wilson@example.com"
     },
     "features": [
-      { "id": 6, "name": "Floor Level" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 6,
+        "name": "Floor Level"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5310,7 +6241,6 @@
     "address": {
       "id": 80,
       "city": "Dhaka",
-
       "location": "Gulshan-1",
       "coordinates": "23.780573,90.416974"
     },
@@ -5333,13 +6263,12 @@
       }
     ]
   },
-
   {
     "id": "81",
     "referenceNo": "PROP90151",
     "title": "Modern Loft in Uttara",
     "size": 1800,
-    "price": 22000000,
+    "price": 6620000,
     "video": "https://example.com/video81.mp4",
     "bed": 3,
     "bath": 2,
@@ -5353,9 +6282,18 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5402,7 +6340,7 @@
     "referenceNo": "PROP90152",
     "title": "Penthouse in Banani",
     "size": 3500,
-    "price": 50000000,
+    "price": 4560000,
     "video": "https://example.com/video82.mp4",
     "bed": 4,
     "bath": 5,
@@ -5416,10 +6354,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5466,7 +6416,7 @@
     "referenceNo": "PROP90153",
     "title": "Cozy Apartment in Dhanmondi",
     "size": 1200,
-    "price": 18000000,
+    "price": 8930000,
     "video": "https://example.com/video83.mp4",
     "bed": 3,
     "bath": 2,
@@ -5480,9 +6430,18 @@
       "email": "emma.watson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5529,7 +6488,7 @@
     "referenceNo": "PROP90154",
     "title": "Spacious Duplex in Baridhara",
     "size": 3500,
-    "price": 65000000,
+    "price": 6800000,
     "video": "https://example.com/video84.mp4",
     "bed": 4,
     "bath": 5,
@@ -5543,9 +6502,18 @@
       "email": "john.doe@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5606,9 +6574,18 @@
       "email": "alice.smith@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5669,9 +6646,18 @@
       "email": "robert.brown@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5718,7 +6704,7 @@
     "referenceNo": "PROP90157",
     "title": "Luxury Villa in Gulshan",
     "size": 5000,
-    "price": 120000000,
+    "price": 8020000,
     "video": "https://example.com/video87.mp4",
     "bed": 5,
     "bath": 6,
@@ -5732,11 +6718,26 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Private Pool" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Private Pool"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5797,9 +6798,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5860,9 +6870,18 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5909,7 +6928,7 @@
     "referenceNo": "PROP90160",
     "title": "Luxury Penthouse in Gulshan",
     "size": 4000,
-    "price": 90000000,
+    "price": 9490000,
     "video": "https://example.com/video90.mp4",
     "bed": 4,
     "bath": 5,
@@ -5923,11 +6942,26 @@
       "email": "emma.watson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Private Pool" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Private Pool"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -5988,9 +7022,18 @@
       "email": "alice.smith@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6037,7 +7080,7 @@
     "referenceNo": "PROP90162",
     "title": "Elegant Villa in Uttara",
     "size": 4000,
-    "price": 85000000,
+    "price": 7040000,
     "video": "https://example.com/video92.mp4",
     "bed": 5,
     "bath": 6,
@@ -6051,11 +7094,26 @@
       "email": "john.doe@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Private Pool" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Private Pool"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6116,9 +7174,18 @@
       "email": "jane.doe@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6165,7 +7232,7 @@
     "referenceNo": "PROP90164",
     "title": "Spacious Bungalow in Bashundhara",
     "size": 4500,
-    "price": 95000000,
+    "price": 6390000,
     "video": "https://example.com/video94.mp4",
     "bed": 6,
     "bath": 7,
@@ -6179,10 +7246,22 @@
       "email": "michael.clark@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Private Pool" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Private Pool"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6243,9 +7322,18 @@
       "email": "david.green@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6306,9 +7394,18 @@
       "email": "jane.doe@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6369,9 +7466,18 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6418,7 +7524,7 @@
     "referenceNo": "PROP90168",
     "title": "Luxury Apartment in Banani",
     "size": 2500,
-    "price": 30000000,
+    "price": 5480000,
     "video": "https://example.com/video98.mp4",
     "bed": 4,
     "bath": 4,
@@ -6432,10 +7538,22 @@
       "email": "emma.watson@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6482,7 +7600,7 @@
     "referenceNo": "PROP90169",
     "title": "Modern Apartment in Gulshan",
     "size": 2000,
-    "price": 27000000,
+    "price": 5010000,
     "video": "https://example.com/video99.mp4",
     "bed": 3,
     "bath": 3,
@@ -6496,9 +7614,18 @@
       "email": "john.doe@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6545,7 +7672,7 @@
     "referenceNo": "PROP90170",
     "title": "Charming House in Lalmatia",
     "size": 3000,
-    "price": 60000000,
+    "price": 9440000,
     "video": "https://example.com/video100.mp4",
     "bed": 4,
     "bath": 5,
@@ -6559,10 +7686,22 @@
       "email": "alice.smith@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6609,7 +7748,7 @@
     "referenceNo": "PROP90171",
     "title": "Elegant Apartment in Niketan",
     "size": 1800,
-    "price": 24000000,
+    "price": 9710000,
     "video": "https://example.com/video101.mp4",
     "bed": 3,
     "bath": 3,
@@ -6623,10 +7762,22 @@
       "email": "samantha.brown@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6687,9 +7838,18 @@
       "email": "sophie.johnson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6736,7 +7896,7 @@
     "referenceNo": "PROP90173",
     "title": "Spacious Duplex in Bashundhara",
     "size": 4000,
-    "price": 45000000,
+    "price": 9410000,
     "video": "https://example.com/video103.mp4",
     "bed": 5,
     "bath": 6,
@@ -6750,10 +7910,22 @@
       "email": "michael.brown@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6800,7 +7972,7 @@
     "referenceNo": "PROP90174",
     "title": "Charming House in Uttara",
     "size": 3500,
-    "price": 50000000,
+    "price": 7470000,
     "video": "https://example.com/video104.mp4",
     "bed": 4,
     "bath": 5,
@@ -6814,10 +7986,22 @@
       "email": "sarah.lee@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6864,7 +8048,7 @@
     "referenceNo": "PROP90175",
     "title": "Luxury Villa in Gulshan",
     "size": 5000,
-    "price": 100000000,
+    "price": 5060000,
     "video": "https://example.com/video105.mp4",
     "bed": 6,
     "bath": 7,
@@ -6878,11 +8062,26 @@
       "email": "david.green@example.com"
     },
     "features": [
-      { "id": 1, "name": "View" },
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 3, "name": "Swimming Pool" },
-      { "id": 5, "name": "Parking Spaces" },
-      { "id": 7, "name": "CCTV Security" }
+      {
+        "id": 1,
+        "name": "View"
+      },
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 3,
+        "name": "Swimming Pool"
+      },
+      {
+        "id": 5,
+        "name": "Parking Spaces"
+      },
+      {
+        "id": 7,
+        "name": "CCTV Security"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6929,7 +8128,7 @@
     "referenceNo": "PROP90176",
     "title": "Contemporary Apartment in Mirpur",
     "size": 1500,
-    "price": 15000000,
+    "price": 6050000,
     "video": "https://example.com/video106.mp4",
     "bed": 3,
     "bath": 3,
@@ -6943,9 +8142,18 @@
       "email": "emma.watson@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {
@@ -6992,7 +8200,7 @@
     "referenceNo": "PROP90177",
     "title": "Cozy Apartment in Dhanmondi",
     "size": 1200,
-    "price": 18000000,
+    "price": 8180000,
     "video": "https://example.com/video107.mp4",
     "bed": 2,
     "bath": 2,
@@ -7006,9 +8214,18 @@
       "email": "john.smith@example.com"
     },
     "features": [
-      { "id": 2, "name": "Balcony or Terrace" },
-      { "id": 8, "name": "Double Glazed Windows" },
-      { "id": 10, "name": "Electricity Backup" }
+      {
+        "id": 2,
+        "name": "Balcony or Terrace"
+      },
+      {
+        "id": 8,
+        "name": "Double Glazed Windows"
+      },
+      {
+        "id": 10,
+        "name": "Electricity Backup"
+      }
     ],
     "purpose": {
       "purpose": {

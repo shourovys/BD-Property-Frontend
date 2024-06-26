@@ -1,6 +1,9 @@
 import FlyoutWrapper from '@/components/common/Flyout'
 import PropertySubPurposeFlyout from '@/components/common/Search/PropertySubPurposeFlyout'
-import { setSelectedPurpose } from '@/features/propertySearchSlice'
+import {
+  setSelectedPurpose,
+  setSelectedPurposeWithSub,
+} from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { propertyPurposeData } from '@/utils/data/property'
 import { DownArrowIcon } from '@/utils/icon'
@@ -44,57 +47,66 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
         ))}
       </div>
       <div className='hidden flex-wrap items-center justify-center gap-2.5 sm:flex sm:gap-4 '>
-        {propertyPurposeData?.map((purpose) => (
+        {propertyPurposeData?.map((purpose, index) => (
           <>
-            {purpose.subPurpose.length ? (
-              <FlyoutWrapper
-                key={purpose.id}
-                direction='right'
-                flyoutContent={(close) => (
-                  <PropertySubPurposeFlyout
-                    currentPurpose={purpose}
-                    close={close}
-                  />
-                )}
-              >
-                <div
+            {
+              // purpose.subPurpose.length
+              index === 0 ? (
+                <FlyoutWrapper
+                  key={purpose.id}
+                  direction='right'
+                  flyoutContent={(close) => (
+                    <PropertySubPurposeFlyout
+                      currentPurpose={purpose}
+                      close={close}
+                    />
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
+                      selectedPurpose.purpose.value !== purpose.id &&
+                        'bg-opacity-60'
+                    )}
+                    onClick={() =>
+                      dispatch(
+                        setSelectedPurpose({
+                          label: purpose.title,
+                          value: purpose.id,
+                        })
+                      )
+                    }
+                  >
+                    {purpose.title}
+                    <DownArrowIcon />
+                  </div>
+                </FlyoutWrapper>
+              ) : (
+                <button
                   className={classNames(
-                    'flex cursor-pointer items-center justify-center gap-1 rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
+                    'flex items-center justify-center rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
                     selectedPurpose.purpose.value !== purpose.id &&
                       'bg-opacity-60'
                   )}
                   onClick={() =>
                     dispatch(
-                      setSelectedPurpose({
-                        label: purpose.title,
-                        value: purpose.id,
+                      setSelectedPurposeWithSub({
+                        purpose: {
+                          label: purpose.title,
+                          value: purpose.id,
+                        },
+                        completion: {
+                          label: purpose.subPurpose[0].title,
+                          value: purpose.subPurpose[0].id,
+                        },
                       })
                     )
                   }
                 >
                   {purpose.title}
-                  <DownArrowIcon />
-                </div>
-              </FlyoutWrapper>
-            ) : (
-              <button
-                className={classNames(
-                  'flex items-center justify-center rounded-3xs border border-white bg-white px-4 py-3 md:px-6 md:py-2',
-                  selectedPurpose.purpose.value !== purpose.id &&
-                    'bg-opacity-60'
-                )}
-                onClick={() =>
-                  dispatch(
-                    setSelectedPurpose({
-                      label: purpose.title,
-                      value: purpose.id,
-                    })
-                  )
-                }
-              >
-                {purpose.title}
-              </button>
-            )}
+                </button>
+              )
+            }
           </>
         ))}
       </div>

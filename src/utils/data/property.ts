@@ -18,21 +18,21 @@ import {
 
 export const propertyPurposeData: IPropertyPurpose[] = [
   {
-    id: 'rent',
-    title: 'Rent',
-    subPurpose: [
-      { id: 'any', title: 'Any' },
-      { id: 'vacant', title: 'Vacant' },
-      { id: 'occupied', title: 'Occupied' },
-    ],
-  },
-  {
     id: 'buy',
     title: 'Buy',
     subPurpose: [
       { id: 'all', title: 'All' },
       { id: 'ready', title: 'Ready' },
       { id: 'under-construction', title: 'Under Construction' },
+    ],
+  },
+  {
+    id: 'rent',
+    title: 'Rent',
+    subPurpose: [
+      { id: 'any', title: 'Any' },
+      { id: 'vacant', title: 'Vacant' },
+      { id: 'occupied', title: 'Occupied' },
     ],
   },
 ]

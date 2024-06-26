@@ -42,7 +42,10 @@ export const propertySearchInitialState: IPropertySearchState = {
       value: propertyPurposeData[0].id,
       label: propertyPurposeData[0].title,
     },
-    completion: emptySelectOption,
+    completion: {
+      value: propertyPurposeData[0].subPurpose[0].id,
+      label: propertyPurposeData[0].subPurpose[0].title,
+    },
   },
   selectedPropertyType: {
     type: {
