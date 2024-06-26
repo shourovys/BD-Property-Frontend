@@ -1,5 +1,8 @@
 'use client'
-import { setSelectedSingleBed } from '@/features/propertySearchSlice'
+import {
+  setSelectedSingleBed,
+  setSingleSelectedPropertyLocation,
+} from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import createArray from '@/utils/createArray'
 import { useEffect, useMemo, useState } from 'react'
@@ -69,11 +72,17 @@ const RecommendedSearches = () => {
             <p
               key={item.bed}
               className='block max-w-sm cursor-pointer truncate break-words hover:text-[#D76147] hover:underline'
-              onClick={() =>
+              onClick={() => {
                 dispatch(
                   setSelectedSingleBed({ label: item.bed, value: item.bed })
                 )
-              }
+                dispatch(
+                  setSingleSelectedPropertyLocation({
+                    label: selectedPropertyLocation[0].label,
+                    value: selectedPropertyLocation[0].value,
+                  })
+                )
+              }}
               title={item.query}
             >
               {item.query}
