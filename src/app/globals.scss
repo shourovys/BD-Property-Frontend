@@ -101,7 +101,7 @@
 
   // otp input class
   .otpInput {
-    @apply border-gray-border block aspect-square h-10 w-full overflow-hidden overflow-ellipsis whitespace-nowrap rounded-md border bg-white text-sm text-black transition ease-in-out focus:border-salmon focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base;
+    @apply block aspect-square h-10 w-full overflow-hidden overflow-ellipsis whitespace-nowrap rounded-md border border-gray-border bg-white text-sm text-black transition ease-in-out focus:border-salmon focus:bg-white focus:text-gray-700 focus:outline-none disabled:bg-[#F0F1F3] disabled:text-gray-600 md:text-base;
     width: 40px !important;
   }
 
@@ -137,5 +137,15 @@
     -webkit-line-clamp: 6; /* number of lines to show */
     line-clamp: 6;
     -webkit-box-orient: vertical;
+  }
+  .custom_ping {
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
   }
 }

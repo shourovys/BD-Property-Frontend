@@ -5,6 +5,7 @@ import PropertyListLink from '@/components/common/Search/HOC/PropertyListLink'
 import LookingForFlyout from '@/components/common/Search/LookingForFlyout'
 import PropertyPriceFlyout from '@/components/common/Search/PropertyPriceFlyout'
 import PropertySizeFlyout from '@/components/common/Search/PropertySizeFlyout'
+import PingEffect from '@/components/HOC/PingEffect'
 import { useAppSelector } from '@/hooks/reduxHooks'
 import { propertyTypeData } from '@/utils/data/property'
 import {
@@ -13,6 +14,7 @@ import {
   getPropertySizeValue,
 } from '@/utils/getFilterValues'
 import { DownArrowIcon, SearchIcon } from '@/utils/icon'
+import classNames from 'classnames'
 import type { NextPage } from 'next'
 import MobilePropertyListFilters from '../../propertyList/propertyListFilter/MobilePropertyListFilters'
 import LocationSelector from './LocationSelector'
@@ -33,9 +35,17 @@ const HomeHeroSearch: NextPage<IHomeHeroSearchProps> = ({
     selectedPropertyPrice,
   } = useAppSelector((state) => state.propertySearch)
 
+  const isCommercial =
+    selectedPropertyType.type.value === propertyTypeData[0].id
+
   return (
     <section className='hidden w-full max-w-sm rounded-3xs bg-white px-4 pb-3 pt-4 font-ubuntu text-sm font-light text-darkslateblue-100 sm:block md:w-3/5 md:min-w-[600px] md:max-w-full md:flex-row md:pb-3 md:pt-3 md:text-sm lg:w-3/6 lg:min-w-[750px]'>
-      <div className='flex min-w-[200px] flex-col gap-y-2 md:flex-row md:gap-x-4 md:gap-y-0'>
+      <div
+        className={classNames(
+          'grid min-w-[200px] grid-cols-1 gap-y-2 md:gap-x-4 md:gap-y-0',
+          isCommercial ? 'md:grid-cols-4' : 'md:grid-cols-3'
+        )}
+      >
         <FlyoutWrapper
           flyoutContent={(close: () => void) => (
             <LookingForFlyout close={close} />
@@ -54,7 +64,7 @@ const HomeHeroSearch: NextPage<IHomeHeroSearchProps> = ({
           </div>
         </FlyoutWrapper>
 
-        {selectedPropertyType.type.value === propertyTypeData[0].id && (
+        {isCommercial && (
           <FlyoutWrapper
             flyoutContent={(close: () => void) => (
               <BedsAndBathsFlyout close={close} />
@@ -105,12 +115,14 @@ const HomeHeroSearch: NextPage<IHomeHeroSearchProps> = ({
         </FlyoutWrapper>
       </div>
 
-      <div className='mt-2 flex w-full items-center justify-center border-t border-lightgray-100 pt-2'>
+      <div className='mt-2 flex w-full items-center justify-center border-t border-lightgray-100 pt-2 '>
         <LocationSelector />
         <PropertyListLink>
-          <button className='cursor-pointer rounded-6xs bg-darkslateblue-100 px-10 py-2 md:p-3'>
-            <SearchIcon className='h-5 w-5 text-white md:h-7 md:w-7 md:text-base' />
-          </button>
+          <PingEffect>
+            <button className='cursor-pointer rounded-6xs bg-darkslateblue-100 px-10 py-2 md:p-3 '>
+              <SearchIcon className='h-5 w-5 text-white md:h-7 md:w-7 md:text-base' />
+            </button>
+          </PingEffect>
         </PropertyListLink>
       </div>
 
