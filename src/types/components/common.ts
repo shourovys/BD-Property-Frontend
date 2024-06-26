@@ -1,4 +1,5 @@
 import { TSelectValue } from '@/components/atomic/Selector'
+import { IPropertySearchState } from '@/features/propertySearchSlice'
 import { TButtonColor, TButtonSize } from '@/types/components/buttons'
 import {
   DateType,
@@ -57,4 +58,9 @@ export type INullAbleSelectOption = {
 
 export type INewFormErrors<T> = Partial<Record<keyof T, string>> & {
   non_field_errors?: string
+}
+
+export interface ILinkQuery {
+  query: string
+  state: IPropertySearchState
 }
