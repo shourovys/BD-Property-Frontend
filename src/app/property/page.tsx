@@ -73,6 +73,7 @@ const PropertyListPage: NextPage = () => {
     areaMax: propertySearch.selectedPropertySize.max,
     keyword: propertySearch.selectedKeywords,
     tour: propertySearch.tourType,
+    sort: propertySearch.sortBy,
   }
 
   const { isLoading, data } = useSWR<
