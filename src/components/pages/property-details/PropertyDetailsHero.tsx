@@ -26,7 +26,7 @@ const PropertyDetailsHero: React.FC<IProps> = ({ data }) => {
     <div className='h-full min-h-max text-left font-lato text-xs text-white'>
       {/* desktop hero section  */}
       <div className='custom_screen_width hidden h-full grid-cols-4 gap-6 sm:grid'>
-        <div className='max-h-auto relative col-span-3 h-full min-h-[70vh] overflow-hidden rounded-6xs'>
+        <div className='max-h-auto relative col-span-3 h-[70vh] max-h-[560px] overflow-hidden rounded-6xs'>
           <Image
             className='overflow-hidden object-fill'
             alt=''
