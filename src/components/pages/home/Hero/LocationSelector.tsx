@@ -1,15 +1,13 @@
-import { propertyUrls } from '@/api/urls/propertyUrls'
 import Input from '@/components/atomic/Input'
+import { ILocationData } from '@/components/common/Search/PropertyLocationSearch'
 import {
   removePropertyLocation,
   setSelectedPropertyLocation,
 } from '@/features/propertySearchSlice'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks'
 import { ISelectOption } from '@/types/components/common'
-import { ISingleServerResponse } from '@/types/pages/common'
 import classNames from 'classnames'
-import React, { useState } from 'react'
-import useSWR from 'swr'
+import React, { useEffect, useState } from 'react'
 
 const LocationSelector: React.FC = () => {
   const selectedPropertyLocation = useAppSelector(
@@ -17,14 +15,30 @@ const LocationSelector: React.FC = () => {
   )
   const dispatch = useAppDispatch()
 
+  const [data, setData] = useState<ILocationData[]>([])
+
   const [inputValue, setInputValue] = useState('')
   const [activeIndex, setActiveIndex] = useState<number | null>(0)
 
-  const { data } = useSWR<
-    ISingleServerResponse<{ id: string; name: string }[]>
-  >(propertyUrls.address)
+  // const { data } = useSWR<
+  //   ISingleServerResponse<{ id: string; name: string }[]>
+  // >(propertyUrls.address)
 
-  const filteredLocations = data?.results?.filter(
+  useEffect(() => {
+    const fetchDataAsync = async () => {
+      try {
+        const res = await fetch('/data/location.json')
+        const parsedData = (await res.json()) as ILocationData[]
+        setData(parsedData)
+      } catch (error) {
+        console.log('Failed to fetch data:', error)
+      }
+    }
+
+    fetchDataAsync()
+  }, [])
+
+  const filteredLocations = data?.filter(
     (location) =>
       location.name.toLowerCase().includes(inputValue.toLowerCase()) &&
       !selectedPropertyLocation.some(
@@ -119,7 +133,7 @@ const LocationSelector: React.FC = () => {
           />
         </div>
         {inputValue && !!filteredLocations?.length && (
-          <div className='absolute z-10 mt-2 w-full overflow-hidden rounded-md border border-lightgray-100 bg-white shadow-md'>
+          <div className='absolute z-10 mt-2 max-h-72 w-full overflow-hidden overflow-y-auto rounded-md border border-lightgray-100 bg-white shadow-md'>
             {filteredLocations?.map((location, index) => (
               <div
                 key={location.id}
