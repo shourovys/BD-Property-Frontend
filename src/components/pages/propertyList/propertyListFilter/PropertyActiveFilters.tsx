@@ -24,8 +24,8 @@ const PropertyActiveFilters: React.FC = () => {
 
   // Helper function to generate filter item with close button
   const generateFilterItem = (label: string, onReset: () => void) => (
-    <li className='rounded-6xs border border-darkslateblue-100 bg-darkslateblue-300 px-2 py-0.5'>
-      {label}
+    <li className='flex items-center rounded-6xs border border-darkslateblue-100 bg-darkslateblue-300 px-2 py-0.5'>
+      <span>{label}</span>
       <button
         className='pl-1.5 text-lg text-gray-800 hover:text-red-500 md:text-xl'
         onClick={onReset}
