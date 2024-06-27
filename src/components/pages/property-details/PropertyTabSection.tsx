@@ -36,6 +36,8 @@ const PropertyTabSection: React.FC<IProps> = ({
   return (
     <>
       <PropertyDetailsTabs
+        data={data}
+        recommendedPresent={!!recommendedProperty.length}
         isComponentScrolledOut={isComponentScrolledOut}
         handleOpenEmailModal={handleOpenEmailModal}
         handleOpenCallModal={handleOpenCallModal}
@@ -53,14 +55,16 @@ const PropertyTabSection: React.FC<IProps> = ({
           <div className=''>
             <PropertyDetailsBlog data={data} />
             {/* <PropertyDetailsPropertyInfo data={data} /> */}
-            {data.features && (
+            {data.features?.length && (
               <PropertyDetailsPropertyFeatures features={data.features} />
             )}
             <PropertyDetailsTrends />
             {data?.floorPlans && (
               <PropertyDetailsFloorPlan floorPlans={data?.floorPlans} />
             )}
-            <PropertyDetailsMortgage propertyPrice={data.price} />
+            {data?.purpose.purpose.id === 'buy' && (
+              <PropertyDetailsMortgage propertyPrice={data.price} />
+            )}
           </div>
         </div>
 

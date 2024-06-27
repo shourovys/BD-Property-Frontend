@@ -9,7 +9,7 @@ const data = [
 
 const PropertyDetailsTrends: NextPage = () => {
   return (
-    <section className='space-y-5 pt-10 md:pt-8 lg:pt-16'>
+    <section id='trends' className='space-y-5 pt-10 md:pt-8 lg:pt-16'>
       <h2 className='font-inter text-xl font-medium md:text-2xl'>
         Trends - Most Searched Locations in LocationName
       </h2>

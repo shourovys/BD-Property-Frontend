@@ -1,34 +1,55 @@
+import { IPropertyDetails } from '@/types/pages/property'
 import {
   Feature,
   FloorIcon,
-  LoancalCulator,
+  IIconType,
+  LoanCalculator,
   NearByLoc,
   Overview,
+  TrendIcon,
 } from '@/utils/icon'
 import classNames from 'classnames'
 import type { NextPage } from 'next'
 import { Link } from 'react-scroll'
 
-const tabData = [
-  { id: 'overview', name: 'Overview', icon: Overview },
-  { id: 'feature', name: 'Feature', icon: Feature },
-  { id: 'floorPlan', name: 'Floor Plan', icon: FloorIcon },
-  { id: 'loanCalculator', name: 'Loan Calculator', icon: LoancalCulator },
-  // { id: 'lifestyle', name: 'Lifestyle', icon: LifeStyle },
-  { id: 'nearByLoc', name: 'Near By Location', icon: NearByLoc },
-]
+interface Tab {
+  id: string
+  name: string
+  icon: IIconType // Assuming IconType is the correct type for your icons
+}
 
 interface IProps {
+  data: IPropertyDetails
+  recommendedPresent: boolean
   isComponentScrolledOut: boolean
   handleOpenEmailModal: () => void
   handleOpenCallModal: () => void
 }
 
 const PropertyDetailsTabs: NextPage<IProps> = ({
+  data,
+  recommendedPresent,
   isComponentScrolledOut,
   handleOpenEmailModal,
   handleOpenCallModal,
 }) => {
+  const tabData: Tab[] = [
+    { id: 'overview', name: 'Overview', icon: Overview },
+    data?.features?.length
+      ? { id: 'feature', name: 'Features', icon: Feature }
+      : undefined,
+    data?.floorPlans
+      ? { id: 'floorPlan', name: 'Floor Plan', icon: FloorIcon }
+      : undefined,
+    data?.purpose.purpose.id === 'buy'
+      ? { id: 'loanCalculator', name: 'Loan Calculator', icon: LoanCalculator }
+      : undefined,
+    { id: 'trends', name: 'Trends', icon: TrendIcon },
+    recommendedPresent
+      ? { id: 'nearByLoc', name: 'Near By', icon: NearByLoc }
+      : undefined,
+  ].filter((tab): tab is Tab => tab !== undefined) // Type guard to filter out undefined values
+
   return (
     <div
       className={classNames(
@@ -57,14 +78,14 @@ const PropertyDetailsTabs: NextPage<IProps> = ({
               className='cursor-pointer border-b-2 border-white text-gray-200'
               activeClass=' text-salmon border-b-2 border-salmon'
             >
-              <ul className='flex min-w-max items-center gap-1.5 border-b-2 border-white py-2  md:py-3'>
+              <ul className='flex min-w-max items-center gap-1.5 py-2  md:py-3'>
                 <tab.icon className='text-lg md:text-xl' />
                 {tab.name}
               </ul>
             </Link>
           ))}
         </div>
-        <div className='hidden min-h-max w-full max-w-[300px] items-center gap-2 md:flex'>
+        <div className='hidden min-h-max w-full max-w-[260px] items-center gap-2 md:flex'>
           <div className='relative h-9 w-full'>
             <button
               onClick={handleOpenCallModal}

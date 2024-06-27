@@ -43,6 +43,7 @@ import {
 import { GiElevator } from 'react-icons/gi'
 import { MdBalcony, MdSecurity } from 'react-icons/md'
 
+import { FaArrowTrendUp } from 'react-icons/fa6'
 import { FiFilter } from 'react-icons/fi'
 import { GrFormDown } from 'react-icons/gr'
 import { ImOffice } from 'react-icons/im'
@@ -109,6 +110,7 @@ export const CameraIcon = FaCamera
 export const WarehouseIcon = MdOutlineWarehouse
 export const ShopIcon = RiBuilding2Fill
 export const FactoryIcon = BiSolidFactory
+export const TrendIcon = FaArrowTrendUp
 
 // featureIcons
 export const ViewIcon = FaEye
@@ -126,7 +128,7 @@ export const ConciergeIcon = FaUserClock
 // property details tab icons
 export const Overview = FaHome
 export const Feature = FaList
-export const LoancalCulator = FaCalculator
+export const LoanCalculator = FaCalculator
 export const LifeStyle = FaHeart
 export const NearByLoc = FaMapMarkerAlt
 export const Finance = FaMoneyBill
