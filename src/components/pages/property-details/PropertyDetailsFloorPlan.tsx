@@ -37,7 +37,7 @@ const PropertyDetailsFloorPlan: React.FC<IProps> = ({ floorPlans }) => {
         >
           <Image
             className={`transform transition duration-300`}
-            src={floorPlans}
+            src='/Floor_Plan.jpeg'
             alt='Floor Plan'
             fill
           />
