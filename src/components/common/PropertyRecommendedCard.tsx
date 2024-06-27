@@ -1,10 +1,11 @@
 import { sendPostRequest } from '@/api/swrConfig'
 import { propertyUrls } from '@/api/urls/propertyUrls'
 import useAuth from '@/hooks/useAuth'
-import { IMAGE_URL } from '@/utils/config'
+import { IMAGE_URL, SITE_PAGES } from '@/utils/config'
 import { FavoriteIcon } from '@/utils/icon'
 import { errorToast, successToast, warningToast } from '@/utils/toast'
 import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import useSWRMutation from 'swr/mutation'
 
@@ -56,16 +57,19 @@ const RecommendedCard: React.FC<RecommendedCardProps> = ({
   }
 
   return (
-    <div className='w-full overflow-hidden text-left font-ubuntu text-sm text-black md:text-base'>
+    <Link
+      href={SITE_PAGES.propertyPage(id)}
+      className='w-full cursor-pointer overflow-hidden text-left font-ubuntu text-sm text-black md:text-base'
+    >
       <div className='relative h-[285px] '>
         <button
           onClick={saveProperty}
-          className='absolute right-4 top-4 z-10 rounded-full text-gray-500 text-white hover:text-gray-700'
+          className='absolute right-4 top-4 z-10 rounded-full text-white hover:text-gray-200'
         >
           <FavoriteIcon className='h-6 w-6' />
         </button>
         <Image
-          className='w-full rounded-lg object-cover'
+          className='aspect-square w-full rounded-lg object-cover'
           alt=''
           src={IMAGE_URL + imageSrc}
           fill
@@ -94,7 +98,7 @@ const RecommendedCard: React.FC<RecommendedCardProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

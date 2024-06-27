@@ -44,7 +44,7 @@ const PropertyRecommendedList: React.FC<IProps> = ({ recommendedProperty }) => {
   return (
     <div
       id='nearByLoc'
-      className='custom_screen_width w-full min-w-max space-y-4 pt-10 font-inter text-sm text-black md:space-y-5 md:pt-8 md:text-base lg:pt-16'
+      className='w-full min-w-max space-y-4 font-inter text-sm text-black md:space-y-5 md:text-base'
     >
       <div className='font-inter text-xl font-medium md:text-2xl'>
         Similar Property Around
@@ -52,8 +52,8 @@ const PropertyRecommendedList: React.FC<IProps> = ({ recommendedProperty }) => {
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4'>
         {recommendedProperty.map((data) => (
           <RecommendedCard
-            key={data.id}
-            id={data.id}
+            key={data._id}
+            id={data._id}
             imageSrc={data.images?.length ? data.images[0]?.image : ''}
             price={data.price}
             location={data.title}

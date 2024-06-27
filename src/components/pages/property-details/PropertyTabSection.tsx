@@ -42,43 +42,45 @@ const PropertyTabSection: React.FC<IProps> = ({
         handleOpenEmailModal={handleOpenEmailModal}
         handleOpenCallModal={handleOpenCallModal}
       />
-      <div className='custom_screen_width grid gap-6 py-6 lg:grid-cols-4'>
-        <div className='lg:col-span-3'>
-          <div ref={componentRef}>
-            <PropertyDetailsInfo
-              data={data}
-              isComponentScrolledOut={isComponentScrolledOut}
+      <div className='custom_screen_width space-y-8 py-6 md:space-y-10'>
+        <div className='grid gap-6 lg:grid-cols-4'>
+          <div className='lg:col-span-3'>
+            <div ref={componentRef}>
+              <PropertyDetailsInfo
+                data={data}
+                isComponentScrolledOut={isComponentScrolledOut}
+                handleOpenEmailModal={handleOpenEmailModal}
+                handleOpenCallModal={handleOpenCallModal}
+              />
+            </div>
+            <div className=''>
+              <PropertyDetailsBlog data={data} />
+              {/* <PropertyDetailsPropertyInfo data={data} /> */}
+              {data.features?.length && (
+                <PropertyDetailsPropertyFeatures features={data.features} />
+              )}
+              <PropertyDetailsTrends />
+              {data?.floorPlans && (
+                <PropertyDetailsFloorPlan floorPlans={data?.floorPlans} />
+              )}
+              {data?.purpose.purpose.id === 'buy' && (
+                <PropertyDetailsMortgage propertyPrice={data.price} />
+              )}
+            </div>
+          </div>
+
+          <div className='col-span-1 hidden space-y-8 lg:block'>
+            <CardActions
               handleOpenEmailModal={handleOpenEmailModal}
               handleOpenCallModal={handleOpenCallModal}
             />
-          </div>
-          <div className=''>
-            <PropertyDetailsBlog data={data} />
-            {/* <PropertyDetailsPropertyInfo data={data} /> */}
-            {data.features?.length && (
-              <PropertyDetailsPropertyFeatures features={data.features} />
-            )}
-            <PropertyDetailsTrends />
-            {data?.floorPlans && (
-              <PropertyDetailsFloorPlan floorPlans={data?.floorPlans} />
-            )}
-            {data?.purpose.purpose.id === 'buy' && (
-              <PropertyDetailsMortgage propertyPrice={data.price} />
-            )}
+            <PopularSearches />
           </div>
         </div>
-
-        <div className='col-span-1 hidden space-y-8 lg:block'>
-          <CardActions
-            handleOpenEmailModal={handleOpenEmailModal}
-            handleOpenCallModal={handleOpenCallModal}
-          />
-          <PopularSearches />
-        </div>
+        {!!recommendedProperty.length && (
+          <PropertyRecommendedList recommendedProperty={recommendedProperty} />
+        )}
       </div>
-      {!!recommendedProperty.length && (
-        <PropertyRecommendedList recommendedProperty={recommendedProperty} />
-      )}
 
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
         <PropertyCallCard
