@@ -44,7 +44,7 @@ const PropertyRecommendedList: React.FC<IProps> = ({ recommendedProperty }) => {
   return (
     <div
       id='nearByLoc'
-      className='w-full min-w-max space-y-4 font-inter text-sm text-black md:space-y-5 md:text-base'
+      className='w-full min-w-max space-y-5 pt-10 font-inter text-sm text-black md:pt-8 md:text-base lg:pt-16'
     >
       <div className='font-inter text-xl font-medium md:text-2xl'>
         Similar Property Around

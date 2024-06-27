@@ -38,13 +38,13 @@ const PropertyDetailsTabs: NextPage<IProps> = ({
     data?.features?.length
       ? { id: 'feature', name: 'Features', icon: Feature }
       : undefined,
+    { id: 'trends', name: 'Trends', icon: TrendIcon },
     data?.floorPlans
       ? { id: 'floorPlan', name: 'Floor Plan', icon: FloorIcon }
       : undefined,
     data?.purpose.purpose.id === 'buy'
       ? { id: 'loanCalculator', name: 'Loan Calculator', icon: LoanCalculator }
       : undefined,
-    { id: 'trends', name: 'Trends', icon: TrendIcon },
     recommendedPresent
       ? { id: 'nearByLoc', name: 'Near By', icon: NearByLoc }
       : undefined,

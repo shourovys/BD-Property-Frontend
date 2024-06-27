@@ -42,7 +42,7 @@ const PropertyTabSection: React.FC<IProps> = ({
         handleOpenEmailModal={handleOpenEmailModal}
         handleOpenCallModal={handleOpenCallModal}
       />
-      <div className='custom_screen_width space-y-8 py-6 md:space-y-10'>
+      <div className='custom_screen_width py-6'>
         <div className='grid gap-6 lg:grid-cols-4'>
           <div className='lg:col-span-3'>
             <div ref={componentRef}>
