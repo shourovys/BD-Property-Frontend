@@ -18,7 +18,6 @@ import {
 } from '@/utils/icon'
 import { errorToast, successToast, warningToast } from '@/utils/toast'
 import classNames from 'classnames'
-import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import useSWRMutation from 'swr/mutation'
@@ -107,12 +106,12 @@ const PropertyDetailsInfo: React.FC<IProps> = ({
           </div>
         </div>
         <div className='flex flex-shrink flex-wrap justify-end gap-4'>
-          <Link href={bookPropertyPageHref}>
-            <div className='hidden h-fit items-center gap-2 rounded-6xs bg-salmon-light px-3 py-1.5 md:flex'>
-              <CalendarIcon />
-              <div className='font-medium'>Booking View</div>
-            </div>
-          </Link>
+          {/* <Link href={bookPropertyPageHref}> */}
+          <div className='hidden h-fit cursor-default items-center gap-2 rounded-6xs bg-salmon-light px-3 py-1.5 md:flex'>
+            <CalendarIcon />
+            <div className='font-medium'>Booking View</div>
+          </div>
+          {/* </Link> */}
 
           <button
             onClick={handleOpenCallModal}
@@ -135,8 +134,8 @@ const PropertyDetailsInfo: React.FC<IProps> = ({
 
           <div className='flex gap-4'>
             <button
-              onClick={saveProperty}
-              className='flex cursor-pointer items-center justify-center gap-1.5 rounded-6xs p-1 text-salmon lg:h-9 lg:w-[90px] lg:bg-gainsboro lg:p-0'
+              // onClick={saveProperty}
+              className='flex cursor-default items-center justify-center gap-1.5 rounded-6xs p-1 text-salmon lg:h-9 lg:w-[90px] lg:bg-gainsboro lg:p-0'
             >
               <FavoriteIcon className='text-2xl lg:text-lg' />
               <p className='hidden font-ubuntu text-sm font-medium md:text-base lg:block'>
@@ -195,12 +194,12 @@ const PropertyDetailsInfo: React.FC<IProps> = ({
             <p className='font-medium '>SMS</p>
           </button>
         </div>
-        <Link href={bookPropertyPageHref}>
-          <div className='flex h-10 w-full cursor-pointer items-center justify-center rounded-6xs bg-salmon-light p-0'>
-            <CalendarIcon className='mr-2 h-[17.86px] w-[18.36px]' />
-            <div className='font-medium'>Booking View</div>
-          </div>
-        </Link>
+        {/* <Link href={bookPropertyPageHref}> */}
+        <div className='flex h-10 w-full items-center justify-center rounded-6xs bg-salmon-light p-0'>
+          <CalendarIcon className='mr-2 h-[17.86px] w-[18.36px]' />
+          <div className='font-medium'>Booking View</div>
+        </div>
+        {/* </Link> */}
       </div>
       <Modal openModal={openShareModal} setOpenModal={setOpenShareModal}>
         <ShareModal title='Share' url={''} setOpenModal={setOpenShareModal} />

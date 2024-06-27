@@ -312,7 +312,7 @@ const PropertyDetailsMortgage: NextPage<IProps> = ({ propertyPrice }) => {
           </div>
 
           {/* Apply for Loan */}
-          <button className='flex w-full cursor-pointer items-center justify-center rounded bg-salmon p-2 font-medium text-white'>
+          <button className='flex w-full cursor-default items-center justify-center rounded bg-salmon p-2 font-medium text-white'>
             APPLY FOR LOAN
           </button>
         </div>
