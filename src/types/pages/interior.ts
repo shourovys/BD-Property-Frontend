@@ -13,7 +13,6 @@ export interface InteriorService {
 export interface InteriorAllService {
   id: number
   name: string
-  service_type: 'commercial' | 'residential'
   image: string
   description: string
 }

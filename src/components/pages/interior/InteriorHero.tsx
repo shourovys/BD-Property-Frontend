@@ -1,9 +1,8 @@
 'use client'
-import { InteriorData } from '@/types/pages/interior'
-import { IMAGE_URL } from '@/utils/config'
 import Image from 'next/image'
 import React from 'react'
 import { Link } from 'react-scroll'
+import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
@@ -11,7 +10,17 @@ import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 interface IProps {
-  data: InteriorData
+  data: {
+    interiorData: {
+      title: string
+      description: string
+    }
+    previousWorkData: {
+      id: number
+      image: string
+      title: string
+    }[]
+  }
 }
 
 const InteriorHero: React.FC<IProps> = ({ data }) => {
@@ -29,11 +38,11 @@ const InteriorHero: React.FC<IProps> = ({ data }) => {
         modules={[EffectFade, Autoplay, Pagination]}
         slidesPerView={1}
       >
-        {data.previous_work_data.map((service) => (
+        {data.previousWorkData.map((service) => (
           <SwiperSlide key={service.id}>
             <div className='relative h-[80vh]'>
               <Image
-                src={IMAGE_URL + service.image}
+                src={service.image}
                 alt={service.title}
                 className='h-full w-full object-cover'
                 layout='fill'
@@ -41,25 +50,15 @@ const InteriorHero: React.FC<IProps> = ({ data }) => {
             </div>
           </SwiperSlide>
         ))}
-        <SwiperSlide>
-          <div className='relative h-[80vh]'>
-            <Image
-              src='/mask-group-2@2x.png'
-              alt=''
-              className='h-full w-full object-cover'
-              layout='fill'
-            />
-          </div>
-        </SwiperSlide>
       </Swiper>
 
       <div className='absolute inset-0 flex items-center justify-center'>
         <div className='z-10 text-center text-white'>
           <div className='relative mb-6 border-l-8 border-salmon bg-black bg-opacity-40 p-4 py-8 md:px-10'>
             <h2 className='text-2xl font-medium uppercase md:text-4xl'>
-              {data.interior_data.title}
+              {data.interiorData.title}
             </h2>
-            <p>{data.interior_data.description}</p>
+            <p>{data.interiorData.description}</p>
           </div>
           <Link
             to='services'

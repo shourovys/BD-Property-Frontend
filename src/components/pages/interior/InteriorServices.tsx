@@ -3,6 +3,7 @@ import SectionTitle from '@/components/common/SectionTitle'
 import { InteriorAllService } from '@/types/pages/interior'
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 
 interface IProps {
   services: InteriorAllService[]
@@ -24,7 +25,7 @@ const InteriorServices: React.FC<IProps> = ({ services }) => {
                 <div className='relative h-[200px] w-full sm:h-[350px] sm:basis-1/2 '>
                   <Image
                     className='rounded-lg object-cover sm:rounded-xl'
-                    alt=''
+                    alt={service.name}
                     src={service.image}
                     fill
                   />

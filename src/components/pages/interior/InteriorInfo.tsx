@@ -1,4 +1,3 @@
-'use client'
 import Section from '@/components/common/Section'
 import type { NextPage } from 'next'
 import CountUp from 'react-countup'
