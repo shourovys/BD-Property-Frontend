@@ -38,7 +38,7 @@ const InfoWithTabModalModal: React.FC<IInfoWithTabModalModalProps> = ({
       case 'photos':
         return <ImageGallery images={images} />
       case 'video':
-        return <YouTubeVideo videoUrl={videoUrl} />
+        return <YouTubeVideo videoUrl={'jPkBJY1KI_Q?si=0GizLTRZTTsY9Tw-'} />
       default:
         return null
     }

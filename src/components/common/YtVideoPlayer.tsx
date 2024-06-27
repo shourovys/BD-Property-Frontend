@@ -42,7 +42,7 @@ const YtVideoPlayer: React.FC<IYtVideoPlayerProps> = ({
     }
   }
 
-  const videoId = extractYouTubeVideoId(videosUrl)
+  // const videoId = extractYouTubeVideoId(videosUrl)
 
   return (
     <div className='relative aspect-video'>
@@ -53,7 +53,7 @@ const YtVideoPlayer: React.FC<IYtVideoPlayerProps> = ({
         )}
       >
         <iframe
-          src={`https://www.youtube.com/embed/${videoId}?controls=${
+          src={`https://www.youtube.com/embed/${videosUrl}?controls=${
             controllers ? 1 : 0
           }`}
           title='YouTube video player'
