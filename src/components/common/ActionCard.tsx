@@ -11,7 +11,7 @@ const CardActions: React.FC<IProps> = ({
 }) => {
   return (
     <div className='flex w-full flex-col items-center space-y-2 rounded-3xs border-[0.5px] border-dimgray bg-white px-6 py-4 font-ubuntu text-sm md:text-base'>
-      <img className='h-10 w-fit md:h-14' alt='' src='/logoWithMange.png' />
+      <img className='h-6 w-auto md:h-8' alt='' src='/logoWithMange.png' />
       <p className='pb-2 font-inter'>bd-property.com</p>
       <div className='grid w-full grid-cols-2 gap-2'>
         <div className='relative h-9 w-full'>

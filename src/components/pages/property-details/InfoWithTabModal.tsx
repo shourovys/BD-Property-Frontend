@@ -71,7 +71,7 @@ const InfoWithTabModalModal: React.FC<IInfoWithTabModalModalProps> = ({
 
         {/* Footer */}
         <div className='mt-3 flex items-center justify-between'>
-          <img className='h-10 w-fit md:h-14' alt='' src='/logoWithMange.png' />
+          <img className='h-6 w-auto md:h-8' alt='' src='/logoWithMange.png' />
           <div className='grid w-full max-w-[220px] grid-cols-2 gap-2'>
             <div className='relative h-10 w-full'>
               <button

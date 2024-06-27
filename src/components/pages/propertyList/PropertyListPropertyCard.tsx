@@ -165,7 +165,7 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
             </div>
             <div
               className={classNames(
-                'relative h-10 w-fit md:h-14',
+                'relative h-6 w-auto md:h-8',
                 isCardVertical ? 'hidden' : 'hidden md:block '
               )}
             >
