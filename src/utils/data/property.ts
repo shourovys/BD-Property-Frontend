@@ -3,16 +3,27 @@ import { IPropertyPurpose, IPropertyType } from '@/types/pages/property'
 
 import {
   ApartmentIcon,
+  BalconyIcon,
   BuildingIcon,
+  CCTVIcon,
+  CentralHeatingIcon,
+  ConciergeIcon,
+  DoubleWindowsIcon,
   DuplexIcon,
+  ElectricityBackupIcon,
+  ElevatorsIcon,
   FactoryIcon,
   FloorIcon,
+  FloorLevelIcon,
+  LobbyIcon,
   OfficeIcon,
+  ParkingIcon,
   PenthouseIcon,
   PlazaIcon,
   PlotIcon,
   RoomIcon,
   ShopIcon,
+  ViewIcon,
   WarehouseIcon,
 } from '@/utils/icon'
 
@@ -104,6 +115,20 @@ export const features = [
   { id: 10, name: 'Electricity Backup' },
   { id: 11, name: '24 Hours Concierge' },
 ]
+
+export const featureIcons = {
+  1: ViewIcon, // View
+  2: BalconyIcon, // Balcony or Terrace
+  3: LobbyIcon, // Lobby in Building
+  4: ElevatorsIcon, // Elevators in Building
+  5: ParkingIcon, // Parking Spaces
+  6: FloorLevelIcon, // Floor Level
+  7: CCTVIcon, // CCTV Security
+  8: DoubleWindowsIcon, // Double Glazed Windows
+  9: CentralHeatingIcon, // Central Heating
+  10: ElectricityBackupIcon, // Electricity Backup
+  11: ConciergeIcon, // 24 Hours Concierge
+}
 
 export const propertySortOptions: ISelectOption[] = [
   { label: 'Popular', value: 'popular' },

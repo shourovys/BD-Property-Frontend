@@ -1,5 +1,5 @@
 import { IPropertyDetails } from '@/types/pages/property'
-import { CloseIcon } from '@/utils/icon'
+import { featureIcons } from '@/utils/data/property'
 
 interface Feature {
   id: number
@@ -13,8 +13,9 @@ interface IProps {
 const PropertyDetailsPropertyFeatures: React.FC<IProps> = ({ features }) => {
   if (!features) return null
 
-  const propertyFeatures: Feature[] = features?.map((feature) => ({
+  const propertyFeatures = features.map((feature) => ({
     id: feature.id,
+    icon: featureIcons[feature.id as keyof typeof featureIcons],
     label: feature.name,
   }))
 
@@ -33,7 +34,7 @@ const PropertyDetailsPropertyFeatures: React.FC<IProps> = ({ features }) => {
             className='flex h-[112.5px] min-w-[150px] flex-1 items-center justify-center overflow-hidden rounded-lg bg-whitesmoke-300 p-3'
           >
             <div className='flex flex-col items-center justify-center text-center'>
-              <CloseIcon className='h-16 w-16' />
+              <feature.icon className='h-5 w-5' />
               <div className='mt-2'>
                 <p className='m-0'>{feature.label}</p>
               </div>

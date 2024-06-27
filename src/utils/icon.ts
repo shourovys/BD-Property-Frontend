@@ -20,10 +20,15 @@ import {
   FaCalculator,
   FaCalendarAlt,
   FaCamera,
+  FaCar,
   FaDoorOpen,
+  FaEye,
+  FaFireAlt,
   FaHeart,
   FaHome,
   FaInstagram,
+  FaLayerGroup,
+  FaLightbulb,
   FaList,
   FaMapMarkedAlt,
   FaMapMarkerAlt,
@@ -31,8 +36,13 @@ import {
   FaMoneyBill,
   FaPlus,
   FaRegBuilding,
+  FaUserClock,
+  FaWindowRestore,
   FaYoutube,
 } from 'react-icons/fa'
+import { GiElevator } from 'react-icons/gi'
+import { MdBalcony, MdSecurity } from 'react-icons/md'
+
 import { FiFilter } from 'react-icons/fi'
 import { GrFormDown } from 'react-icons/gr'
 import { ImOffice } from 'react-icons/im'
@@ -99,6 +109,19 @@ export const CameraIcon = FaCamera
 export const WarehouseIcon = MdOutlineWarehouse
 export const ShopIcon = RiBuilding2Fill
 export const FactoryIcon = BiSolidFactory
+
+// featureIcons
+export const ViewIcon = FaEye
+export const BalconyIcon = MdBalcony
+export const LobbyIcon = FaBuilding
+export const ElevatorsIcon = GiElevator
+export const ParkingIcon = FaCar
+export const FloorLevelIcon = FaLayerGroup
+export const CCTVIcon = MdSecurity
+export const DoubleWindowsIcon = FaWindowRestore
+export const CentralHeatingIcon = FaFireAlt
+export const ElectricityBackupIcon = FaLightbulb
+export const ConciergeIcon = FaUserClock
 
 // property details tab icons
 export const Overview = FaHome
