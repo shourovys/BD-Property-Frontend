@@ -30,10 +30,12 @@ const PropertyDetailsTrends: NextPage = () => {
             <tr className=''>
               <th className='px-6 py-3 text-center font-normal'>RANK</th>
               <th className='px-6 py-3 text-start font-normal'>LOCALITY</th>
-              <th className='px-6 py-3 text-start font-normal'>
+              <th className='hidden px-6 py-3 text-start font-normal sm:block'>
                 PERCENTAGE OF TOTAL SEARCH (%)
               </th>
-              <th className='px-6 py-3 text-center font-normal'>PERFORMANCE</th>
+              <th className='hidden px-6 py-3 text-center font-normal sm:block'>
+                PERFORMANCE
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -43,10 +45,10 @@ const PropertyDetailsTrends: NextPage = () => {
                 <td className='px-6 py-2 text-start text-sm'>
                   {item.locality}
                 </td>
-                <td className='px-6 py-2 text-start text-sm'>
+                <td className='hidden px-6 py-2 text-start text-sm sm:block'>
                   <div className='flex items-center space-x-2'>
                     <span>{`${item.percentage}%`}</span>
-                    <div className='h-4 w-full'>
+                    <div className='h-4 w-full '>
                       <div
                         className='h-full bg-darkslateblue-100'
                         style={{ width: `${item.percentage}%` }}
@@ -54,7 +56,7 @@ const PropertyDetailsTrends: NextPage = () => {
                     </div>
                   </div>
                 </td>
-                <td className='px-6 py-2 text-center text-sm'>
+                <td className='hidden px-6 py-2 text-center text-sm sm:block'>
                   {item.performance}
                 </td>
               </tr>
