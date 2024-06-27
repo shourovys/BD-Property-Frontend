@@ -67,14 +67,14 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
     }
   }
 
-  const handleOpenCallModal = (event: MouseEvent<HTMLButtonElement>) => {
+  const handleCallModal = (event: MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation()
-    setOpenCallModal(true)
+    setOpenCallModal((prev) => !prev)
   }
 
-  const handleOpenEmailModal = (event: MouseEvent<HTMLButtonElement>) => {
+  const handleEmailModal = (event: MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation()
-    setOpenEmailModal(true)
+    setOpenEmailModal((prev) => !prev)
   }
 
   return (
@@ -83,7 +83,7 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
         isCardVertical
           ? 'max-w-xs'
           : 'grid grid-cols-1 gap-4 border-lightgray-100 md:grid-cols-[324px,1fr] md:border',
-        'w-full overflow-hidden rounded-6xs font-ubuntu text-sm md:text-base'
+        'w-full cursor-pointer overflow-hidden rounded-6xs font-ubuntu text-sm md:text-base'
       )}
       onClick={() => router.push(`/property/${property._id}`)}
     >
@@ -135,11 +135,11 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
         </div>
         <div className='relative flex flex-wrap items-center justify-between gap-2 pt-1 md:flex-nowrap'>
           <div className='flex w-full gap-x-2 font-ubuntu text-xs font-medium md:text-base'>
-            <Button size='small' onClick={handleOpenCallModal}>
+            <Button size='small' onClick={handleCallModal}>
               <CallIcon className='text-base md:text-lg' />
               <p>Call</p>
             </Button>
-            <Button size='small' onClick={handleOpenEmailModal}>
+            <Button size='small' onClick={handleEmailModal}>
               <EmailIcon className='text-base md:text-lg' />
               <p className='font-ubuntu text-xs font-medium text-white md:text-base'>
                 Email
@@ -169,13 +169,13 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
       </div>
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
         <PropertyCallCard
-          setOpenModal={setOpenCallModal}
+          handleClose={handleCallModal}
           reference={property.referenceNo}
         />
       </Modal>
       <Modal openModal={openEmailModal} setOpenModal={setOpenEmailModal}>
         <PropertyEmailCard
-          setOpenModal={setOpenEmailModal}
+          handleClose={handleEmailModal}
           reference={property.referenceNo}
         />
       </Modal>

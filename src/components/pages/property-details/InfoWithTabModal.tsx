@@ -30,8 +30,8 @@ const InfoWithTabModalModal: React.FC<IInfoWithTabModalModalProps> = ({
   const [openCallModal, setOpenCallModal] = useState(false)
   const [openEmailModal, setOpenEmailModal] = useState(false)
 
-  const handleOpenEmailModal = () => setOpenEmailModal(true)
-  const handleOpenCallModal = () => setOpenCallModal(true)
+  const handleEmailModal = () => setOpenEmailModal((prev) => !prev)
+  const handleCallModal = () => setOpenCallModal((prev) => !prev)
 
   const renderTabContent = () => {
     switch (selectedTab) {
@@ -75,7 +75,7 @@ const InfoWithTabModalModal: React.FC<IInfoWithTabModalModalProps> = ({
           <div className='grid w-full max-w-[220px] grid-cols-2 gap-2'>
             <div className='relative h-10 w-full'>
               <button
-                onClick={handleOpenCallModal}
+                onClick={handleCallModal}
                 className='flex h-full w-full cursor-pointer items-center justify-center rounded-6xs bg-salmon p-0'
               >
                 <div className='mr-2 h-[15.86px] w-[16.36px]'>
@@ -90,7 +90,7 @@ const InfoWithTabModalModal: React.FC<IInfoWithTabModalModalProps> = ({
             </div>
             <div className='relative h-10 w-full'>
               <button
-                onClick={handleOpenEmailModal}
+                onClick={handleEmailModal}
                 className='flex h-full w-full cursor-pointer items-center justify-center rounded-6xs bg-salmon p-0'
               >
                 <div className='mr-2 h-[16.81px] w-[24.91px]'>
@@ -107,14 +107,11 @@ const InfoWithTabModalModal: React.FC<IInfoWithTabModalModalProps> = ({
         </div>
       </div>
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
-        <PropertyCallCard
-          setOpenModal={setOpenCallModal}
-          reference={reference}
-        />
+        <PropertyCallCard handleClose={handleCallModal} reference={reference} />
       </Modal>
       <Modal openModal={openEmailModal} setOpenModal={setOpenEmailModal}>
         <PropertyEmailCard
-          setOpenModal={setOpenEmailModal}
+          handleClose={handleEmailModal}
           reference={reference}
         />
       </Modal>

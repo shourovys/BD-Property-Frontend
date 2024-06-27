@@ -31,16 +31,16 @@ const PropertyTabSection: React.FC<IProps> = ({
   const [openCallModal, setOpenCallModal] = useState(false)
   const [openEmailModal, setOpenEmailModal] = useState(false)
 
-  const handleOpenEmailModal = () => setOpenEmailModal(true)
-  const handleOpenCallModal = () => setOpenCallModal(true)
+  const handleEmailModal = () => setOpenEmailModal((prev) => !prev)
+  const handleCallModal = () => setOpenCallModal((prev) => !prev)
   return (
     <>
       <PropertyDetailsTabs
         data={data}
         recommendedPresent={!!recommendedProperty.length}
         isComponentScrolledOut={isComponentScrolledOut}
-        handleOpenEmailModal={handleOpenEmailModal}
-        handleOpenCallModal={handleOpenCallModal}
+        handleOpenEmailModal={handleEmailModal}
+        handleOpenCallModal={handleCallModal}
       />
       <div className='custom_screen_width py-6'>
         <div className='grid gap-6 lg:grid-cols-4'>
@@ -49,8 +49,8 @@ const PropertyTabSection: React.FC<IProps> = ({
               <PropertyDetailsInfo
                 data={data}
                 isComponentScrolledOut={isComponentScrolledOut}
-                handleOpenEmailModal={handleOpenEmailModal}
-                handleOpenCallModal={handleOpenCallModal}
+                handleOpenEmailModal={handleEmailModal}
+                handleOpenCallModal={handleCallModal}
               />
             </div>
             <div className=''>
@@ -71,8 +71,8 @@ const PropertyTabSection: React.FC<IProps> = ({
 
           <div className='col-span-1 hidden space-y-8 lg:block'>
             <CardActions
-              handleOpenEmailModal={handleOpenEmailModal}
-              handleOpenCallModal={handleOpenCallModal}
+              handleOpenEmailModal={handleEmailModal}
+              handleOpenCallModal={handleCallModal}
             />
             <PopularSearches />
           </div>
@@ -84,13 +84,13 @@ const PropertyTabSection: React.FC<IProps> = ({
 
       <Modal openModal={openCallModal} setOpenModal={setOpenCallModal}>
         <PropertyCallCard
-          setOpenModal={setOpenCallModal}
+          handleClose={handleCallModal}
           reference={data.referenceNo}
         />
       </Modal>
       <Modal openModal={openEmailModal} setOpenModal={setOpenEmailModal}>
         <PropertyEmailCard
-          setOpenModal={setOpenEmailModal}
+          handleClose={handleEmailModal}
           reference={data.referenceNo}
         />
       </Modal>
