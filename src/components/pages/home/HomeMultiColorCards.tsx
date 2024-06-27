@@ -64,13 +64,13 @@ const HomeMultiColorCards: NextPage = () => {
     // },
     {
       bgColor: 'bg-[#bec1ff]', //lightsteelblue
-      iconSrc: '/icon-ionicmdtrendingup.svg',
+      iconSrc: '/icon-feathermap.svg',
       title: 'Plot Finder',
       subTitle: 'Find plots in any housing society',
     },
     {
       bgColor: 'bg-[#d7beff]', // plum
-      iconSrc: '/icon-feathermap.svg',
+      iconSrc: '/icon-ionicmdtrendingup.svg',
       title: 'Area Guides',
       subTitle: 'Find plots in any housing society',
     },
