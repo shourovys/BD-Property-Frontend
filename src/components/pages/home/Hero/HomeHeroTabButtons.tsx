@@ -116,7 +116,7 @@ const HomeHeroTabButtons: NextPage<IHomeHeroTabButtonsProps> = ({
             Interior
           </button>
         </Link>
-        <Link href='/services/renovation'>
+        <Link href='/services/interior'>
           <button className='flex items-center justify-center rounded-3xs border border-white bg-white bg-opacity-60 px-4 py-3 font-normal sm:font-light md:px-6 md:py-2'>
             Renovation
           </button>

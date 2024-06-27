@@ -60,11 +60,11 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
 
   const handleSaveProperty = (event: MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation()
-    if (!isAuthenticated) {
-      router.push(`/login?previousRoute=${pathName}?${searchParams.toString()}`)
-    } else {
-      saveTrigger({ property_id: property._id })
-    }
+    // if (!isAuthenticated) {
+    //   router.push(`/login?previousRoute=${pathName}?${searchParams.toString()}`)
+    // } else {
+    //   saveTrigger({ property_id: property._id })
+    // }
   }
 
   const handleCallModal = (event: MouseEvent<HTMLButtonElement>) => {
@@ -148,8 +148,9 @@ const PropertyListPropertyCard: NextPage<IProps> = ({
             <Button
               color='info'
               size='small'
-              onClick={handleSaveProperty}
+              // onClick={handleSaveProperty}
               isLoading={saveIsLoading}
+              className='cursor-default'
             >
               <FavoriteIcon className='text-base md:text-lg' />
               <p className='font-ubuntu text-xs font-medium md:text-base'>

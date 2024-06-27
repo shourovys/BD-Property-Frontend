@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                 </div>
                 <div className='flex items-center gap-6 md:gap-8'>
                   <div className='hidden lg:block'>
-                    <div className='flex items-center gap-6 md:gap-8'>
+                    <div className='flex cursor-default items-center gap-6 md:gap-8'>
                       {navigation.map((item) => (
                         <div key={item.name} className='group relative'>
                           {/* Render dropdown menu for items with subRoutes */}
@@ -99,16 +99,16 @@ const Header: React.FC = () => {
                                     {item.subRoutes.map((subItem) => (
                                       <Menu.Item key={subItem.name}>
                                         {({ active }) => (
-                                          <Link href={subItem.href}>
-                                            <p
-                                              className={classNames(
-                                                'block min-w-max overflow-hidden px-4 py-2 text-sm font-light',
-                                                active ? 'bg-gray-100' : ''
-                                              )}
-                                            >
-                                              {subItem.name}
-                                            </p>
-                                          </Link>
+                                          // <Link href={subItem.href}>
+                                          <p
+                                            className={classNames(
+                                              'block min-w-max overflow-hidden px-4 py-2 text-sm font-light',
+                                              active ? 'bg-gray-100' : ''
+                                            )}
+                                          >
+                                            {subItem.name}
+                                          </p>
+                                          // </Link>
                                         )}
                                       </Menu.Item>
                                     ))}
@@ -117,21 +117,21 @@ const Header: React.FC = () => {
                               )}
                             </Menu>
                           ) : (
-                            <Link href={item.href}>
-                              <span
-                                className={classNames(
-                                  'font-light',
-                                  item.href === pathName
-                                    ? 'text-gray-900'
-                                    : 'text-black hover:text-gray-900'
-                                )}
-                                aria-current={
-                                  item.href === pathName ? 'page' : undefined
-                                }
-                              >
-                                {item.name}
-                              </span>
-                            </Link>
+                            // <Link href={item.href}>
+                            <span
+                              className={classNames(
+                                'font-light',
+                                item.href === pathName
+                                  ? 'text-gray-900'
+                                  : 'text-black hover:text-gray-900'
+                              )}
+                              aria-current={
+                                item.href === pathName ? 'page' : undefined
+                              }
+                            >
+                              {item.name}
+                            </span>
+                            // </Link>
                           )}
                         </div>
                       ))}
@@ -139,20 +139,20 @@ const Header: React.FC = () => {
                   </div>
                   {/* {!loading && ( */}
                   <>
-                    {isAuthenticated ? (
-                      <button
-                        onClick={() => setOpenMeetingModal(true)}
-                        className='rounded-6xl bg-darkslateblue-100 px-4 py-2 text-white md:px-8 md:py-2.5'
-                      >
-                        Set A Meeting
-                      </button>
-                    ) : pathName === '/login' ? null : (
+                    {/* {isAuthenticated ? ( */}
+                    <button
+                      // onClick={() => setOpenMeetingModal(true)}
+                      className='cursor-default rounded-6xl bg-darkslateblue-100 px-4 py-2 text-white md:px-8 md:py-2.5'
+                    >
+                      Set A Meeting
+                    </button>
+                    {/* ) : pathName === '/login' ? null : (
                       <Link href='/login'>
                         <button className='rounded-6xl bg-darkslateblue-100 px-4 py-2 text-white md:px-8 md:py-2.5'>
                           Login
                         </button>
                       </Link>
-                    )}
+                    )} */}
                   </>
                   {/* )} */}
                 </div>
