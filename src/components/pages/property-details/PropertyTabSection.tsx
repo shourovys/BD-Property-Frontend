@@ -59,7 +59,7 @@ const PropertyTabSection: React.FC<IProps> = ({
               {data.features?.length && (
                 <PropertyDetailsPropertyFeatures features={data.features} />
               )}
-              <PropertyDetailsTrends />
+              <PropertyDetailsTrends location={data.address.location} />
               {data?.floorPlans && (
                 <PropertyDetailsFloorPlan floorPlans={data?.floorPlans} />
               )}
