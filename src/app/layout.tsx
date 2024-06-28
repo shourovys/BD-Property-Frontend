@@ -1,6 +1,5 @@
 'use client'
 import Footer from '@/components/common/Footer'
-import Header from '@/components/common/Header'
 import { Providers } from '@/components/HOC/Provider'
 import classNames from 'classnames'
 import { Inter } from 'next/font/google'
@@ -25,7 +24,7 @@ export default function RootLayout({
       >
         <Providers>
           <div className='flex min-h-screen max-w-[100vw] flex-col justify-between'>
-            <Header />
+            {/* <Header /> */}
             {children}
             <Footer />
           </div>
