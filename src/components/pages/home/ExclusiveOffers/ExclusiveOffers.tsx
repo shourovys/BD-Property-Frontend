@@ -4,10 +4,8 @@ import Section from '@/components/common/Section'
 import SectionTitle from '@/components/common/SectionTitle'
 import { ISingleServerResponse } from '@/types/pages/common'
 import { IListPropertyResponse } from '@/types/pages/property'
-import { SITE_PAGES } from '@/utils/config'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import useSWR from 'swr'
 import ExclusiveOffersLoading from './ExclusiveOffersLoading'
 
@@ -52,8 +50,8 @@ const ExclusiveOffers: NextPage = () => {
       ) : (
         <div className='relative grid w-full grid-cols-1 justify-items-center gap-4 sm:grid-cols-3 md:gap-6 lg:grid-cols-5'>
           {offerData.map((property) => (
-            <Link
-              href={SITE_PAGES.propertyPage(property.id)}
+            <p
+              // href={SITE_PAGES.propertyPage(property.id)}
               key={property.id}
               className='relative flex h-[255px] w-full min-w-max '
             >
@@ -73,7 +71,7 @@ const ExclusiveOffers: NextPage = () => {
                   {property.title}
                 </p>
               </div>
-            </Link>
+            </p>
           ))}
         </div>
       )}
