@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # BD Property - Property Management Platform
 
 A comprehensive property management platform for the Bangladesh real estate market. Features property listings with advanced search filters, user authentication, and responsive design.
@@ -299,3 +298,4 @@ MIT License
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 >>>>>>> ee9f24095ef15a6b45d402fc226a20162bb2e02b
+
