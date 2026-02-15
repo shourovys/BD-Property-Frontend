@@ -6,7 +6,7 @@ A comprehensive property management platform for the Bangladesh real estate mark
 
 **Live Website:** [https://bd-properly.vercel.app](https://bd-properly.vercel.app)
 
-**GitHub Repository:** [[https://github.com/shourovys/bd-properly](https://github.com/shourovys/bd-properly)]
+**GitHub Repository:** [https://github.com/shourovys/bd-properly](https://github.com/shourovys/bd-properly)
 
 ---
 
@@ -147,4 +147,5 @@ MIT License
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
 
